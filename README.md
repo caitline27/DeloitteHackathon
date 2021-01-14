@@ -1,9 +1,9 @@
-Welcome to the Heads in the Cloud team repo!
+# Welcome to the Heads in the Cloud team repo!
 
-Ideas we liked so far:
+## Ideas we liked so far:
 4, 5, 9
 
-Justify your idea: 
+## Justify your idea: 
 1)	Pick your idea
 2)	what data sources have you gathered?
 - Urls
@@ -13,7 +13,7 @@ Justify your idea:
 - nice to have: Screen mockups etc.
 4)	commercial viability
 
-Software we might need (please add to this):
+### Software we might need (please add to this):
 
 - Microsoft Azure Cloud
 - Microsoft Powerpoint
