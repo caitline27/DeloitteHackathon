@@ -6,11 +6,11 @@ Ideas we liked so far:
 Justify your idea: 
 1)	Pick your idea
 2)	what data sources have you gathered?
-a.	Urls
-b.	Files
+- Urls
+- Files
 3)	What will the app do?
-a.	description
-b.	nice to have: Screen mockups etc.
+- description
+- nice to have: Screen mockups etc.
 4)	commercial viability
 
 Software we might need (please add to this):
