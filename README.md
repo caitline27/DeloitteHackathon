@@ -4,7 +4,7 @@
 4, 5, 9
 
 ## Justify your idea: 
-1)	Pick your idea
+1)	Pick your idea 
 2)	what data sources have you gathered?
 - Urls
 - Files
@@ -18,6 +18,7 @@
 - Microsoft Azure Cloud
 - Microsoft Powerpoint
 - Gimp: https://www.gimp.org/downloads/ (a good open source picture/photo editor)
+- The nounproject: https://thenounproject.com/ (a good icon website)
 - OBS: https://obsproject.com/download (to record your desktop and make youtube-style videos - useful for demos)
 - PyCharm Community Edition https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC (the best Python IDE in the world - yes, much better than Visual Studio Code!)
 - IntelliJ Community Edition https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC (the best Java IDE in the world - yes, much better than Eclipse )
