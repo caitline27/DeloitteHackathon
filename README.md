@@ -23,5 +23,6 @@
 - PyCharm Community Edition https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC (the best Python IDE in the world - yes, much better than Visual Studio Code!)
 - IntelliJ Community Edition https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC (the best Java IDE in the world - yes, much better than Eclipse )
 - Git SCM https://git-scm.com/download/win (this gives you a good bash shell in linux, and allows you to use git commands)
+- Adobe XD (very easy to work with for quick mockups or wireframing) free: https://www.adobe.com/products/xd.html
 
 
