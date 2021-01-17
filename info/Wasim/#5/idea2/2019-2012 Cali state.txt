@@ -1,0 +1,3 @@
+https://healthdata.gov/dataset/hospital-inpatient-diagnosis-procedure-and-external-cause-codes
+
+diagnosis, procedure, and external cause of injury/morbidity code reported on the hospital inpatient data
