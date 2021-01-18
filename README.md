@@ -6,7 +6,8 @@
 ## Option 4 Datasets:
 1. https://www.kaggle.com/tboyle10/medicaltranscriptions
 2. @Rayan - General thoughts: It is quite difficult to obtain medical dataset due to high regulations. Not a lot of open source data available for the general public. Majority of the open source data in healthcare sector is in epidemiology like this one https://healthdata.gov/search/type/dataset 
-
+3. https://physionet.org/about/database/#overview
+4. https://github.com/EpistasisLab/ClinicalDataSources
 
 ## Justify your idea: 
 1)	Pick your idea 
