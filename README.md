@@ -9,6 +9,7 @@
 3. https://physionet.org/about/database/#overview
 4. https://github.com/EpistasisLab/ClinicalDataSources
 5. Another team used these: MIMIC III and SyntheticMass
+6. MIMIC III demo: https://physionet.org/content/mimiciii-demo/1.4/
 
 ## Justify your idea: 
 1)	Pick your idea 
