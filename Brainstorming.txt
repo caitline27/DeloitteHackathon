@@ -3,7 +3,7 @@ Intro:
 ------------------- Wholesale ----------------|----------------- Retail ------------------------
 
 	Generator		<------			Reseller			<------		End user
-				------> i.e. electricity utility companies,	------>
+				------> i.e. electricity utility companies,------>
 						  competetive power providers,
 						  and electricity marketers							
 
@@ -80,7 +80,7 @@ Regulations:
 			3				3		
 
 Second model: 
-- in case of over-capacity (supply > demand), predict the upper interval limit of expected selling price in the sopt market.
+- in case of over-capacity (supply > demand), predict the upper interval limit of expected selling price in the spot market.
 - in case of under-capacity (demand > supply), predict the lower interval limit of expected selling price in the spot market
 
 Resources:
