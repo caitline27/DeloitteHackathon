@@ -1,12 +1,91 @@
-First model: (reserve problem) maximize energy traded in the wholesale market while minimizing the energy traded in spot market.
-Assumption: whole sale price < spot price (most of the time)
+Intro:
+
+------------------- Wholesale ----------------|----------------- Retail ------------------------
+
+	Generator		<------			Reseller			<------		End user
+				------> i.e. electricity utility companies,	------>
+						  competetive power providers,
+						  and electricity marketers							
+
+Look at figure 1: https://learn.pjm.com/electricity-basics/market-for-electricity.aspx
+
+EU has 2 major markets:
+	- Retail market:
+		-> The actors are suppliers and customers
+		-> Electricity needs to be sold and consumed instantly, hence the demand vs supply is changing constantly
+	
+	- Wholesale market: 
+		-> refers to the buying and selling of power between the generators and suppliers
+		-> divided into 4 markets
+			- Long-term markets (forward energy markets, forward transmission markets and capacity mechanisms):
+				* financial exchanges
+				* OTC deals
+				-> Negotiated bidding prices are unique to each bidding zone
+				-> One country can have multiple bidding zones
+				-> cross-zonal trading is when energy is traded between bidding zones
+				-> cross-zonal trading requires long-term transmission rights acquired by the JAO 
+					(we might ignore it for this hackathon)
+			
+			- Spot market
+				* day-ahead market (to be ingored in this hackathon)
+				* intraday market
+				-> prices are decided based on the merit order:
+					- buyers bid to buy X MWh for price X
+					- Sellers bid to sell X MWh for price X
+					- Buying prices are listed on a descending order and buying prices are listed on an ascending order
+					- In case (price offer == selling offer) in more than 1 case, the merit order allows the energy units to be sold to the region/city with highest priority
+		
+			- Balancing market (to be ingored in this hackathon)
+				* ensures supply == demand in real time (after the intraday market)
+				
+			- Transmission re-dispatch markets (to be ingored in this hackathon)
+				* needed when trading in a spot market results in potential violation of operational limits:
+					- e.g.: thermal limits, voltage ranges
+				* occurs within a bidding zone	
+				* merged with balancing market in certain EU members
+		
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Problem statement: Identify best rerouting power grids during an outage to attain optimal cost and energy footprint
+--> We want to maximize the profits of a an electricity retailer while giving the option to reduce energy footprint.
+
+Thought process:
+	- Causes of power outage (blackout) : 
+		* Transient fault: a fault in powerline; power is restored once the fault is cleared (to be ignored in this hackathon)
+		* Brownout: drop in voltage in an electrical power supply (to be ignored in this hackathon)
+		* Rolling blackout: demand > supply
+			- e.g.: California electricity crisis 2000-2001
+			- Δ = |demand - supply| (MWh)
+	- During an outage, the energy supplier is forced to participate in the spot market (model 2)
+	- In order to minimize the spot market participation, the energy supplier should maximize his long-term market participation (model 1)
+		* By accturately modeling his clients demand vs supply
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+First model: (reserve problem) maximize energy traded in the long-term market while minimizing the energy traded in spot market.
+Assumption: long-term price < spot price (most of the time)
+
+Regulations:
+	- merit order: 
+		buy(descending)		sell(ascending)
+			4				1		The seller makes 3$/unit
+			3				2		The seller makes 1$/unit
+			2				3		The seller loses 1$/unit
+			1				4		The seller loses 3$/unit
+	
+	- ???:
+		buy(descending)		sell(ascending)
+			3				3		The energy units are sold to the region/city with highest priority
+			3				3		
+			3				3		
 
 Second model: 
-- in case of over-capacity, predict the upper interval limit of expected selling price in the sopt market.
-- in case of under-capacity, predict the lower interval limit of expected selling price in the spot market
+- in case of over-capacity (supply > demand), predict the upper interval limit of expected selling price in the sopt market.
+- in case of under-capacity (demand > supply), predict the lower interval limit of expected selling price in the spot market
 
 Resources:
 	- Electricity markets in the EU: https://fsr.eui.eu/electricity-markets-in-the-eu/
+	- Understanding electricity markets in the EU (pdf): http://www.easyres-project.eu/wp-content/uploads/2019/02/understanding-elecricity-markets-in-the-eu.pdf
 	- Cross-border electricity trade in EU: https://www.smard.de/page/en/wiki-article/5884/6012
 	- Transmission system network in EU: https://www.entsoe.eu/data/map/
 	- Transmission system network in EU (pdf): https://eepublicdownloads.entsoe.eu/clean-documents/Publications/maps/2019/Map_ENTSO-E-4.000.000.pdf
