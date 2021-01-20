@@ -1,0 +1,14 @@
+First model: (reserve problem) maximize energy traded in the wholesale market while minimizing the energy traded in spot market.
+Assumption: whole sale price < spot price (most of the time)
+
+Second model: 
+- in case of over-capacity, predict the upper interval limit of expected selling price in the sopt market.
+- in case of under-capacity, predict the lower interval limit of expected selling price in the spot market
+
+Resources:
+	- Electricity markets in the EU: https://fsr.eui.eu/electricity-markets-in-the-eu/
+	- Cross-border electricity trade in EU: https://www.smard.de/page/en/wiki-article/5884/6012
+	- Transmission system network in EU: https://www.entsoe.eu/data/map/
+	- Transmission system network in EU (pdf): https://eepublicdownloads.entsoe.eu/clean-documents/Publications/maps/2019/Map_ENTSO-E-4.000.000.pdf
+	- Nordpool: https://www.nordpoolgroup.com/historical-market-data/
+
