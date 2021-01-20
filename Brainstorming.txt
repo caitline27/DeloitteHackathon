@@ -24,7 +24,7 @@ EU has 2 major markets:
 				-> One country can have multiple bidding zones
 				-> cross-zonal trading is when energy is traded between bidding zones
 				-> cross-zonal trading requires long-term transmission rights acquired by the JAO 
-					(we might ignore it for this hackathon)
+					(we might ignore cross-zonal trading for this hackathon)
 			
 			- Spot market
 				* day-ahead market (to be ingored in this hackathon)
