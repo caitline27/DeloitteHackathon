@@ -1,0 +1,21 @@
+- Miscellaneous interest rates, daily listings
+	- Nominal rate / key policy rate
+		- Sight deposit rate
+		- Reserve rate
+		- Overnight lending rate
+	- effective rate / Bonds
+		- 3yrs
+		- 5yrs
+		- 10yrs
+	- effective synthetic rate / Treasury bills
+		- 3months
+		- 6months
+		- 9months
+		- 12 months
+	- Nominal rate / NOWA (Norweigian Overnight weighted average)
+		- NOWA
+		- Volume NOK (mill)
+		- Qualifier (acted or estimate or alternative or normal or ket policy rate)
+		- Banks lending
+		- Banks borrowing
+		- Transactions
