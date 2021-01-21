@@ -65,6 +65,9 @@ Thought process:
 First model: (reserve problem) maximize energy traded in the long-term market while minimizing the energy traded in spot market.
 Assumption: long-term price < spot price (most of the time)
 
+prediction_numberOfMWh = F1(wed, daily temperature, norwegian central bank rate, Libor, norway stock exchange OSE futures, 
+ust2yr, ust5yr, neighboring bank rates, aluminum futures, brent crude oil price or volumes, nickel futures)
+
 Regulations:
 	- merit order: 
 		buy(descending)		sell(ascending)

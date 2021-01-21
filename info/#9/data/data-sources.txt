@@ -1,2 +1,0 @@
-https://www.nordpoolgroup.com/historical-market-data/    -> European market data link - Jon
-https://sandbox.zenodo.org/record/715409#.YAYBUuhKhhE    -> Datasets for day-ahead electricity prices - Jon
