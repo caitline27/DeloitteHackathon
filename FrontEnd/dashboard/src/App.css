@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.dashboard-wrapper{
+  border: 1px solid #cdcdcd;
+  background-color: #fff;
+  box-shadow: 2px 2px 11px -2px #cdcdcd;
+  min-height: 25em;
+  margin-top: 6em;
+}
