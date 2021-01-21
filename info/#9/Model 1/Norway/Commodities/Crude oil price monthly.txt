@@ -1,4 +1,4 @@
-Montha	Price		Change
+Month		Price		Change
 Jan 2013	583.76	2.93 %
 Feb 2013	597.42	2.34 %
 Mar 2013	591.85	-0.93 %
