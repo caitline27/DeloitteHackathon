@@ -1,0 +1,2 @@
+https://jsfiddle.net/bkma0dLc/2/      -> some code for a slider we could use, on js fiddle - Jonathon N
+-> documentation on this slider can be found here https://roundsliderui.com/

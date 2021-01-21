@@ -1,0 +1,3 @@
+https://mimic.physionet.org/gettingstarted/access/  
+-> this link is to structured data containing fields like doctor diagnoses,prescriptions, services, etc. 
+-> must request access to this data. Approval takes roughly 1 week, we requested access o Friday 15th. - Jonathon N

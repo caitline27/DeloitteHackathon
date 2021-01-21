@@ -1,0 +1,3 @@
+https://healthdata.gov/dataset/hospital-emergency-department-diagnosis-procedure-and-external-cause-codes
+
+diagnosis, procedure, and external cause of injury/morbidity code reported on the hospital emergency department data
