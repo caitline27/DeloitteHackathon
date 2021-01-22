@@ -1,4 +1,6 @@
-C:.
+model 1:
+│   Directory tree.txt
+│
 ├───Denmark
 │   └───Bidding zones
 │       ├───Consumption per bidding zone 2021-2013
@@ -109,47 +111,308 @@ C:.
 │   │       Miscellaneous interest rates, daily listings.xlsx
 │   │       Summary.txt
 │   │
-│   └───Oslo Bors exchange ; XOSL market
-│       ├───bonds
-│       │       OSLKO25_quote_chart.csv
-│       │       OSLKO26_quote_chart.csv
-│       │       OSLKO27_quote_chart.csv
-│       │       OSLKO28_quote_chart.csv
-│       │       OSLKO29_quote_chart.csv
-│       │       OSLKO30_quote_chart.csv
-│       │       OSLKO31_quote_chart.csv
-│       │       OSLKO32_quote_chart.csv
-│       │       OSLKO33_quote_chart.csv
-│       │       OSLKO34 ESG_quote_chart.csv
-│       │       OSLKO36_quote_chart.csv
-│       │       OSLKO37_quote_chart.csv
-│       │       OSLKO38_quote_chart.csv
-│       │       OSLKO39_quote_chart.csv
-│       │       OSLKO40_quote_chart.csv
-│       │       OSLKO41_quote_chart.csv
-│       │       OSLKO42_quote_chart.csv
-│       │       SPOL12 PRO_quote_chart.csv
-│       │       SPOL30 PRO_quote_chart.csv
-│       │       SPOL34 PRO_quote_chart.csv
-│       │       SPOL40 PRO_quote_chart.csv
-│       │
-│       └───indices
-│               OBOSX OIL SERV GR_quote_chart (1).csv
-│               OBSFX SEAFOOD GR_quote_chart (1).csv
-│               OBSHX SHIPPING GR_quote_chart.csv
-│               OSE All-SHARE GR_quote_chart.csv
-│               OSEBX GR_quote_chart.csv
-│               OSEFX MUTUAL F GR_quote_chart.csv
-│               OSEMX MID CAP GR_quote_chart.csv
-│               OSESX SMALL CAP GR_quote_chart.csv
-│               OSLO BØRS EQ C GR_quote_chart.csv
-│               OSLO BØRS EQ C PR_quote_chart.csv
-│               OSLO ENERGY GR_quote_chart.csv
-│               OSLO ENERGY PR_quote_chart.csv
-│               OSLO SEAFOOD GR_quote_chart.csv
-│               OSLO SEAFOOD PR_quote_chart.csv
-│               OSLO SHIPPING GR_quote_chart.csv
-│               OSLO SHIPPING PR_quote_chart.csv
+│   ├───Oslo Bors exchange ; XOSL market
+│   │   ├───bonds
+│   │   │       OSLKO25_quote_chart.csv
+│   │   │       OSLKO26_quote_chart.csv
+│   │   │       OSLKO27_quote_chart.csv
+│   │   │       OSLKO28_quote_chart.csv
+│   │   │       OSLKO29_quote_chart.csv
+│   │   │       OSLKO30_quote_chart.csv
+│   │   │       OSLKO31_quote_chart.csv
+│   │   │       OSLKO32_quote_chart.csv
+│   │   │       OSLKO33_quote_chart.csv
+│   │   │       OSLKO34 ESG_quote_chart.csv
+│   │   │       OSLKO36_quote_chart.csv
+│   │   │       OSLKO37_quote_chart.csv
+│   │   │       OSLKO38_quote_chart.csv
+│   │   │       OSLKO39_quote_chart.csv
+│   │   │       OSLKO40_quote_chart.csv
+│   │   │       OSLKO41_quote_chart.csv
+│   │   │       OSLKO42_quote_chart.csv
+│   │   │       SPOL12 PRO_quote_chart.csv
+│   │   │       SPOL30 PRO_quote_chart.csv
+│   │   │       SPOL34 PRO_quote_chart.csv
+│   │   │       SPOL40 PRO_quote_chart.csv
+│   │   │
+│   │   └───indices
+│   │           OBOSX OIL SERV GR_quote_chart (1).csv
+│   │           OBSFX SEAFOOD GR_quote_chart (1).csv
+│   │           OBSHX SHIPPING GR_quote_chart.csv
+│   │           OSE All-SHARE GR_quote_chart.csv
+│   │           OSEBX GR_quote_chart.csv
+│   │           OSEFX MUTUAL F GR_quote_chart.csv
+│   │           OSEMX MID CAP GR_quote_chart.csv
+│   │           OSESX SMALL CAP GR_quote_chart.csv
+│   │           OSLO BØRS EQ C GR_quote_chart.csv
+│   │           OSLO BØRS EQ C PR_quote_chart.csv
+│   │           OSLO ENERGY GR_quote_chart.csv
+│   │           OSLO ENERGY PR_quote_chart.csv
+│   │           OSLO SEAFOOD GR_quote_chart.csv
+│   │           OSLO SEAFOOD PR_quote_chart.csv
+│   │           OSLO SHIPPING GR_quote_chart.csv
+│   │           OSLO SHIPPING PR_quote_chart.csv
+│   │
+│   └───Temperatures
+│           elements.txt
+│           metadata.txt
+│           sources.txt
+│           stations.txt
+│           TG_STAID000179.txt
+│           TG_STAID000186.txt
+│           TG_STAID000187.txt
+│           TG_STAID000188.txt
+│           TG_STAID000189.txt
+│           TG_STAID000192.txt
+│           TG_STAID000195.txt
+│           TG_STAID000264.txt
+│           TG_STAID000265.txt
+│           TG_STAID000266.txt
+│           TG_STAID000329.txt
+│           TG_STAID000331.txt
+│           TG_STAID001042.txt
+│           TG_STAID001044.txt
+│           TG_STAID001045.txt
+│           TG_STAID001046.txt
+│           TG_STAID001047.txt
+│           TG_STAID001049.txt
+│           TG_STAID001051.txt
+│           TG_STAID001052.txt
+│           TG_STAID001055.txt
+│           TG_STAID001056.txt
+│           TG_STAID001059.txt
+│           TG_STAID002215.txt
+│           TG_STAID002216.txt
+│           TG_STAID002230.txt
+│           TG_STAID002581.txt
+│           TG_STAID002582.txt
+│           TG_STAID002587.txt
+│           TG_STAID002589.txt
+│           TG_STAID002656.txt
+│           TG_STAID002669.txt
+│           TG_STAID002685.txt
+│           TG_STAID002709.txt
+│           TG_STAID002727.txt
+│           TG_STAID002733.txt
+│           TG_STAID002750.txt
+│           TG_STAID002754.txt
+│           TG_STAID002755.txt
+│           TG_STAID002756.txt
+│           TG_STAID004993.txt
+│           TG_STAID005001.txt
+│           TG_STAID005003.txt
+│           TG_STAID005042.txt
+│           TG_STAID005046.txt
+│           TG_STAID005048.txt
+│           TG_STAID005054.txt
+│           TG_STAID005056.txt
+│           TG_STAID005060.txt
+│           TG_STAID005070.txt
+│           TG_STAID005071.txt
+│           TG_STAID005083.txt
+│           TG_STAID005106.txt
+│           TG_STAID005132.txt
+│           TG_STAID005137.txt
+│           TG_STAID005138.txt
+│           TG_STAID005140.txt
+│           TG_STAID005149.txt
+│           TG_STAID005150.txt
+│           TG_STAID005152.txt
+│           TG_STAID005153.txt
+│           TG_STAID005154.txt
+│           TG_STAID005160.txt
+│           TG_STAID011093.txt
+│           TG_STAID011094.txt
+│           TG_STAID011096.txt
+│           TG_STAID011114.txt
+│           TG_STAID011122.txt
+│           TG_STAID011124.txt
+│           TG_STAID011127.txt
+│           TG_STAID011134.txt
+│           TG_STAID011136.txt
+│           TG_STAID011140.txt
+│           TG_STAID018010.txt
+│           TG_STAID018017.txt
+│           TG_STAID018018.txt
+│           TG_STAID018020.txt
+│           TG_STAID018036.txt
+│           TG_STAID018038.txt
+│           TG_STAID018046.txt
+│           TG_STAID018049.txt
+│           TG_STAID018050.txt
+│           TG_STAID018054.txt
+│           TG_STAID018059.txt
+│           TG_STAID018072.txt
+│           TG_STAID018081.txt
+│           TG_STAID018088.txt
+│           TG_STAID018091.txt
+│           TG_STAID018096.txt
+│           TG_STAID018104.txt
+│           TG_STAID018107.txt
+│           TG_STAID018112.txt
+│           TG_STAID018113.txt
+│           TG_STAID018114.txt
+│           TG_STAID018118.txt
+│           TG_STAID018123.txt
+│           TG_STAID018124.txt
+│           TG_STAID018126.txt
+│           TG_STAID018131.txt
+│           TG_STAID018132.txt
+│           TG_STAID018144.txt
+│           TG_STAID018145.txt
+│           TG_STAID018150.txt
+│           TG_STAID018170.txt
+│           TG_STAID018172.txt
+│           TG_STAID018197.txt
+│           TG_STAID018202.txt
+│           TG_STAID018203.txt
+│           TG_STAID018215.txt
+│           TG_STAID018224.txt
+│           TG_STAID018227.txt
+│           TG_STAID018228.txt
+│           TG_STAID018236.txt
+│           TG_STAID018238.txt
+│           TG_STAID018242.txt
+│           TG_STAID018244.txt
+│           TG_STAID018245.txt
+│           TG_STAID018256.txt
+│           TG_STAID018259.txt
+│           TG_STAID018262.txt
+│           TG_STAID018263.txt
+│           TG_STAID018267.txt
+│           TG_STAID018288.txt
+│           TG_STAID018294.txt
+│           TG_STAID018307.txt
+│           TG_STAID018311.txt
+│           TG_STAID018329.txt
+│           TG_STAID018331.txt
+│           TG_STAID018349.txt
+│           TG_STAID018353.txt
+│           TG_STAID018382.txt
+│           TG_STAID018403.txt
+│           TG_STAID018412.txt
+│           TG_STAID018432.txt
+│           TG_STAID018438.txt
+│           TG_STAID018448.txt
+│           TG_STAID018456.txt
+│           TG_STAID018461.txt
+│           TG_STAID018472.txt
+│           TG_STAID018474.txt
+│           TG_STAID018482.txt
+│           TG_STAID018483.txt
+│           TG_STAID018495.txt
+│           TG_STAID018501.txt
+│           TG_STAID018527.txt
+│           TG_STAID018534.txt
+│           TG_STAID018545.txt
+│           TG_STAID018556.txt
+│           TG_STAID018572.txt
+│           TG_STAID018575.txt
+│           TG_STAID018579.txt
+│           TG_STAID018588.txt
+│           TG_STAID018592.txt
+│           TG_STAID018619.txt
+│           TG_STAID018628.txt
+│           TG_STAID018647.txt
+│           TG_STAID018653.txt
+│           TG_STAID018657.txt
+│           TG_STAID018678.txt
+│           TG_STAID018682.txt
+│           TG_STAID018687.txt
+│           TG_STAID018698.txt
+│           TG_STAID018704.txt
+│           TG_STAID018707.txt
+│           TG_STAID018709.txt
+│           TG_STAID018710.txt
+│           TG_STAID018722.txt
+│           TG_STAID018737.txt
+│           TG_STAID018741.txt
+│           TG_STAID018742.txt
+│           TG_STAID018744.txt
+│           TG_STAID018745.txt
+│           TG_STAID018746.txt
+│           TG_STAID018747.txt
+│           TG_STAID018749.txt
+│           TG_STAID018761.txt
+│           TG_STAID018763.txt
+│           TG_STAID018766.txt
+│           TG_STAID018767.txt
+│           TG_STAID018776.txt
+│           TG_STAID018785.txt
+│           TG_STAID018786.txt
+│           TG_STAID018788.txt
+│           TG_STAID018792.txt
+│           TG_STAID018794.txt
+│           TG_STAID018797.txt
+│           TG_STAID018798.txt
+│           TG_STAID018814.txt
+│           TG_STAID018821.txt
+│           TG_STAID018826.txt
+│           TG_STAID018836.txt
+│           TG_STAID018840.txt
+│           TG_STAID018849.txt
+│           TG_STAID018862.txt
+│           TG_STAID018868.txt
+│           TG_STAID018878.txt
+│           TG_STAID018884.txt
+│           TG_STAID018889.txt
+│           TG_STAID018895.txt
+│           TG_STAID018896.txt
+│           TG_STAID018901.txt
+│           TG_STAID018903.txt
+│           TG_STAID018904.txt
+│           TG_STAID018909.txt
+│           TG_STAID018914.txt
+│           TG_STAID018930.txt
+│           TG_STAID018931.txt
+│           TG_STAID018936.txt
+│           TG_STAID018938.txt
+│           TG_STAID018942.txt
+│           TG_STAID018949.txt
+│           TG_STAID018953.txt
+│           TG_STAID018954.txt
+│           TG_STAID018960.txt
+│           TG_STAID018965.txt
+│           TG_STAID018974.txt
+│           TG_STAID018979.txt
+│           TG_STAID018987.txt
+│           TG_STAID018989.txt
+│           TG_STAID018991.txt
+│           TG_STAID018998.txt
+│           TG_STAID019001.txt
+│           TG_STAID019006.txt
+│           TG_STAID019007.txt
+│           TG_STAID019016.txt
+│           TG_STAID019019.txt
+│           TG_STAID019033.txt
+│           TG_STAID019038.txt
+│           TG_STAID019039.txt
+│           TG_STAID019042.txt
+│           TG_STAID019043.txt
+│           TG_STAID019048.txt
+│           TG_STAID019050.txt
+│           TG_STAID019055.txt
+│           TG_STAID019056.txt
+│           TG_STAID019070.txt
+│           TG_STAID019078.txt
+│           TG_STAID019079.txt
+│           TG_STAID019094.txt
+│           TG_STAID019104.txt
+│           TG_STAID019115.txt
+│           TG_STAID019122.txt
+│           TG_STAID019142.txt
+│           TG_STAID019144.txt
+│           TG_STAID019145.txt
+│           TG_STAID019149.txt
+│           TG_STAID019167.txt
+│           TG_STAID019188.txt
+│           TG_STAID019195.txt
+│           TG_STAID019201.txt
+│           TG_STAID020821.txt
+│           TG_STAID020822.txt
+│           TG_STAID020823.txt
+│           TG_STAID021769.txt
+│           TG_STAID021770.txt
 │
 ├───Sweden
 │   └───Bidding zones
