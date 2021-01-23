@@ -1,11 +1,18 @@
 
+body{
+  --color-bg1: rgb(231, 235, 236);
+  --color-bg2: rgb(157, 184, 180);
+  --color-container-shadow: rgb(73, 77, 85);
+  --color-nav-bg: rgb(17, 17, 45);
+  --color-nav_text: rgb(95, 165, 142);
+}
 
 .dashboard-wrapper{
-  border: 1px solid #cdcdcd;
-  background-color: #fff;
-  box-shadow: 2px 2px 11px -2px #cdcdcd;
+  background: linear-gradient(var(--color-bg1) 10%, var(--color-bg2) 50%);
+  box-shadow: 2px 8px 11px -2px var(--color-container-shadow);
   min-height: 25em;
   margin-top: 3em;
+  padding: 0% !important;
 }
 
 .btn-75{
@@ -16,6 +23,24 @@
   font-size: 7em;
   text-align: center;
 }
+
+
+img.center{
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+nav.navline{
+  width:100%;
+  height:7vmax;
+  margin-top: 20px;
+  background-color: var(--color-nav-bg);
+  color: var(--color-nav_text);
+}
+
+
+
+
 
 .graph{
   border:1px solid #cdcdcd;
