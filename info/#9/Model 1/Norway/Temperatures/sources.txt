@@ -1,0 +1,1000 @@
+EUROPEAN CLIMATE ASSESSMENT & DATASET (ECA&D), file created on 21-01-2021
+THESE DATA CAN BE USED FREELY PROVIDED THAT THE FOLLOWING SOURCE IS ACKNOWLEDGED:
+
+Klein Tank, A.M.G. and Coauthors, 2002. Daily dataset of 20th-century surface
+air temperature and precipitation series for the European Climate Assessment.
+Int. J. of Climatol., 22, 1441-1453.
+Data and metadata available at http://www.ecad.eu
+
+FILE FORMAT (MISSING VALUE CODE IS -9999):
+
+ 01- 05 STAID  : Station identifier
+ 07- 12 SOUID  : Source identifier
+ 14- 53 SOUNAME: Source name
+ 55- 56 CN     : Country code (ISO3116 country codes)
+ 58- 66 LAT    : Latitude in degrees:minutes:seconds (+: North, -: South)
+ 68- 77 LON    : Longitude in degrees:minutes:seconds (+: East, -: West)
+ 79- 82 HGTH   : Station elevation in meters
+ 84- 87 ELEI   : Element identifier (see website at Daily Data > Data dictionary > Elements)
+ 89- 96 BEGIN  : Begin date YYYYMMDD
+ 98-105 END    : End date YYYYMMDD
+107-111 PARID  : Participant identifier
+113-163 PARNAME: Participant name
+
+STAID, SOUID,SOUNAME                                 ,CN,      LAT,       LON,HGHT,ELEI,   BEGIN,     END,PARID,PARNAME
+
+  179,100577,BJOERNOEYA                              ,NO,+74:31:00,+019:01:00,  16,TG21,19100829,20201231,   22,Hans Olav Hygen                                   
+  186,100580,SVALBARD AIRPORT                        ,NO,+78:15:00,+015:28:00,  28,TG21,19750801,20201231,   22,Hans Olav Hygen                                   
+  186,199233,ADVENTDALEN                             ,NO,+78:12:08,+015:49:52,  15,TG21,20161122,20201231,   22,Hans Olav Hygen                                   
+  186,200882,LONGYEARBYEN                            ,SJ,+78:13:21,+015:37:30,  37,TG21,19110816,19770730,   22,Hans Olav Hygen                                   
+  187,100583,HOPEN                                   ,NO,+76:30:00,+025:04:00,   6,TG21,19451101,20201231,   22,Hans Olav Hygen                                   
+  187,901062,HOPEN                                   ,NO,+76:30:00,+025:04:00,  10, TG5,19820114,20200229,     ,                    
+  188,100586,GLOMFJORD                               ,NO,+66:49:00,+013:59:00,  39,TG21,19160501,20201231,   22,Hans Olav Hygen                                   
+  189,100589,JAN MAYEN                               ,NO,+70:56:00,-008:40:00,  10,TG21,19220101,20201231,   22,Hans Olav Hygen                                   
+  192,100598,FAERDER FYR                             ,NO,+59:01:36,+010:31:48,   6,TG21,18851021,20201231,   22,Hans Olav Hygen                                   
+  192,901482,FERDER LH                               ,NO,+59:02:00,+010:32:00,   8, TG5,19820113,20200229,     ,                    
+  195,100607,VARDOE                                  ,NO,+70:22:02,+031:05:05,  14,TG21,19000101,20201231,   22,Hans Olav Hygen                                   
+  195,901098,VARDO                                   ,NO,+70:21:59,+031:06:00,  15, TG5,19820114,20200229,     ,                    
+ 1056,104441,SKROVA FYR                              ,NO,+68:09:01,+014:39:03,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 1056,133952,SVOLVAER LUFTHAVN                       ,NO,+68:14:43,+014:40:09,   9,TG21,20040101,20201231,   22,Hans Olav Hygen                                   
+ 1056,901160,SKROVA LH                               ,NO,+68:09:00,+014:39:00,  11, TG5,19820115,20200229,     ,                    
+  265,105463,BERGEN FLORIDA                          ,NO,+60:23:00,+005:20:00,  12,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+  265,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+  266,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+  266,199073,BODOE - SKIVIKA                         ,NO,+67:18:30,+014:25:51,   5,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+  264,105484,OKSOEY FYR                              ,NO,+58:04:01,+008:03:03,   9,TG21,18760101,20201231,   22,Hans Olav Hygen                                   
+  264,134948,KRISTIANSAND - SOMSKLEIVA               ,NO,+58:09:02,+008:03:10,  12,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+  264,901448,OKSOY LH                                ,NO,+58:04:00,+008:03:00,   8, TG5,19820113,20200228,     ,                    
+ 1059,109461,FRUHOLMEN FYR                           ,NO,+71:05:36,+023:59:42,  13,TG21,19540616,20201231,   22,Hans Olav Hygen                                   
+ 1059,901055,FRUHOLMEN LH                            ,NO,+71:05:59,+024:00:00,  14, TG5,19820113,20200229,     ,                    
+ 1055,109606,ORLAND                                  ,NO,+63:42:01,+009:36:05,  10,TG21,19541101,20201231,   22,Hans Olav Hygen                                   
+ 1055,901241,ORLAND III                              ,NO,+63:42:00,+009:36:00,   7, TG5,19820113,20200229,     ,                    
+ 1044,109632,LINDESNES FYR                           ,NO,+57:59:00,+007:02:54,  13,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 1044,901436,LINDESNES LH                            ,NO,+57:59:00,+007:03:00,  13, TG5,19820114,20200229,     ,                    
+ 1045,109642,LISTA FYR                               ,NO,+58:06:36,+006:34:06,  14,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 1045,901427,LISTA LH                                ,NO,+58:07:00,+006:34:00,  14, TG5,19820113,20200229,     ,                    
+ 1042,109655,LYNGOR FYR                              ,NO,+58:38:01,+009:09:01,   4,TG21,19560101,20201231,   22,Hans Olav Hygen                                   
+ 1042,901467,LYNGOR LH                               ,NO,+58:38:00,+009:09:00,   5, TG5,19820114,20200229,     ,                    
+  331,101153,TORUNGEN FYR                            ,NO,+58:23:00,+008:47:30,  12, TG5,19370108,20031231,   47,GSN network                                       
+  331,109664,TORUNGEN FYR                            ,NO,+58:23:00,+008:47:30,  12,TG21,19110101,20201231,   22,Hans Olav Hygen                                   
+  331,901465,TORUNGEN LH                             ,NO,+58:24:00,+008:48:00,  15, TG5,19820113,20190702,     ,                    
+ 1047,109673,SAUDA                                   ,NO,+59:38:55,+006:21:48,   5,TG21,19280301,20201231,   22,Hans Olav Hygen                                   
+ 1046,109682,SOLA                                    ,NO,+58:53:03,+005:38:13,   7,TG21,19530101,20201231,   22,Hans Olav Hygen                                   
+ 1046,134372,SANDNES - ROVIK                         ,NO,+58:51:58,+005:45:44,  19,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+ 2581,109721,ONA                                     ,NO,+62:52:00,+006:33:00,  11,TG21,19110101,19630331,   22,Hans Olav Hygen                                   
+ 2581,109730,ONA HUSOY                               ,NO,+62:52:00,+006:32:00,   8,TG21,19630501,19780630,   22,Hans Olav Hygen                                   
+ 2581,109739,ONA II                                  ,NO,+62:51:35,+006:32:22,  13,TG21,19780901,20201231,   22,Hans Olav Hygen                                   
+ 2581,901212,ONA II                                  ,NO,+62:52:00,+006:32:00,  15, TG5,19820113,20200229,     ,                    
+ 2582,109721,ONA                                     ,NO,+62:52:00,+006:33:00,  11,TG21,19110101,19630331,   22,Hans Olav Hygen                                   
+ 2582,109730,ONA HUSOY                               ,NO,+62:52:00,+006:32:00,   8,TG21,19630501,19780630,   22,Hans Olav Hygen                                   
+ 2582,109739,ONA II                                  ,NO,+62:51:35,+006:32:22,  13,TG21,19780901,20201231,   22,Hans Olav Hygen                                   
+ 2582,901212,ONA II                                  ,NO,+62:52:00,+006:32:00,  15, TG5,19820113,20200229,     ,                    
+  329,109721,ONA                                     ,NO,+62:52:00,+006:33:00,  11,TG21,19110101,19630331,   22,Hans Olav Hygen                                   
+  329,109730,ONA HUSOY                               ,NO,+62:52:00,+006:32:00,   8,TG21,19630501,19780630,   22,Hans Olav Hygen                                   
+  329,109739,ONA II                                  ,NO,+62:51:35,+006:32:22,  13,TG21,19780901,20201231,   22,Hans Olav Hygen                                   
+  329,901212,ONA II                                  ,NO,+62:52:00,+006:32:00,  15, TG5,19820113,20200229,     ,                    
+ 1051,109748,TAFJORD                                 ,NO,+62:14:01,+007:25:00,  15,TG21,19300617,20201231,   22,Hans Olav Hygen                                   
+ 1051,199163,VALLDAL - MURI                          ,NO,+62:17:49,+007:15:09,   2,TG21,20140901,20201231,   22,Hans Olav Hygen                                   
+ 1051,901218,TAFJORD                                 ,NO,+62:14:00,+007:25:00,  17, TG5,19820113,20200228,     ,                    
+ 1049,109770,TAKLE                                   ,NO,+61:01:36,+005:23:06,  38,TG21,19500602,20201231,   22,Hans Olav Hygen                                   
+ 2216,109779,SLETTNES FYR                            ,NO,+71:05:02,+028:13:04,   8,TG21,19560826,20201231,   22,Hans Olav Hygen                                   
+ 2216,901078,SLETTNES LH                             ,NO,+71:05:59,+028:14:00,  10, TG5,19820114,20200229,     ,                    
+ 2587,109824,RADE - TOMB                             ,NO,+59:19:00,+010:49:00,  14,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+ 2587,199294,RYGGE - HUGGENES                        ,NO,+59:23:53,+010:45:15,  35,TG21,20130213,20201231,   22,Hans Olav Hygen                                   
+ 2587,200741,ROED I RADE                             ,NO,+59:20:25,+010:53:42,  34,TG21,19591001,19711230,   22,Hans Olav Hygen                                   
+ 2589,109842,RYGGE                                   ,NO,+58:22:59,+010:47:18,  40,TG21,19550301,20201231,   22,Hans Olav Hygen                                   
+ 2590,109851,SARPSBORG                               ,NO,+59:17:09,+011:06:53,  57,TG21,19911201,20201231,   22,Hans Olav Hygen                                   
+ 2590,199092,OSAKER                                  ,NO,+59:19:09,+011:02:32,  45,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+ 2590,200816,KALNES                                  ,NO,+59:18:55,+011:02:56,  56,TG21,19570101,19820730,   22,Hans Olav Hygen                                   
+ 2590,901493,SARPSBORG                               ,NO,+59:17:00,+011:07:00,  57, TG5,20060128,20200229,     ,                    
+ 2656,110449,KJEVIK                                  ,NO,+58:12:01,+008:04:06,  12,TG21,19460101,20201231,   22,Hans Olav Hygen                                   
+ 2656,901452,KRISTIANSAND/KJEVIK                     ,NO,+58:12:00,+008:05:00,  17, TG5,19820113,20200229,     ,                    
+ 2669,110574,OBRESTAD FYR                            ,NO,+58:39:33,+005:33:19,  24,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 2669,901412,OBRESTAD                                ,NO,+58:39:00,+005:34:00,  26, TG5,19820113,20200229,     ,                    
+ 2230,110655,BERGEN/FLESLAND                         ,NO,+60:17:21,+005:13:35,  48,TG21,19551002,20201231,   22,Hans Olav Hygen                                   
+ 2230,901317,BERGEN/FLORIDA                          ,NO,+60:23:00,+005:20:00,  36, TG5,19820113,20200229,     ,                    
+ 2685,110727,SLATTEROY FYR                           ,NO,+59:54:30,+005:04:06,  25,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 2685,901406,SLATTEROY LH                            ,NO,+59:55:00,+005:04:00,  26, TG5,19820113,20200229,     ,                    
+ 2709,110943,ORSKOG                                  ,NO,+62:28:44,+006:49:12,   4,TG21,20141117,20201231,   22,Hans Olav Hygen                                   
+ 2709,199685,E39 SVORTA                              ,NO,+62:28:58,+006:38:45,  20,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+ 2709,200821,SKODJE                                  ,NO,+62:30:00,+006:41:00,  26,TG21,19610101,20200830,   22,Hans Olav Hygen                                   
+ 2727,111113,NORDOYAN FYR                            ,NO,+64:47:52,+010:32:57,  33,TG21,19510101,20201231,   22,Hans Olav Hygen                                   
+ 2727,901262,NORDOYAN LH                             ,NO,+64:48:00,+010:33:00,  33, TG5,19820113,20200229,     ,                    
+ 2733,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 2733,111167,BODOE - VAGONES                         ,NO,+67:17:00,+014:28:00,  33,TG21,19940115,20140630,   22,Hans Olav Hygen                                   
+ 2733,199182,RV80 HUNSTAD                            ,NO,+67:16:42,+014:31:02,  25,TG21,20140101,20201120,   22,Hans Olav Hygen                                   
+ 2733,199438,RV80 BERTNES                            ,NO,+67:17:16,+014:35:36,  30,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+ 2750,111320,TORSVAG FYR                             ,NO,+70:14:45,+019:30:02,  21,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 2750,901033,TORSVAG LH                              ,NO,+70:15:00,+019:30:00,  24, TG5,19820113,20200229,     ,                    
+ 2754,111356,MAKKAUR FYR                             ,NO,+70:42:02,+030:04:05,   9,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 2754,901092,MAKKAUR LH                              ,NO,+70:42:00,+030:05:00,   9, TG5,19820113,20200229,     ,                    
+ 2755,111365,ISFJORD RADIO                           ,NO,+78:04:00,+013:38:00,   7,TG21,19340901,20201231,   22,Hans Olav Hygen                                   
+ 2756,111374,SVEAGRUVA                               ,NO,+77:53:00,+016:43:00,   9,TG21,19780501,20201231,   22,Hans Olav Hygen                                   
+ 1052,112073,VAERNES                                 ,NO,+63:30:00,+010:53:24,  12,TG21,19460101,20201231,   22,Hans Olav Hygen                                   
+ 2215,112082,ANDOYA                                  ,NO,+69:18:00,+016:09:00,  14,TG21,19580601,20201231,   22,Hans Olav Hygen                                   
+ 2215,157206,ANDENES                                 ,NO,+69:19:25,+016:07:12,   5,TG21,18670710,19720331,   22,Hans Olav Hygen                                   
+ 2215,200880,ANDOEYA LH - TEST                       ,NO,+69:15:48,+016:10:48,  13,TG21,20050823,20090524,   22,Hans Olav Hygen                                   
+ 2215,901010,ANDOYA                                  ,NO,+69:18:00,+016:08:00,  14, TG5,19820113,20160104,     ,                    
+ 4993,133016,LANDVIK                                 ,NO,+58:20:24,+008:31:21,   6,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+ 5001,133112,ALTA LUFTHAVN                           ,NO,+69:58:39,+023:21:30,   3,TG21,19631201,20201231,   22,Hans Olav Hygen                                   
+ 5001,200635,ALTA                                    ,NO,+69:58:00,+023:15:00,   4,TG21,19000101,19400910,   22,Hans Olav Hygen                                   
+ 5003,133136,HONNINGSVAG LUFTHAVN                    ,NO,+71:00:38,+025:58:42,  14,TG21,20030801,20201231,   22,Hans Olav Hygen                                   
+ 5003,200586,HELNES FYR                              ,NO,+71:03:41,+026:13:17,  33,TG21,19540101,20040916,   22,Hans Olav Hygen                                   
+ 5046,133652,SVINOY FYR                              ,NO,+62:19:46,+005:16:05,  38,TG21,19550613,20201231,   22,Hans Olav Hygen                                   
+ 5046,901205,SVINOY LH                               ,NO,+62:20:00,+005:16:00,  41, TG5,19820113,20200229,     ,                    
+ 5048,133676,KRISTIANSUND - KARIHOLA                 ,NO,+63:07:31,+007:42:15,  39,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+ 5048,133688,KRISTIANSUND LUFTHAVN                   ,NO,+63:06:34,+007:48:57,  62,TG21,20031017,20201231,   22,Hans Olav Hygen                                   
+ 5048,200876,KRISTIANSUND N                          ,NO,+63:06:37,+007:45:06,  48,TG21,19570101,19751230,   22,Hans Olav Hygen                                   
+ 5049,133688,KRISTIANSUND LUFTHAVN                   ,NO,+63:06:34,+007:48:57,  62,TG21,20031017,20201231,   22,Hans Olav Hygen                                   
+ 5049,200876,KRISTIANSUND N                          ,NO,+63:06:37,+007:45:06,  48,TG21,19570101,19751230,   22,Hans Olav Hygen                                   
+ 5054,133748,VIGRA                                   ,NO,+62:33:42,+006:06:54,  22,TG21,19580701,20201231,   22,Hans Olav Hygen                                   
+ 5054,199170,ALESUND IV                              ,NO,+62:28:13,+006:12:39,  15,TG21,20090625,20201231,   22,Hans Olav Hygen                                   
+ 5056,133772,BRONNOYSUND LUFTHAVN                    ,NO,+65:27:24,+012:13:06,   9,TG21,20020801,20201231,   22,Hans Olav Hygen                                   
+ 5056,200606,BROENNOEYSUND III                       ,NO,+65:28:36,+012:12:45,   5,TG21,19570101,19721230,   22,Hans Olav Hygen                                   
+ 5056,200887,BROENNOEYSUND                           ,NO,+65:28:00,+012:12:00,   4,TG21,19000101,19481230,   22,Hans Olav Hygen                                   
+ 5060,133820,EVENES LUFTHAVN                         ,NO,+68:29:28,+016:41:00,  26,TG21,20040101,20201231,   22,Hans Olav Hygen                                   
+ 5060,200831,EVENSKJER                               ,NO,+68:35:01,+016:34:09,   7,TG21,19581001,19851030,   22,Hans Olav Hygen                                   
+ 5060,201028,EVENSKJER BAKKE                         ,NO,+68:34:58,+016:34:14,  10,TG21,19570301,19580929,   22,Hans Olav Hygen                                   
+ 5070,133940,NARVIK LUFTHAVN                         ,NO,+68:26:23,+017:23:19,  31,TG21,20020801,20170404,   22,Hans Olav Hygen                                   
+ 5070,157134,NARVIK II                               ,NO,+68:28:08,+017:29:32,  32,TG21,19540101,19750831,   22,Hans Olav Hygen                                   
+ 5070,199398,NARVIK SENTRUM                          ,NO,+68:26:14,+017:25:16,  31,TG21,20181214,20201231,   22,Hans Olav Hygen                                   
+ 5070,199742,E6 SKJOMENBRUA                          ,NO,+68:22:16,+017:14:38,  30,TG21,20150521,20201231,   22,Hans Olav Hygen                                   
+ 5070,200805,NARVIK III                              ,NO,+68:28:11,+017:29:54,  17,TG21,19750901,20020530,   22,Hans Olav Hygen                                   
+ 5070,901194,NARVIK III                              ,NO,+68:28:00,+017:30:00,  17, TG5,19820113,20020531,     ,                    
+ 5071,104441,SKROVA FYR                              ,NO,+68:09:01,+014:39:03,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+ 5071,133952,SVOLVAER LUFTHAVN                       ,NO,+68:14:43,+014:40:09,   9,TG21,20040101,20201231,   22,Hans Olav Hygen                                   
+ 5071,901160,SKROVA LH                               ,NO,+68:09:00,+014:39:00,  11, TG5,19820115,20200229,     ,                    
+ 5083,134096,SKLINNA FYR                             ,NO,+65:12:08,+010:59:47,  23,TG21,19741004,20201231,   22,Hans Olav Hygen                                   
+ 5106,109682,SOLA                                    ,NO,+58:53:03,+005:38:13,   7,TG21,19530101,20201231,   22,Hans Olav Hygen                                   
+ 5106,134372,SANDNES - ROVIK                         ,NO,+58:51:58,+005:45:44,  19,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+ 5106,199632,E39 FORUS                               ,NO,+58:53:03,+005:43:06,  15,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+ 5110,134420,NEDRE VATS                              ,NO,+59:29:02,+005:45:03,  64,TG21,19690101,20120131,   22,Hans Olav Hygen                                   
+ 5110,200838,E134 VATS                               ,NO,+59:34:11,+005:42:09,  50,TG21,20131123,20201231,   22,Hans Olav Hygen                                   
+ 5110,901417,NEDRE VATS                              ,NO,+59:29:00,+005:45:00,  65, TG5,19820114,20200229,     ,                    
+ 5132,134684,BUHOLMRASA FYR                          ,NO,+64:24:05,+010:27:18,  18,TG21,19651101,20201231,   22,Hans Olav Hygen                                   
+ 5132,200642,KALVAERET                               ,NO,+64:20:05,+010:19:10,  12,TG21,19630701,19650921,   22,Hans Olav Hygen                                   
+ 5137,134744,SULA                                    ,NO,+63:50:48,+008:28:00,   5,TG21,19750101,20201231,   22,Hans Olav Hygen                                   
+ 5137,134756,SULA FYR                                ,NO,+63:51:00,+008:28:00,  28,TG21,19540101,19741231,   22,Hans Olav Hygen                                   
+ 5137,901228,SULA                                    ,NO,+63:51:00,+008:28:00,   6, TG5,19820113,20200229,     ,                    
+ 5138,134744,SULA                                    ,NO,+63:50:48,+008:28:00,   5,TG21,19750101,20201231,   22,Hans Olav Hygen                                   
+ 5138,134756,SULA FYR                                ,NO,+63:51:00,+008:28:00,  28,TG21,19540101,19741231,   22,Hans Olav Hygen                                   
+ 5138,901228,SULA                                    ,NO,+63:51:00,+008:28:00,   6, TG5,19820113,20200229,     ,                    
+ 5140,134780,NY-ALESUND                              ,NO,+78:55:23,+011:56:00,   8,TG21,19740801,20201231,   22,Hans Olav Hygen                                   
+ 5140,200822,NY-ALESUND TEST                         ,SJ,+78:55:23,+011:56:00,   8,TG21,19930701,19950905,   22,Hans Olav Hygen                                   
+ 5149,134888,HEKKINGEN FYR                           ,NO,+69:36:03,+017:50:15,  14,TG21,19791101,20201231,   22,Hans Olav Hygen                                   
+ 5149,200581,LEIRKJOSEN                              ,NO,+69:33:06,+017:54:46,   9,TG21,19671101,19790429,   22,Hans Olav Hygen                                   
+ 5149,200608,SOMMAROEY I SENJA                       ,NO,+69:38:00,+018:00:38,   2,TG21,19570101,19670629,   22,Hans Olav Hygen                                   
+ 5149,901015,HEKKINGEN LH                            ,NO,+69:35:59,+017:49:59,  14, TG5,19820113,20200229,     ,                    
+ 5150,134900,TROMSO - LANGNES                        ,NO,+69:40:36,+018:54:48,   8,TG21,19641001,20201231,   22,Hans Olav Hygen                                   
+ 5150,199703,TROMSO - HOLT                           ,NO,+69:39:14,+018:54:34,  20,TG21,19940120,20201231,   22,Hans Olav Hygen                                   
+ 5150,200836,SKATTOERA                               ,NO,+69:41:49,+019:01:15,  14,TG21,19570101,19640830,   22,Hans Olav Hygen                                   
+ 5152,134924,SORKJOSEN LUFTHAVN                      ,NO,+69:47:20,+020:57:19,   6,TG21,20050817,20201231,   22,Hans Olav Hygen                                   
+ 5152,200708,NORDREISA - OEYENG                      ,NO,+69:44:48,+021:01:36,   5,TG21,19920701,20060830,   22,Hans Olav Hygen                                   
+ 5152,200779,NORDREISA                               ,NO,+69:44:28,+021:01:25,   1,TG21,19581101,19920629,   22,Hans Olav Hygen                                   
+ 5152,901041,NORDREISA-OYENG                         ,NO,+69:44:00,+021:01:00,   5, TG5,19820114,20060830,     ,                    
+ 5153,134936,NORDSTRAUM I KVAENANGEN                 ,NO,+69:50:01,+021:53:03,   6,TG21,19650801,20201231,   22,Hans Olav Hygen                                   
+ 5153,901045,NORDSTRAUM I KVAENANGEN                 ,NO,+69:49:59,+021:53:00,   6, TG5,19820113,20200229,     ,                    
+ 5154,105484,OKSOEY FYR                              ,NO,+58:04:01,+008:03:03,   9,TG21,18760101,20201231,   22,Hans Olav Hygen                                   
+ 5154,110449,KJEVIK                                  ,NO,+58:12:01,+008:04:06,  12,TG21,19460101,20201231,   22,Hans Olav Hygen                                   
+ 5154,134948,KRISTIANSAND - SOMSKLEIVA               ,NO,+58:09:02,+008:03:10,  12,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+ 5154,200646,KRISTIANSAND S - EG                     ,NO,+58:09:50,+007:58:55,  22,TG21,19570101,19750929,   22,Hans Olav Hygen                                   
+ 5160,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+ 5160,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+ 5160,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+ 5160,200847,MAKEROEY                                ,NO,+59:09:28,+010:26:25,  43,TG21,19671201,19940929,   22,Hans Olav Hygen                                   
+11093,156729,ULVIK-HJELTNES                          ,NO,+60:33:49,+006:55:57,  42,TG21,19660601,20201231,   22,Hans Olav Hygen                                   
+11094,109748,TAFJORD                                 ,NO,+62:14:01,+007:25:00,  15,TG21,19300617,20201231,   22,Hans Olav Hygen                                   
+11094,156741,LINGE                                   ,NO,+62:17:18,+007:13:02,  24,TG21,19610101,20201231,   22,Hans Olav Hygen                                   
+11094,901218,TAFJORD                                 ,NO,+62:14:00,+007:25:00,  17, TG5,19820113,20200228,     ,                    
+11096,156765,SORTLAND-KLEIVA                         ,NO,+68:38:54,+015:16:58,  14,TG21,19570901,20201231,   22,Hans Olav Hygen                                   
+11096,199086,SORTLAND                                ,NO,+68:42:12,+015:24:57,   3,TG21,19850101,20191208,   22,Hans Olav Hygen                                   
+11098,156789,RANHEIM                                 ,NO,+63:25:29,+010:32:01,  23,TG21,20121015,20201231,   22,Hans Olav Hygen                                   
+11098,199266,LADE                                    ,NO,+63:26:34,+010:26:34,  13,TG21,20121015,20201231,   22,Hans Olav Hygen                                   
+11114,156894,SKALVAER                                ,NO,+65:52:00,+012:11:00,   6,TG21,19540101,19800531,   22,Hans Olav Hygen                                   
+11114,199556,TJOTTA                                  ,NO,+65:49:46,+012:25:32,  21,TG21,19940115,20201231,   22,Hans Olav Hygen                                   
+11114,901117,TJOTTA                                  ,NO,+65:49:59,+012:26:00,  21, TG5,20111005,20200220,     ,                    
+11122,156990,NORD-SOLVAER                            ,NO,+66:22:06,+012:38:40,   7,TG21,19540101,19980913,   22,Hans Olav Hygen                                   
+11122,199306,SOLVAER III                             ,NO,+66:22:15,+012:36:39,  10,TG21,20071101,20201231,   22,Hans Olav Hygen                                   
+11122,200929,SOLVAER - SLENESET                      ,NO,+66:21:59,+012:36:55,   6,TG21,19981001,20060214,   22,Hans Olav Hygen                                   
+11122,901121,SOLVAER III                             ,NO,+66:21:59,+012:37:00,  12, TG5,19820123,20200229,     ,                    
+11124,157014,MYKEN                                   ,NO,+66:45:38,+012:28:39,  19,TG21,19540101,19910731,   22,Hans Olav Hygen                                   
+11124,199396,MYKEN                                   ,NO,+66:45:46,+012:29:10,  17,TG21,19921001,20201231,   22,Hans Olav Hygen                                   
+11124,901115,MYKEN                                   ,NO,+66:46:00,+012:29:00,  13, TG5,19820113,20200229,     ,                    
+11127,157050,HELLIGVAER                              ,NO,+67:25:33,+013:55:29,  14,TG21,19570101,19730630,   22,Hans Olav Hygen                                   
+11127,199458,HELLIGVAER II                           ,NO,+67:24:17,+013:53:45,  24,TG21,20050101,20201231,   22,Hans Olav Hygen                                   
+11134,133940,NARVIK LUFTHAVN                         ,NO,+68:26:23,+017:23:19,  31,TG21,20020801,20170404,   22,Hans Olav Hygen                                   
+11134,157134,NARVIK II                               ,NO,+68:28:08,+017:29:32,  32,TG21,19540101,19750831,   22,Hans Olav Hygen                                   
+11134,199345,E6 HALOGALANDSBRUA                      ,NO,+68:28:06,+017:28:55,  44,TG21,20190418,20201231,   22,Hans Olav Hygen                                   
+11134,199398,NARVIK SENTRUM                          ,NO,+68:26:14,+017:25:16,  31,TG21,20181214,20201231,   22,Hans Olav Hygen                                   
+11134,200805,NARVIK III                              ,NO,+68:28:11,+017:29:54,  17,TG21,19750901,20020530,   22,Hans Olav Hygen                                   
+11134,901194,NARVIK III                              ,NO,+68:28:00,+017:30:00,  17, TG5,19820113,20020531,     ,                    
+11136,157158,GLAPEN FYR                              ,NO,+67:53:00,+013:03:00,  31,TG21,19570101,19840331,   22,Hans Olav Hygen                                   
+11136,199704,E10 AKKARVIKA                           ,NO,+67:57:46,+013:09:15,  54,TG21,20150115,20201231,   22,Hans Olav Hygen                                   
+11140,112082,ANDOYA                                  ,NO,+69:18:00,+016:09:00,  14,TG21,19580601,20201231,   22,Hans Olav Hygen                                   
+11140,157206,ANDENES                                 ,NO,+69:19:25,+016:07:12,   5,TG21,18670710,19720331,   22,Hans Olav Hygen                                   
+11140,200880,ANDOEYA LH - TEST                       ,NO,+69:15:48,+016:10:48,  13,TG21,20050823,20090524,   22,Hans Olav Hygen                                   
+11140,901010,ANDOYA                                  ,NO,+69:18:00,+016:08:00,  14, TG5,19820113,20160104,     ,                    
+18329,199042,E136 TRESFJORDBRUA                      ,NO,+62:36:40,+007:06:49,  20,TG21,20160419,20201231,   22,Hans Olav Hygen                                   
+18329,200823,HJELVIK - MYRBOE                        ,NO,+62:36:31,+007:13:45,  35,TG21,19990927,20090629,   22,Hans Olav Hygen                                   
+18329,200943,HJELVIK I ROMSDAL                       ,NO,+62:36:58,+007:12:39,  21,TG21,19730901,19921129,   22,Hans Olav Hygen                                   
+18329,901215,HJELVIK-MYRBO                           ,NO,+62:37:00,+007:13:59,  35, TG5,19820113,20170628,     ,                    
+18331,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18331,199045,FV307 GRAVDAL                           ,NO,+59:18:13,+010:11:51,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18331,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+18331,199238,RAMNES - KILE VESTRE                    ,NO,+59:22:51,+010:14:23,  39,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18331,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18081,199065,DRAMMEN - BERSKOG                       ,NO,+59:45:13,+010:07:25,   8,TG21,20041001,20201231,   22,Hans Olav Hygen                                   
+18081,200761,DRAMMEN - MARIENLYST                    ,NO,+59:44:14,+010:12:07,   3,TG21,19660501,20031030,   22,Hans Olav Hygen                                   
+18349,199067,E6 YTTERVIKA                            ,NO,+66:13:47,+013:52:22,   8,TG21,20190129,20201231,   22,Hans Olav Hygen                                   
+18349,199273,SKAMDAL                                 ,NO,+66:14:05,+013:54:14,   5,TG21,20110922,20201231,   22,Hans Olav Hygen                                   
+18349,200644,NERDAL I RANA                           ,NO,+66:15:42,+013:58:17,  31,TG21,19660901,19891030,   22,Hans Olav Hygen                                   
+18352,110655,BERGEN/FLESLAND                         ,NO,+60:17:21,+005:13:35,  48,TG21,19551002,20201231,   22,Hans Olav Hygen                                   
+18352,199072,FV555 KROSSLEITET                       ,NO,+60:19:06,+005:04:37,  72,TG21,20141220,20201231,   22,Hans Olav Hygen                                   
+18352,199130,RV555 SOTRABRUA VIND                    ,NO,+60:22:21,+005:10:26,  50,TG21,20161119,20201231,   22,Hans Olav Hygen                                   
+18353,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+18353,199073,BODOE - SKIVIKA                         ,NO,+67:18:30,+014:25:51,   5,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18353,199182,RV80 HUNSTAD                            ,NO,+67:16:42,+014:31:02,  25,TG21,20140101,20201120,   22,Hans Olav Hygen                                   
+18088,199078,ROEST LUFTHAVN                          ,NO,+67:31:36,+012:06:14,   4,TG21,20021001,20201231,   22,Hans Olav Hygen                                   
+18088,200698,ROEST II                                ,NO,+67:30:23,+012:04:34,  10,TG21,19790101,19971028,   22,Hans Olav Hygen                                   
+18088,200864,ROEST III                               ,NO,+67:31:30,+012:06:14,   4,TG21,19980401,20081230,   22,Hans Olav Hygen                                   
+18088,200886,ROEST                                   ,NO,+67:30:22,+012:04:08,   8,TG21,19570101,19691030,   22,Hans Olav Hygen                                   
+18088,901106,ROEST III                               ,NO,+67:31:00,+012:06:00,   4, TG5,19820114,19971028,     ,                    
+18006,199080,OVERHALLA-SKOGMO                        ,NO,+64:30:37,+012:01:11,  32,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18006,200582,HOEYLANDET - DRAGEIDET                  ,NO,+64:33:30,+012:10:56,  29,TG21,19981204,20070611,   22,Hans Olav Hygen                                   
+18006,901295,HOYLANDET-DRAG.                         ,NO,+64:33:00,+012:09:00,  29, TG5,19820114,20070610,     ,                    
+18357,199084,E39 NORDHORDLANDSBRUA                   ,NO,+60:31:21,+005:16:01,  20,TG21,20140110,20201231,   22,Hans Olav Hygen                                   
+18357,199724,FV217 STEINRUSTEN                       ,NO,+60:26:29,+005:10:50,  17,TG21,20141224,20201231,   22,Hans Olav Hygen                                   
+18091,156765,SORTLAND-KLEIVA                         ,NO,+68:38:54,+015:16:58,  14,TG21,19570901,20201231,   22,Hans Olav Hygen                                   
+18091,199086,SORTLAND                                ,NO,+68:42:12,+015:24:57,   3,TG21,19850101,20191208,   22,Hans Olav Hygen                                   
+18009,199091,GJERPEN-ARHUS                           ,NO,+59:13:36,+009:34:38,  41,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18009,200706,RV36 FJAEREKILEN                        ,NO,+59:11:08,+009:32:25,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18010,109851,SARPSBORG                               ,NO,+59:17:09,+011:06:53,  57,TG21,19911201,20201231,   22,Hans Olav Hygen                                   
+18010,199092,OSAKER                                  ,NO,+59:19:09,+011:02:32,  45,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18010,200816,KALNES                                  ,NO,+59:18:55,+011:02:56,  56,TG21,19570101,19820730,   22,Hans Olav Hygen                                   
+18010,901493,SARPSBORG                               ,NO,+59:17:00,+011:07:00,  57, TG5,20060128,20200229,     ,                    
+18096,199065,DRAMMEN - BERSKOG                       ,NO,+59:45:13,+010:07:25,   8,TG21,20041001,20201231,   22,Hans Olav Hygen                                   
+18096,199104,DRAMMEN - BANGELOEKKA                   ,NO,+59:43:52,+010:12:51,  14,TG21,20150629,20201231,   22,Hans Olav Hygen                                   
+18096,199508,DRAMMEN - SLETTA                        ,NO,+59:44:40,+010:13:52,   4,TG21,20171102,20201231,   22,Hans Olav Hygen                                   
+18096,200761,DRAMMEN - MARIENLYST                    ,NO,+59:44:14,+010:12:07,   3,TG21,19660501,20031030,   22,Hans Olav Hygen                                   
+18104,199126,LAKSFORS                                ,NO,+65:37:17,+013:17:21,  50,TG21,20111120,20201231,   22,Hans Olav Hygen                                   
+18104,200685,GRANE II                                ,NO,+65:35:12,+013:23:00,  42,TG21,19751115,19860720,   22,Hans Olav Hygen                                   
+18104,200878,GRANE                                   ,NO,+65:35:21,+013:22:42,  66,TG21,19751115,19810517,   22,Hans Olav Hygen                                   
+18382,110655,BERGEN/FLESLAND                         ,NO,+60:17:21,+005:13:35,  48,TG21,19551002,20201231,   22,Hans Olav Hygen                                   
+18382,199072,FV555 KROSSLEITET                       ,NO,+60:19:06,+005:04:37,  72,TG21,20141220,20201231,   22,Hans Olav Hygen                                   
+18382,199130,RV555 SOTRABRUA VIND                    ,NO,+60:22:21,+005:10:26,  50,TG21,20161119,20201231,   22,Hans Olav Hygen                                   
+18382,199412,BERGEN - FLORIDA UIB                    ,NO,+60:23:01,+005:19:55,  46,TG21,20170804,20201231,   22,Hans Olav Hygen                                   
+18382,200691,RV555 SOTRABRUA                         ,NO,+60:22:19,+005:09:20,  30,TG21,20140103,20201231,   22,Hans Olav Hygen                                   
+18382,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18382,901317,BERGEN/FLORIDA                          ,NO,+60:23:00,+005:20:00,  36, TG5,19820113,20200229,     ,                    
+18107,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18107,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18107,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18107,200847,MAKEROEY                                ,NO,+59:09:28,+010:26:25,  43,TG21,19671201,19940929,   22,Hans Olav Hygen                                   
+18390,199141,FV310 KOTTERUD                          ,NO,+59:25:55,+010:25:18,  40,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18390,199238,RAMNES - KILE VESTRE                    ,NO,+59:22:51,+010:14:23,  39,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18390,199359,ASGARDSTRAND                            ,NO,+59:21:23,+010:27:36,  61,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18390,199440,FV650 BORRE                             ,NO,+59:21:13,+010:22:57,  55,TG21,20130106,20201231,   22,Hans Olav Hygen                                   
+18390,199622,HORTEN - SKOPPUM                        ,NO,+59:23:04,+010:23:55,  40,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18112,199155,LENANGSSTRAUMEN                         ,NO,+69:53:29,+020:08:19,  45,TG21,20161011,20201231,   22,Hans Olav Hygen                                   
+18112,200927,NORD-LENANGEN                           ,NO,+69:54:43,+020:09:18,  23,TG21,19691101,19740629,   22,Hans Olav Hygen                                   
+18403,199160,RV13 ARDAL                              ,NO,+59:08:59,+006:10:25,   5,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+18403,200924,FISTER                                  ,NO,+59:10:36,+006:04:06,   1,TG21,19540101,19910730,   22,Hans Olav Hygen                                   
+18403,901422,FISTER_SIGMUNDSTAD                      ,NO,+59:10:00,+006:02:00,  25, TG5,20080126,20200229,     ,                    
+18113,199161,MANDAL III                              ,NO,+58:01:29,+007:27:06,  10,TG21,20090827,20201231,   22,Hans Olav Hygen                                   
+18113,200923,MANDAL                                  ,NO,+58:01:43,+007:27:35,   6,TG21,19310101,19490530,   22,Hans Olav Hygen                                   
+18113,201001,MANDAL - EIGEBREKK                      ,NO,+58:00:50,+007:36:31,  10,TG21,19970702,19970730,   22,Hans Olav Hygen                                   
+18113,901430,MANDAL III                              ,NO,+58:01:00,+007:27:00,  12, TG5,20100420,20200229,     ,                    
+18114,109748,TAFJORD                                 ,NO,+62:14:01,+007:25:00,  15,TG21,19300617,20201231,   22,Hans Olav Hygen                                   
+18114,156741,LINGE                                   ,NO,+62:17:18,+007:13:02,  24,TG21,19610101,20201231,   22,Hans Olav Hygen                                   
+18114,199163,VALLDAL - MURI                          ,NO,+62:17:49,+007:15:09,   2,TG21,20140901,20201231,   22,Hans Olav Hygen                                   
+18114,901218,TAFJORD                                 ,NO,+62:14:00,+007:25:00,  17, TG5,19820113,20200228,     ,                    
+18118,133748,VIGRA                                   ,NO,+62:33:42,+006:06:54,  22,TG21,19580701,20201231,   22,Hans Olav Hygen                                   
+18118,199170,ALESUND IV                              ,NO,+62:28:13,+006:12:39,  15,TG21,20090625,20201231,   22,Hans Olav Hygen                                   
+18118,199314,FV395 ALESUND                           ,NO,+62:28:13,+006:11:40,  10,TG21,20150912,20201231,   22,Hans Olav Hygen                                   
+18123,134900,TROMSO - LANGNES                        ,NO,+69:40:36,+018:54:48,   8,TG21,19641001,20201231,   22,Hans Olav Hygen                                   
+18123,199181,TROMSDALEN                              ,NO,+69:39:03,+019:00:23,   3,TG21,20111021,20201231,   22,Hans Olav Hygen                                   
+18123,199703,TROMSO - HOLT                           ,NO,+69:39:14,+018:54:34,  20,TG21,19940120,20201231,   22,Hans Olav Hygen                                   
+18123,200836,SKATTOERA                               ,NO,+69:41:49,+019:01:15,  14,TG21,19570101,19640830,   22,Hans Olav Hygen                                   
+18412,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+18412,111167,BODOE - VAGONES                         ,NO,+67:17:00,+014:28:00,  33,TG21,19940115,20140630,   22,Hans Olav Hygen                                   
+18412,199073,BODOE - SKIVIKA                         ,NO,+67:18:30,+014:25:51,   5,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18412,199182,RV80 HUNSTAD                            ,NO,+67:16:42,+014:31:02,  25,TG21,20140101,20201120,   22,Hans Olav Hygen                                   
+18412,199438,RV80 BERTNES                            ,NO,+67:17:16,+014:35:36,  30,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18124,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18124,199045,FV307 GRAVDAL                           ,NO,+59:18:13,+010:11:51,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18124,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+18124,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18124,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18126,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18126,199186,TJOEME                                  ,NO,+59:07:15,+010:23:53,  32,TG21,20160823,20201231,   22,Hans Olav Hygen                                   
+18126,199679,FV308 TJOEME-BUDAL                      ,NO,+59:07:30,+010:23:05,  16,TG21,20151118,20201231,   22,Hans Olav Hygen                                   
+18126,200847,MAKEROEY                                ,NO,+59:09:28,+010:26:25,  43,TG21,19671201,19940929,   22,Hans Olav Hygen                                   
+18126,901482,FERDER LH                               ,NO,+59:02:00,+010:32:00,   8, TG5,19820113,20200229,     ,                    
+18131,199195,SKIBOTN II                              ,NO,+69:23:15,+020:16:56,  20,TG21,20041101,20201231,   22,Hans Olav Hygen                                   
+18131,200817,SKIBOTN - FOSSBAKK                      ,NO,+69:22:06,+020:16:06,   5,TG21,19840901,20041025,   22,Hans Olav Hygen                                   
+18131,201003,SKIBOTN - MELA                          ,NO,+69:22:00,+020:17:00,   8,TG21,19740801,19840830,   22,Hans Olav Hygen                                   
+18131,901036,SKIBOTN                                 ,NO,+69:22:00,+020:16:00,   0, TG5,20020910,20200229,     ,                    
+18131,901037,SKIBOTN 2                               ,NO,+69:23:00,+020:16:00,   6, TG5,20050409,20200229,     ,                    
+18132,199196,KVITSOEY - NORDBOE                      ,NO,+59:04:14,+005:24:44,  21,TG21,20050427,20201231,   22,Hans Olav Hygen                                   
+18132,200794,SKUDENES                                ,NO,+59:08:59,+005:15:38,   7,TG21,19000101,19371230,   22,Hans Olav Hygen                                   
+18139,199217,VOSSEVANGEN                             ,NO,+60:37:30,+006:25:35,  54,TG21,20040130,20201231,   22,Hans Olav Hygen                                   
+18139,200732,VOSS II                                 ,NO,+60:37:39,+006:25:31,  61,TG21,19350816,19611030,   22,Hans Olav Hygen                                   
+18139,201016,VOSS - TVILDEMOEN                       ,NO,+60:37:53,+006:25:57,  66,TG21,19611101,19620530,   22,Hans Olav Hygen                                   
+18432,105463,BERGEN FLORIDA                          ,NO,+60:23:00,+005:20:00,  12,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18432,199224,E16 INDRE ARNA                          ,NO,+60:25:17,+005:27:40,  20,TG21,20151127,20201231,   22,Hans Olav Hygen                                   
+18432,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18432,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18144,199232,FEDJE                                   ,NO,+60:46:48,+004:43:12,  19,TG21,20040827,20201231,   22,Hans Olav Hygen                                   
+18144,201018,HELLISOEY FYR                           ,NO,+60:45:10,+004:42:38,  20,TG21,19510101,20141215,   22,Hans Olav Hygen                                   
+18144,901306,HELLISOY FYR                            ,NO,+60:45:00,+004:43:00,   0, TG5,19820113,19920804,     ,                    
+18145,100580,SVALBARD AIRPORT                        ,NO,+78:15:00,+015:28:00,  28,TG21,19750801,20201231,   22,Hans Olav Hygen                                   
+18145,199233,ADVENTDALEN                             ,NO,+78:12:08,+015:49:52,  15,TG21,20161122,20201231,   22,Hans Olav Hygen                                   
+18145,200882,LONGYEARBYEN                            ,SJ,+78:13:21,+015:37:30,  37,TG21,19110816,19770730,   22,Hans Olav Hygen                                   
+18438,199234,OSLO - LILLEAKER                        ,NO,+59:55:13,+010:38:03,  39,TG21,20120201,20200528,   22,Hans Olav Hygen                                   
+18438,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+18438,200667,DOENSKI                                 ,NO,+59:54:01,+010:30:04,  59,TG21,19700201,20030830,   22,Hans Olav Hygen                                   
+18438,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+18438,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+18032,199045,FV307 GRAVDAL                           ,NO,+59:18:13,+010:11:51,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18032,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+18032,199238,RAMNES - KILE VESTRE                    ,NO,+59:22:51,+010:14:23,  39,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18032,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18150,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18150,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18150,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+18150,200764,SLAGENTANGEN II                         ,NO,+59:19:00,+010:31:00,   3,TG21,19730801,19831230,   22,Hans Olav Hygen                                   
+18150,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18150,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+18448,133748,VIGRA                                   ,NO,+62:33:42,+006:06:54,  22,TG21,19580701,20201231,   22,Hans Olav Hygen                                   
+18448,199170,ALESUND IV                              ,NO,+62:28:13,+006:12:39,  15,TG21,20090625,20201231,   22,Hans Olav Hygen                                   
+18448,199253,FV658 GISKEBRUA                         ,NO,+62:30:30,+006:04:34,  17,TG21,20171130,20201231,   22,Hans Olav Hygen                                   
+18448,199314,FV395 ALESUND                           ,NO,+62:28:13,+006:11:40,  10,TG21,20150912,20201231,   22,Hans Olav Hygen                                   
+18456,199265,E6 KLETT                                ,NO,+63:19:25,+010:19:06,  40,TG21,20140105,20201231,   22,Hans Olav Hygen                                   
+18456,199478,SKJETLEIN                               ,NO,+63:20:25,+010:17:50,  44,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18456,200839,TRONDHEIM II                            ,NO,+63:25:35,+010:25:04,  58,TG21,19270413,19431230,   22,Hans Olav Hygen                                   
+18161,199067,E6 YTTERVIKA                            ,NO,+66:13:47,+013:52:22,   8,TG21,20190129,20201231,   22,Hans Olav Hygen                                   
+18161,199273,SKAMDAL                                 ,NO,+66:14:05,+013:54:14,   5,TG21,20110922,20201231,   22,Hans Olav Hygen                                   
+18461,199092,OSAKER                                  ,NO,+59:19:09,+011:02:32,  45,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18461,199277,E6 KARLSHUS                             ,NO,+59:21:01,+010:53:49,  50,TG21,20130105,20201231,   22,Hans Olav Hygen                                   
+18461,200741,ROED I RADE                             ,NO,+59:20:25,+010:53:42,  34,TG21,19591001,19711230,   22,Hans Olav Hygen                                   
+18461,200816,KALNES                                  ,NO,+59:18:55,+011:02:56,  56,TG21,19570101,19820730,   22,Hans Olav Hygen                                   
+18461,901494,RYGGE                                   ,NO,+59:23:00,+010:47:00,  53, TG5,19820113,20200229,     ,                    
+18036,109824,RADE - TOMB                             ,NO,+59:19:00,+010:49:00,  14,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18036,199277,E6 KARLSHUS                             ,NO,+59:21:01,+010:53:49,  50,TG21,20130105,20201231,   22,Hans Olav Hygen                                   
+18036,199294,RYGGE - HUGGENES                        ,NO,+59:23:53,+010:45:15,  35,TG21,20130213,20201231,   22,Hans Olav Hygen                                   
+18036,199482,FV120 ROEDSUND                          ,NO,+59:28:35,+010:47:24,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18036,199566,GULLHOLMEN                              ,NO,+59:26:07,+010:34:41,  14,TG21,20100601,20201231,   22,Hans Olav Hygen                                   
+18036,200741,ROED I RADE                             ,NO,+59:20:25,+010:53:42,  34,TG21,19591001,19711230,   22,Hans Olav Hygen                                   
+18036,200768,JELOEY                                  ,NO,+59:26:19,+010:35:38,  12,TG21,19600801,19900429,   22,Hans Olav Hygen                                   
+18036,901494,RYGGE                                   ,NO,+59:23:00,+010:47:00,  53, TG5,19820113,20200229,     ,                    
+18472,199298,E18 HJORTNES                            ,NO,+59:54:40,+010:42:15,  20,TG21,20130104,20200827,   22,Hans Olav Hygen                                   
+18472,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+18472,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+18472,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+18472,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+18474,199300,E6 NORDNES                              ,NO,+69:35:06,+020:23:56,  18,TG21,20150414,20201231,   22,Hans Olav Hygen                                   
+18474,199569,LOEKVOLLEN                              ,NO,+69:32:30,+020:33:03,  14,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18474,200720,LYNGSEIDET IV                           ,NO,+69:34:00,+020:14:00,   3,TG21,19641101,19760730,   22,Hans Olav Hygen                                   
+18170,156990,NORD-SOLVAER                            ,NO,+66:22:06,+012:38:40,   7,TG21,19540101,19980913,   22,Hans Olav Hygen                                   
+18170,199306,SOLVAER III                             ,NO,+66:22:15,+012:36:39,  10,TG21,20071101,20201231,   22,Hans Olav Hygen                                   
+18170,200929,SOLVAER - SLENESET                      ,NO,+66:21:59,+012:36:55,   6,TG21,19981001,20060214,   22,Hans Olav Hygen                                   
+18170,901121,SOLVAER III                             ,NO,+66:21:59,+012:37:00,  12, TG5,19820123,20200229,     ,                    
+18172,199310,JOMFRULAND                              ,NO,+58:51:23,+009:34:28,   3,TG21,19941012,20201231,   22,Hans Olav Hygen                                   
+18172,200937,JOMFRULAND FYR                          ,NO,+58:51:55,+009:35:51,  12,TG21,19540101,19931129,   22,Hans Olav Hygen                                   
+18172,901476,JOMFRULAND LH                           ,NO,+58:51:00,+009:33:00,   5, TG5,19820113,20200229,     ,                    
+18482,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18482,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18482,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+18482,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18482,200935,SLAGENTANGEN                            ,NO,+59:18:42,+010:30:45,  31,TG21,19610716,19701230,   22,Hans Olav Hygen                                   
+18482,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18483,133748,VIGRA                                   ,NO,+62:33:42,+006:06:54,  22,TG21,19580701,20201231,   22,Hans Olav Hygen                                   
+18483,199170,ALESUND IV                              ,NO,+62:28:13,+006:12:39,  15,TG21,20090625,20201231,   22,Hans Olav Hygen                                   
+18483,199314,FV395 ALESUND                           ,NO,+62:28:13,+006:11:40,  10,TG21,20150912,20201231,   22,Hans Olav Hygen                                   
+18038,199315,ULLENSVANG FORSOKSGARD                  ,NO,+60:19:07,+006:39:14,  12,TG21,19620601,20201231,   22,Hans Olav Hygen                                   
+18017,112073,VAERNES                                 ,NO,+63:30:00,+010:53:24,  12,TG21,19460101,20201231,   22,Hans Olav Hygen                                   
+18017,199331,KVITHAMAR                               ,NO,+63:29:18,+010:52:46,  27,TG21,19940115,20201231,   22,Hans Olav Hygen                                   
+18495,110655,BERGEN/FLESLAND                         ,NO,+60:17:21,+005:13:35,  48,TG21,19551002,20201231,   22,Hans Olav Hygen                                   
+18495,199337,BERGEN - SANDSLI                        ,NO,+60:17:29,+005:16:39,  45,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18495,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18495,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18495,901317,BERGEN/FLORIDA                          ,NO,+60:23:00,+005:20:00,  36, TG5,19820113,20200229,     ,                    
+18501,133940,NARVIK LUFTHAVN                         ,NO,+68:26:23,+017:23:19,  31,TG21,20020801,20170404,   22,Hans Olav Hygen                                   
+18501,157134,NARVIK II                               ,NO,+68:28:08,+017:29:32,  32,TG21,19540101,19750831,   22,Hans Olav Hygen                                   
+18501,199345,E6 HALOGALANDSBRUA                      ,NO,+68:28:06,+017:28:55,  44,TG21,20190418,20201231,   22,Hans Olav Hygen                                   
+18501,199398,NARVIK SENTRUM                          ,NO,+68:26:14,+017:25:16,  31,TG21,20181214,20201231,   22,Hans Olav Hygen                                   
+18187,199141,FV310 KOTTERUD                          ,NO,+59:25:55,+010:25:18,  40,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18187,199359,ASGARDSTRAND                            ,NO,+59:21:23,+010:27:36,  61,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18187,199384,HORTEN - NYKIRKE                        ,NO,+59:25:42,+010:23:05,  70,TG21,20150601,20201231,   22,Hans Olav Hygen                                   
+18187,199440,FV650 BORRE                             ,NO,+59:21:13,+010:22:57,  55,TG21,20130106,20201231,   22,Hans Olav Hygen                                   
+18197,199386,EIGEROEYA                               ,NO,+58:26:07,+005:52:18,  49,TG21,20100417,20201231,   22,Hans Olav Hygen                                   
+18197,200986,NORDRE EIGEROEY                         ,NO,+58:26:07,+005:54:09,  63,TG21,19690901,19961030,   22,Hans Olav Hygen                                   
+18046,157014,MYKEN                                   ,NO,+66:45:38,+012:28:39,  19,TG21,19540101,19910731,   22,Hans Olav Hygen                                   
+18046,199396,MYKEN                                   ,NO,+66:45:46,+012:29:10,  17,TG21,19921001,20201231,   22,Hans Olav Hygen                                   
+18046,901115,MYKEN                                   ,NO,+66:46:00,+012:29:00,  13, TG5,19820113,20200229,     ,                    
+18202,199397,AKSELOEYA                               ,NO,+77:41:25,+014:45:48,  20,TG21,19020901,20201231,   22,Hans Olav Hygen                                   
+18203,133940,NARVIK LUFTHAVN                         ,NO,+68:26:23,+017:23:19,  31,TG21,20020801,20170404,   22,Hans Olav Hygen                                   
+18203,157134,NARVIK II                               ,NO,+68:28:08,+017:29:32,  32,TG21,19540101,19750831,   22,Hans Olav Hygen                                   
+18203,199398,NARVIK SENTRUM                          ,NO,+68:26:14,+017:25:16,  31,TG21,20181214,20201231,   22,Hans Olav Hygen                                   
+18203,199742,E6 SKJOMENBRUA                          ,NO,+68:22:16,+017:14:38,  30,TG21,20150521,20201231,   22,Hans Olav Hygen                                   
+18203,200805,NARVIK III                              ,NO,+68:28:11,+017:29:54,  17,TG21,19750901,20020530,   22,Hans Olav Hygen                                   
+18203,901194,NARVIK III                              ,NO,+68:28:00,+017:30:00,  17, TG5,19820113,20020531,     ,                    
+18527,199399,FV301 BERG KIRKE                        ,NO,+58:59:34,+009:55:24,  10,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18527,200695,LANGOEYTANGEN FYR                       ,NO,+58:59:30,+009:45:25,   6,TG21,19720701,19900929,   22,Hans Olav Hygen                                   
+18534,199411,E6 SONSVEIEN                            ,NO,+59:31:04,+010:43:31,  25,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18534,199482,FV120 ROEDSUND                          ,NO,+59:28:35,+010:47:24,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18534,199524,TOFTE - RULLETO                         ,NO,+59:33:05,+010:34:53,   9,TG21,20170922,20201231,   22,Hans Olav Hygen                                   
+18534,199566,GULLHOLMEN                              ,NO,+59:26:07,+010:34:41,  14,TG21,20100601,20201231,   22,Hans Olav Hygen                                   
+18534,200768,JELOEY                                  ,NO,+59:26:19,+010:35:38,  12,TG21,19600801,19900429,   22,Hans Olav Hygen                                   
+18049,110655,BERGEN/FLESLAND                         ,NO,+60:17:21,+005:13:35,  48,TG21,19551002,20201231,   22,Hans Olav Hygen                                   
+18049,199130,RV555 SOTRABRUA VIND                    ,NO,+60:22:21,+005:10:26,  50,TG21,20161119,20201231,   22,Hans Olav Hygen                                   
+18049,199337,BERGEN - SANDSLI                        ,NO,+60:17:29,+005:16:39,  45,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18049,199412,BERGEN - FLORIDA UIB                    ,NO,+60:23:01,+005:19:55,  46,TG21,20170804,20201231,   22,Hans Olav Hygen                                   
+18049,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18049,200691,RV555 SOTRABRUA                         ,NO,+60:22:19,+005:09:20,  30,TG21,20140103,20201231,   22,Hans Olav Hygen                                   
+18049,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18049,901317,BERGEN/FLORIDA                          ,NO,+60:23:00,+005:20:00,  36, TG5,19820113,20200229,     ,                    
+18215,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+18215,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+18215,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+18215,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+18050,199425,NJOS                                    ,NO,+61:10:45,+006:51:39,  45,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18050,199692,VANGSNES                                ,NO,+61:10:21,+006:38:43,  49,TG21,19931222,20201231,   22,Hans Olav Hygen                                   
+18050,200662,LEIKANGER                               ,NO,+61:10:49,+006:51:46,  53,TG21,19570101,19900130,   22,Hans Olav Hygen                                   
+18050,200703,VANGSNES                                ,NO,+61:10:20,+006:38:37,  51,TG21,19540101,19940429,   22,Hans Olav Hygen                                   
+18050,901338,VANGSNES                                ,NO,+61:10:00,+006:39:00,  51, TG5,20020618,20200229,     ,                    
+18217,199428,LAERDAL IV                              ,NO,+61:06:12,+007:30:09,   2,TG21,20080916,20201231,   22,Hans Olav Hygen                                   
+18217,200665,LAERDAL - MOLDO                         ,NO,+61:03:59,+007:30:51,  24,TG21,19960601,20080929,   22,Hans Olav Hygen                                   
+18217,901355,LAERDAL IV                              ,NO,+61:06:00,+007:30:00,   5, TG5,19820114,20200229,     ,                    
+18545,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+18545,111167,BODOE - VAGONES                         ,NO,+67:17:00,+014:28:00,  33,TG21,19940115,20140630,   22,Hans Olav Hygen                                   
+18545,199182,RV80 HUNSTAD                            ,NO,+67:16:42,+014:31:02,  25,TG21,20140101,20201120,   22,Hans Olav Hygen                                   
+18545,199438,RV80 BERTNES                            ,NO,+67:17:16,+014:35:36,  30,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18545,218121,FV17 SALTSTRAUMBRUA                     ,NO,+67:13:53,+014:36:45,  21,TG21,20200918,20201231,   22,Hans Olav Hygen                                   
+18547,199141,FV310 KOTTERUD                          ,NO,+59:25:55,+010:25:18,  40,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18547,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+18547,199238,RAMNES - KILE VESTRE                    ,NO,+59:22:51,+010:14:23,  39,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18547,199359,ASGARDSTRAND                            ,NO,+59:21:23,+010:27:36,  61,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18547,199384,HORTEN - NYKIRKE                        ,NO,+59:25:42,+010:23:05,  70,TG21,20150601,20201231,   22,Hans Olav Hygen                                   
+18547,199440,FV650 BORRE                             ,NO,+59:21:13,+010:22:57,  55,TG21,20130106,20201231,   22,Hans Olav Hygen                                   
+18547,200935,SLAGENTANGEN                            ,NO,+59:18:42,+010:30:45,  31,TG21,19610716,19701230,   22,Hans Olav Hygen                                   
+18224,199298,E18 HJORTNES                            ,NO,+59:54:40,+010:42:15,  20,TG21,20130104,20200827,   22,Hans Olav Hygen                                   
+18224,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+18224,199451,OSLO - SOFIENBERG                       ,NO,+59:55:08,+010:45:44,  37,TG21,20160131,20201231,   22,Hans Olav Hygen                                   
+18224,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+18224,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+18227,156789,RANHEIM                                 ,NO,+63:25:29,+010:32:01,  23,TG21,20121015,20201231,   22,Hans Olav Hygen                                   
+18227,199456,TRONDHEIM - HOEVRINGEN                  ,NO,+63:26:47,+010:20:11,  44,TG21,20180501,20201231,   22,Hans Olav Hygen                                   
+18227,199478,SKJETLEIN                               ,NO,+63:20:25,+010:17:50,  44,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18227,200839,TRONDHEIM II                            ,NO,+63:25:35,+010:25:04,  58,TG21,19270413,19431230,   22,Hans Olav Hygen                                   
+18227,201004,TRONDHEIM                               ,NO,+63:25:55,+010:24:53,  58,TG21,19000101,19270330,   22,Hans Olav Hygen                                   
+18556,133688,KRISTIANSUND LUFTHAVN                   ,NO,+63:06:34,+007:48:57,  62,TG21,20031017,20201231,   22,Hans Olav Hygen                                   
+18556,199457,RV70 RENSVIK                            ,NO,+63:05:09,+007:47:52,  40,TG21,20140206,20201231,   22,Hans Olav Hygen                                   
+18556,200876,KRISTIANSUND N                          ,NO,+63:06:37,+007:45:06,  48,TG21,19570101,19751230,   22,Hans Olav Hygen                                   
+18228,157050,HELLIGVAER                              ,NO,+67:25:33,+013:55:29,  14,TG21,19570101,19730630,   22,Hans Olav Hygen                                   
+18228,199458,HELLIGVAER II                           ,NO,+67:24:17,+013:53:45,  24,TG21,20050101,20201231,   22,Hans Olav Hygen                                   
+18570,199477,E39 FINNESTAD                           ,NO,+58:59:27,+005:39:16,  35,TG21,20131016,20201231,   22,Hans Olav Hygen                                   
+18570,199720,FV509 SUNDEKROSSEN                      ,NO,+58:57:44,+005:36:53,  20,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+18054,199478,SKJETLEIN                               ,NO,+63:20:25,+010:17:50,  44,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18054,200839,TRONDHEIM II                            ,NO,+63:25:35,+010:25:04,  58,TG21,19270413,19431230,   22,Hans Olav Hygen                                   
+18054,201004,TRONDHEIM                               ,NO,+63:25:55,+010:24:53,  58,TG21,19000101,19270330,   22,Hans Olav Hygen                                   
+18572,199294,RYGGE - HUGGENES                        ,NO,+59:23:53,+010:45:15,  35,TG21,20130213,20201231,   22,Hans Olav Hygen                                   
+18572,199411,E6 SONSVEIEN                            ,NO,+59:31:04,+010:43:31,  25,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18572,199482,FV120 ROEDSUND                          ,NO,+59:28:35,+010:47:24,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18572,200768,JELOEY                                  ,NO,+59:26:19,+010:35:38,  12,TG21,19600801,19900429,   22,Hans Olav Hygen                                   
+18572,901494,RYGGE                                   ,NO,+59:23:00,+010:47:00,  53, TG5,19820113,20200229,     ,                    
+18575,105463,BERGEN FLORIDA                          ,NO,+60:23:00,+005:20:00,  12,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18575,199486,E39 FJOESANGERVEIEN                     ,NO,+60:21:11,+005:20:18,  15,TG21,20140206,20201231,   22,Hans Olav Hygen                                   
+18575,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18579,133604,HILDRE                                  ,NO,+62:36:13,+006:19:26,  13,TG21,19690701,19741231,   22,Hans Olav Hygen                                   
+18579,133748,VIGRA                                   ,NO,+62:33:42,+006:06:54,  22,TG21,19580701,20201231,   22,Hans Olav Hygen                                   
+18579,199492,PV98851 SKJELTENE                       ,NO,+62:35:14,+006:15:55,   2,TG21,20181205,20201231,   22,Hans Olav Hygen                                   
+18236,100607,VARDOE                                  ,NO,+70:22:02,+031:05:05,  14,TG21,19000101,20201231,   22,Hans Olav Hygen                                   
+18236,199496,VARDOE LUFTHAVN                         ,NO,+70:21:16,+031:02:38,  12,TG21,20070601,20201231,   22,Hans Olav Hygen                                   
+18236,901098,VARDO                                   ,NO,+70:21:59,+031:06:00,  15, TG5,19820114,20200229,     ,                    
+18238,199498,SALTDAL - NORDNES                       ,NO,+66:56:12,+015:18:56,  39,TG21,19970601,20201231,   22,Hans Olav Hygen                                   
+18238,200959,OEVRE SALTDAL                           ,NO,+66:58:30,+015:18:10,  26,TG21,19660701,19820429,   22,Hans Olav Hygen                                   
+18588,199065,DRAMMEN - BERSKOG                       ,NO,+59:45:13,+010:07:25,   8,TG21,20041001,20201231,   22,Hans Olav Hygen                                   
+18588,199104,DRAMMEN - BANGELOEKKA                   ,NO,+59:43:52,+010:12:51,  14,TG21,20150629,20201231,   22,Hans Olav Hygen                                   
+18588,199508,DRAMMEN - SLETTA                        ,NO,+59:44:40,+010:13:52,   4,TG21,20171102,20201231,   22,Hans Olav Hygen                                   
+18588,200761,DRAMMEN - MARIENLYST                    ,NO,+59:44:14,+010:12:07,   3,TG21,19660501,20031030,   22,Hans Olav Hygen                                   
+18242,199513,BANAK                                   ,NO,+70:03:36,+024:59:24,   5,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18242,200755,STABBURSDALEN                           ,NO,+70:03:00,+024:58:14,  26,TG21,19580801,19610429,   22,Hans Olav Hygen                                   
+18242,901059,BANAK                                   ,NO,+70:04:00,+024:59:00,   8, TG5,19820114,20200229,     ,                    
+18592,199217,VOSSEVANGEN                             ,NO,+60:37:30,+006:25:35,  54,TG21,20040130,20201231,   22,Hans Olav Hygen                                   
+18592,199514,E16 EIDESMOEN                           ,NO,+60:38:16,+006:12:18,  45,TG21,20140103,20201231,   22,Hans Olav Hygen                                   
+18592,200732,VOSS II                                 ,NO,+60:37:39,+006:25:31,  61,TG21,19350816,19611030,   22,Hans Olav Hygen                                   
+18592,201016,VOSS - TVILDEMOEN                       ,NO,+60:37:53,+006:25:57,  66,TG21,19611101,19620530,   22,Hans Olav Hygen                                   
+18244,199517,SETSA                                   ,NO,+67:09:57,+015:29:09,   7,TG21,20090201,20201231,   22,Hans Olav Hygen                                   
+18244,200682,FAUSKE - ERIKSTAD                       ,NO,+67:15:00,+015:22:00,  14,TG21,19671201,19720429,   22,Hans Olav Hygen                                   
+18244,200970,FAUSKE                                  ,NO,+67:15:00,+015:23:00,  14,TG21,19570101,19671129,   22,Hans Olav Hygen                                   
+18245,199518,FJAERLAND - BREMUSEET                   ,NO,+61:25:24,+006:45:51,   3,TG21,20051201,20201231,   22,Hans Olav Hygen                                   
+18245,200622,FJAERLAND - SKARESTAD                   ,NO,+61:26:07,+006:46:15,  10,TG21,19520701,20050125,   22,Hans Olav Hygen                                   
+18245,200795,FJAERLAND                               ,NO,+61:26:00,+006:46:00,   5,TG21,19210201,19510929,   22,Hans Olav Hygen                                   
+18245,901332,FJAERLAND-BREMUSEET                     ,NO,+61:26:00,+006:46:00,   3, TG5,20061125,20200229,     ,                    
+18247,199264,SVELVIK - KNEM                          ,NO,+59:36:10,+010:24:17,   4,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18247,199411,E6 SONSVEIEN                            ,NO,+59:31:04,+010:43:31,  25,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18247,199524,TOFTE - RULLETO                         ,NO,+59:33:05,+010:34:53,   9,TG21,20170922,20201231,   22,Hans Olav Hygen                                   
+18059,112073,VAERNES                                 ,NO,+63:30:00,+010:53:24,  12,TG21,19460101,20201231,   22,Hans Olav Hygen                                   
+18059,199526,FROSTA                                  ,NO,+63:33:55,+010:41:36,  32,TG21,20091217,20201231,   22,Hans Olav Hygen                                   
+18256,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18256,199545,NOETTEROEY - BORGHEIM                   ,NO,+59:13:02,+010:24:37,   5,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18256,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+18259,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18259,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+18259,199554,NOETTEROEY - FOEYNLAND                  ,NO,+59:14:12,+010:27:22,   2,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18259,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+18018,156894,SKALVAER                                ,NO,+65:52:00,+012:11:00,   6,TG21,19540101,19800531,   22,Hans Olav Hygen                                   
+18018,199556,TJOTTA                                  ,NO,+65:49:46,+012:25:32,  21,TG21,19940115,20201231,   22,Hans Olav Hygen                                   
+18018,901117,TJOTTA                                  ,NO,+65:49:59,+012:26:00,  21, TG5,20111005,20200220,     ,                    
+18262,199561,BOE I VESTERALEN III                    ,NO,+68:36:24,+014:26:00,   8,TG21,20021204,20201231,   22,Hans Olav Hygen                                   
+18262,200590,BOE I VESTERALEN II                     ,NO,+68:37:56,+014:27:47,  12,TG21,19610701,20010629,   22,Hans Olav Hygen                                   
+18262,200748,BOE I VESTERALEN                        ,NO,+68:37:13,+014:27:03,   7,TG21,19540101,19600929,   22,Hans Olav Hygen                                   
+18262,200775,LITLOEY FYR                             ,NO,+68:35:36,+014:18:37,  30,TG21,19940901,20030605,   22,Hans Olav Hygen                                   
+18263,199562,YTTEROEYANE FYR                         ,NO,+61:34:18,+004:40:54,  26,TG21,19840901,20201231,   22,Hans Olav Hygen                                   
+18263,200640,KINN                                    ,NO,+61:33:40,+004:46:11,   9,TG21,19570101,19671030,   22,Hans Olav Hygen                                   
+18263,200802,KINN                                    ,NO,+61:33:51,+004:47:26,  10,TG21,19671101,19880530,   22,Hans Olav Hygen                                   
+18263,901304,YTTEROYANE LH                           ,NO,+61:34:00,+004:41:00,  25, TG5,19850226,20200229,     ,                    
+18267,199294,RYGGE - HUGGENES                        ,NO,+59:23:53,+010:45:15,  35,TG21,20130213,20201231,   22,Hans Olav Hygen                                   
+18267,199566,GULLHOLMEN                              ,NO,+59:26:07,+010:34:41,  14,TG21,20100601,20201231,   22,Hans Olav Hygen                                   
+18267,200768,JELOEY                                  ,NO,+59:26:19,+010:35:38,  12,TG21,19600801,19900429,   22,Hans Olav Hygen                                   
+18269,199300,E6 NORDNES                              ,NO,+69:35:06,+020:23:56,  18,TG21,20150414,20201231,   22,Hans Olav Hygen                                   
+18269,199569,LOEKVOLLEN                              ,NO,+69:32:30,+020:33:03,  14,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18619,199575,E10 TJELDSUND BRU                       ,NO,+68:37:40,+016:34:59,  20,TG21,20150414,20201231,   22,Hans Olav Hygen                                   
+18619,200831,EVENSKJER                               ,NO,+68:35:01,+016:34:09,   7,TG21,19581001,19851030,   22,Hans Olav Hygen                                   
+18619,201028,EVENSKJER BAKKE                         ,NO,+68:34:58,+016:34:14,  10,TG21,19570301,19580929,   22,Hans Olav Hygen                                   
+18628,199065,DRAMMEN - BERSKOG                       ,NO,+59:45:13,+010:07:25,   8,TG21,20041001,20201231,   22,Hans Olav Hygen                                   
+18628,199593,MJOENDALEN - ORKIDEHOEGDA               ,NO,+59:44:59,+010:01:39,   4,TG21,20171102,20201231,   22,Hans Olav Hygen                                   
+18628,200761,DRAMMEN - MARIENLYST                    ,NO,+59:44:14,+010:12:07,   3,TG21,19660501,20031030,   22,Hans Olav Hygen                                   
+18287,199170,ALESUND IV                              ,NO,+62:28:13,+006:12:39,  15,TG21,20090625,20201231,   22,Hans Olav Hygen                                   
+18287,199616,EMBLEM                                  ,NO,+62:25:54,+006:25:57,   1,TG21,20120804,20201231,   22,Hans Olav Hygen                                   
+18287,200570,BINGSA                                  ,NO,+62:28:58,+006:23:18,  18,TG21,20120813,20171027,   22,Hans Olav Hygen                                   
+18288,199141,FV310 KOTTERUD                          ,NO,+59:25:55,+010:25:18,  40,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18288,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+18288,199238,RAMNES - KILE VESTRE                    ,NO,+59:22:51,+010:14:23,  39,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18288,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18288,199359,ASGARDSTRAND                            ,NO,+59:21:23,+010:27:36,  61,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18288,199440,FV650 BORRE                             ,NO,+59:21:13,+010:22:57,  55,TG21,20130106,20201231,   22,Hans Olav Hygen                                   
+18288,199622,HORTEN - SKOPPUM                        ,NO,+59:23:04,+010:23:55,  40,TG21,20180929,20201231,   22,Hans Olav Hygen                                   
+18288,200935,SLAGENTANGEN                            ,NO,+59:18:42,+010:30:45,  31,TG21,19610716,19701230,   22,Hans Olav Hygen                                   
+18288,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18647,110449,KJEVIK                                  ,NO,+58:12:01,+008:04:06,  12,TG21,19460101,20201231,   22,Hans Olav Hygen                                   
+18647,199624,E18 STUDEVANN                           ,NO,+58:11:58,+008:11:11,  35,TG21,20140104,20201231,   22,Hans Olav Hygen                                   
+18647,901452,KRISTIANSAND/KJEVIK                     ,NO,+58:12:00,+008:05:00,  17, TG5,19820113,20200229,     ,                    
+18653,109682,SOLA                                    ,NO,+58:53:03,+005:38:13,   7,TG21,19530101,20201231,   22,Hans Olav Hygen                                   
+18653,134372,SANDNES - ROVIK                         ,NO,+58:51:58,+005:45:44,  19,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18653,199632,E39 FORUS                               ,NO,+58:53:03,+005:43:06,  15,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+18657,199639,RV15 FOSNES                             ,NO,+61:54:28,+007:03:32,  32,TG21,20171130,20201231,   22,Hans Olav Hygen                                   
+18657,200675,FLO                                     ,NO,+61:56:43,+007:01:31,  40,TG21,19830513,19880830,   22,Hans Olav Hygen                                   
+18657,200862,LOEN                                    ,NO,+61:52:22,+006:51:25,  39,TG21,19710401,19880330,   22,Hans Olav Hygen                                   
+18294,199650,SOERKAPPOEYA                            ,NO,+76:28:40,+016:32:56,  10,TG21,19080901,20201231,   22,Hans Olav Hygen                                   
+18307,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18307,199676,NOETTEROEY - TOROED                     ,NO,+59:10:08,+010:25:26,   2,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18307,199679,FV308 TJOEME-BUDAL                      ,NO,+59:07:30,+010:23:05,  16,TG21,20151118,20201231,   22,Hans Olav Hygen                                   
+18307,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+18678,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18678,199186,TJOEME                                  ,NO,+59:07:15,+010:23:53,  32,TG21,20160823,20201231,   22,Hans Olav Hygen                                   
+18678,199676,NOETTEROEY - TOROED                     ,NO,+59:10:08,+010:25:26,   2,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18678,199679,FV308 TJOEME-BUDAL                      ,NO,+59:07:30,+010:23:05,  16,TG21,20151118,20201231,   22,Hans Olav Hygen                                   
+18678,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+18682,110943,ORSKOG                                  ,NO,+62:28:44,+006:49:12,   4,TG21,20141117,20201231,   22,Hans Olav Hygen                                   
+18682,199616,EMBLEM                                  ,NO,+62:25:54,+006:25:57,   1,TG21,20120804,20201231,   22,Hans Olav Hygen                                   
+18682,199685,E39 SVORTA                              ,NO,+62:28:58,+006:38:45,  20,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18682,200821,SKODJE                                  ,NO,+62:30:00,+006:41:00,  26,TG21,19610101,20200830,   22,Hans Olav Hygen                                   
+18687,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+18687,199691,E18 SANDVIKA                            ,NO,+59:53:32,+010:32:25,   3,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18687,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+18687,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+18687,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+18311,199692,VANGSNES                                ,NO,+61:10:21,+006:38:43,  49,TG21,19931222,20201231,   22,Hans Olav Hygen                                   
+18311,200703,VANGSNES                                ,NO,+61:10:20,+006:38:37,  51,TG21,19540101,19940429,   22,Hans Olav Hygen                                   
+18311,901338,VANGSNES                                ,NO,+61:10:00,+006:39:00,  51, TG5,20020618,20200229,     ,                    
+18020,134900,TROMSO - LANGNES                        ,NO,+69:40:36,+018:54:48,   8,TG21,19641001,20201231,   22,Hans Olav Hygen                                   
+18020,199703,TROMSO - HOLT                           ,NO,+69:39:14,+018:54:34,  20,TG21,19940120,20201231,   22,Hans Olav Hygen                                   
+18020,200836,SKATTOERA                               ,NO,+69:41:49,+019:01:15,  14,TG21,19570101,19640830,   22,Hans Olav Hygen                                   
+18020,200853,TROMSOE I                               ,NO,+69:39:07,+018:57:00,  38,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18695,157158,GLAPEN FYR                              ,NO,+67:53:00,+013:03:00,  31,TG21,19570101,19840331,   22,Hans Olav Hygen                                   
+18695,199704,E10 AKKARVIKA                           ,NO,+67:57:46,+013:09:15,  54,TG21,20150115,20201231,   22,Hans Olav Hygen                                   
+18072,199706,VALNESFJORD                             ,NO,+67:16:35,+015:06:06,  20,TG21,20140601,20201231,   22,Hans Olav Hygen                                   
+18072,200682,FAUSKE - ERIKSTAD                       ,NO,+67:15:00,+015:22:00,  14,TG21,19671201,19720429,   22,Hans Olav Hygen                                   
+18072,200970,FAUSKE                                  ,NO,+67:15:00,+015:23:00,  14,TG21,19570101,19671129,   22,Hans Olav Hygen                                   
+18698,199709,FV62 EIDSOERA                           ,NO,+62:47:59,+008:09:58,  37,TG21,20150912,20201231,   22,Hans Olav Hygen                                   
+18698,200769,TINGVOLL                                ,NO,+62:50:00,+008:18:01,  51,TG21,19321001,19550629,   22,Hans Olav Hygen                                   
+18704,199715,E39 FLASKJAER                           ,NO,+62:16:12,+005:59:30,  20,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18704,200587,OERSTAVIK - VELLE                       ,NO,+62:12:09,+006:07:56,  35,TG21,19610101,19960429,   22,Hans Olav Hygen                                   
+18707,109682,SOLA                                    ,NO,+58:53:03,+005:38:13,   7,TG21,19530101,20201231,   22,Hans Olav Hygen                                   
+18707,199477,E39 FINNESTAD                           ,NO,+58:59:27,+005:39:16,  35,TG21,20131016,20201231,   22,Hans Olav Hygen                                   
+18707,199720,FV509 SUNDEKROSSEN                      ,NO,+58:57:44,+005:36:53,  20,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+18709,109682,SOLA                                    ,NO,+58:53:03,+005:38:13,   7,TG21,19530101,20201231,   22,Hans Olav Hygen                                   
+18709,134372,SANDNES - ROVIK                         ,NO,+58:51:58,+005:45:44,  19,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18709,199723,FV510 REGE                              ,NO,+58:51:29,+005:38:48,  30,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+18710,105463,BERGEN FLORIDA                          ,NO,+60:23:00,+005:20:00,  12,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18710,199084,E39 NORDHORDLANDSBRUA                   ,NO,+60:31:21,+005:16:01,  20,TG21,20140110,20201231,   22,Hans Olav Hygen                                   
+18710,199724,FV217 STEINRUSTEN                       ,NO,+60:26:29,+005:10:50,  17,TG21,20141224,20201231,   22,Hans Olav Hygen                                   
+18710,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18710,200691,RV555 SOTRABRUA                         ,NO,+60:22:19,+005:09:20,  30,TG21,20140103,20201231,   22,Hans Olav Hygen                                   
+18710,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18722,133940,NARVIK LUFTHAVN                         ,NO,+68:26:23,+017:23:19,  31,TG21,20020801,20170404,   22,Hans Olav Hygen                                   
+18722,199398,NARVIK SENTRUM                          ,NO,+68:26:14,+017:25:16,  31,TG21,20181214,20201231,   22,Hans Olav Hygen                                   
+18722,199742,E6 SKJOMENBRUA                          ,NO,+68:22:16,+017:14:38,  30,TG21,20150521,20201231,   22,Hans Olav Hygen                                   
+18722,200611,SKJOMEN - SLETTJORD                     ,NO,+68:17:18,+017:18:36,   6,TG21,19711001,19941230,   22,Hans Olav Hygen                                   
+18741,134888,HEKKINGEN FYR                           ,NO,+69:36:03,+017:50:15,  14,TG21,19791101,20201231,   22,Hans Olav Hygen                                   
+18741,200581,LEIRKJOSEN                              ,NO,+69:33:06,+017:54:46,   9,TG21,19671101,19790429,   22,Hans Olav Hygen                                   
+18741,200608,SOMMAROEY I SENJA                       ,NO,+69:38:00,+018:00:38,   2,TG21,19570101,19670629,   22,Hans Olav Hygen                                   
+18741,901015,HEKKINGEN LH                            ,NO,+69:35:59,+017:49:59,  14, TG5,19820113,20200229,     ,                    
+18742,199080,OVERHALLA-SKOGMO                        ,NO,+64:30:37,+012:01:11,  32,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18742,200582,HOEYLANDET - DRAGEIDET                  ,NO,+64:33:30,+012:10:56,  29,TG21,19981204,20070611,   22,Hans Olav Hygen                                   
+18742,200723,HOEYLANDET                              ,NO,+64:36:14,+012:16:03,  22,TG21,19540601,19800530,   22,Hans Olav Hygen                                   
+18742,901295,HOYLANDET-DRAG.                         ,NO,+64:33:00,+012:09:00,  29, TG5,19820114,20070610,     ,                    
+18745,110655,BERGEN/FLESLAND                         ,NO,+60:17:21,+005:13:35,  48,TG21,19551002,20201231,   22,Hans Olav Hygen                                   
+18745,199337,BERGEN - SANDSLI                        ,NO,+60:17:29,+005:16:39,  45,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18745,200585,FANA FORSOEKSSTASJON                    ,NO,+60:15:36,+005:21:12,  48,TG21,19581001,19901230,   22,Hans Olav Hygen                                   
+18745,200614,SYFTELAND                               ,NO,+60:14:18,+005:26:31,  55,TG21,19570101,19601230,   22,Hans Olav Hygen                                   
+18744,133136,HONNINGSVAG LUFTHAVN                    ,NO,+71:00:38,+025:58:42,  14,TG21,20030801,20201231,   22,Hans Olav Hygen                                   
+18744,200586,HELNES FYR                              ,NO,+71:03:41,+026:13:17,  33,TG21,19540101,20040916,   22,Hans Olav Hygen                                   
+18746,199715,E39 FLASKJAER                           ,NO,+62:16:12,+005:59:30,  20,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18746,200587,OERSTAVIK - VELLE                       ,NO,+62:12:09,+006:07:56,  35,TG21,19610101,19960429,   22,Hans Olav Hygen                                   
+18747,101153,TORUNGEN FYR                            ,NO,+58:23:00,+008:47:30,  12, TG5,19370108,20031231,   47,GSN network                                       
+18747,109664,TORUNGEN FYR                            ,NO,+58:23:00,+008:47:30,  12,TG21,19110101,20201231,   22,Hans Olav Hygen                                   
+18747,200588,MERDOEY                                 ,NO,+58:26:00,+008:48:00,  10,TG21,19540101,19540629,   22,Hans Olav Hygen                                   
+18747,901465,TORUNGEN LH                             ,NO,+58:24:00,+008:48:00,  15, TG5,19820113,20190702,     ,                    
+18749,199561,BOE I VESTERALEN III                    ,NO,+68:36:24,+014:26:00,   8,TG21,20021204,20201231,   22,Hans Olav Hygen                                   
+18749,200590,BOE I VESTERALEN II                     ,NO,+68:37:56,+014:27:47,  12,TG21,19610701,20010629,   22,Hans Olav Hygen                                   
+18749,200748,BOE I VESTERALEN                        ,NO,+68:37:13,+014:27:03,   7,TG21,19540101,19600929,   22,Hans Olav Hygen                                   
+18749,200775,LITLOEY FYR                             ,NO,+68:35:36,+014:18:37,  30,TG21,19940901,20030605,   22,Hans Olav Hygen                                   
+18761,133772,BRONNOYSUND LUFTHAVN                    ,NO,+65:27:24,+012:13:06,   9,TG21,20020801,20201231,   22,Hans Olav Hygen                                   
+18761,200606,BROENNOEYSUND III                       ,NO,+65:28:36,+012:12:45,   5,TG21,19570101,19721230,   22,Hans Olav Hygen                                   
+18761,200887,BROENNOEYSUND                           ,NO,+65:28:00,+012:12:00,   4,TG21,19000101,19481230,   22,Hans Olav Hygen                                   
+18763,134888,HEKKINGEN FYR                           ,NO,+69:36:03,+017:50:15,  14,TG21,19791101,20201231,   22,Hans Olav Hygen                                   
+18763,200581,LEIRKJOSEN                              ,NO,+69:33:06,+017:54:46,   9,TG21,19671101,19790429,   22,Hans Olav Hygen                                   
+18763,200608,SOMMAROEY I SENJA                       ,NO,+69:38:00,+018:00:38,   2,TG21,19570101,19670629,   22,Hans Olav Hygen                                   
+18763,901015,HEKKINGEN LH                            ,NO,+69:35:59,+017:49:59,  14, TG5,19820113,20200229,     ,                    
+18766,199742,E6 SKJOMENBRUA                          ,NO,+68:22:16,+017:14:38,  30,TG21,20150521,20201231,   22,Hans Olav Hygen                                   
+18766,200611,SKJOMEN - SLETTJORD                     ,NO,+68:17:18,+017:18:36,   6,TG21,19711001,19941230,   22,Hans Olav Hygen                                   
+18776,199518,FJAERLAND - BREMUSEET                   ,NO,+61:25:24,+006:45:51,   3,TG21,20051201,20201231,   22,Hans Olav Hygen                                   
+18776,200622,FJAERLAND - SKARESTAD                   ,NO,+61:26:07,+006:46:15,  10,TG21,19520701,20050125,   22,Hans Olav Hygen                                   
+18776,200795,FJAERLAND                               ,NO,+61:26:00,+006:46:00,   5,TG21,19210201,19510929,   22,Hans Olav Hygen                                   
+18776,901332,FJAERLAND-BREMUSEET                     ,NO,+61:26:00,+006:46:00,   3, TG5,20061125,20200229,     ,                    
+18785,109632,LINDESNES FYR                           ,NO,+57:59:00,+007:02:54,  13,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+18785,200633,LINDESNES FYR                           ,NO,+57:58:58,+007:02:52,  13,TG21,20020901,20050627,   22,Hans Olav Hygen                                   
+18785,901436,LINDESNES LH                            ,NO,+57:59:00,+007:03:00,  13, TG5,19820114,20200229,     ,                    
+18792,199562,YTTEROEYANE FYR                         ,NO,+61:34:18,+004:40:54,  26,TG21,19840901,20201231,   22,Hans Olav Hygen                                   
+18792,200640,KINN                                    ,NO,+61:33:40,+004:46:11,   9,TG21,19570101,19671030,   22,Hans Olav Hygen                                   
+18792,200802,KINN                                    ,NO,+61:33:51,+004:47:26,  10,TG21,19671101,19880530,   22,Hans Olav Hygen                                   
+18792,901304,YTTEROYANE LH                           ,NO,+61:34:00,+004:41:00,  25, TG5,19850226,20200229,     ,                    
+18794,134684,BUHOLMRASA FYR                          ,NO,+64:24:05,+010:27:18,  18,TG21,19651101,20201231,   22,Hans Olav Hygen                                   
+18794,200642,KALVAERET                               ,NO,+64:20:05,+010:19:10,  12,TG21,19630701,19650921,   22,Hans Olav Hygen                                   
+18797,133904,MO I RANA III                           ,NO,+66:18:25,+014:09:15,  41,TG21,19570101,19650930,   22,Hans Olav Hygen                                   
+18797,199067,E6 YTTERVIKA                            ,NO,+66:13:47,+013:52:22,   8,TG21,20190129,20201231,   22,Hans Olav Hygen                                   
+18797,200644,NERDAL I RANA                           ,NO,+66:15:42,+013:58:17,  31,TG21,19660901,19891030,   22,Hans Olav Hygen                                   
+18797,200740,MO I RANA II                            ,NO,+66:19:40,+014:10:22,  25,TG21,19460710,19561230,   22,Hans Olav Hygen                                   
+18797,200833,YTTEREN I RANA                          ,NO,+66:20:31,+014:07:40,  20,TG21,19411213,19460709,   22,Hans Olav Hygen                                   
+18797,200883,RANA - BASMOEN                          ,NO,+66:19:54,+014:06:08,  40,TG21,19910815,20011014,   22,Hans Olav Hygen                                   
+18797,200903,MO I RANA                               ,NO,+66:18:30,+014:08:15,   8,TG21,19350617,19410629,   22,Hans Olav Hygen                                   
+18797,901149,RANA-BASMOEN                            ,NO,+66:20:00,+014:06:00,  40, TG5,19820113,20011014,     ,                    
+18796,200645,SKUDENES II                             ,NO,+59:08:56,+005:14:58,   2,TG21,19540101,20051129,   22,Hans Olav Hygen                                   
+18796,200794,SKUDENES                                ,NO,+59:08:59,+005:15:38,   7,TG21,19000101,19371230,   22,Hans Olav Hygen                                   
+18796,200925,SKUDENES III                            ,NO,+59:08:47,+005:15:00,  10,TG21,19810501,19921030,   22,Hans Olav Hygen                                   
+18812,199425,NJOS                                    ,NO,+61:10:45,+006:51:39,  45,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18812,199692,VANGSNES                                ,NO,+61:10:21,+006:38:43,  49,TG21,19931222,20201231,   22,Hans Olav Hygen                                   
+18812,200662,LEIKANGER                               ,NO,+61:10:49,+006:51:46,  53,TG21,19570101,19900130,   22,Hans Olav Hygen                                   
+18812,200703,VANGSNES                                ,NO,+61:10:20,+006:38:37,  51,TG21,19540101,19940429,   22,Hans Olav Hygen                                   
+18812,901338,VANGSNES                                ,NO,+61:10:00,+006:39:00,  51, TG5,20020618,20200229,     ,                    
+18814,199428,LAERDAL IV                              ,NO,+61:06:12,+007:30:09,   2,TG21,20080916,20201231,   22,Hans Olav Hygen                                   
+18814,200665,LAERDAL - MOLDO                         ,NO,+61:03:59,+007:30:51,  24,TG21,19960601,20080929,   22,Hans Olav Hygen                                   
+18814,200951,LAERDAL - TOENJUM                       ,NO,+61:03:42,+007:31:00,  36,TG21,19540101,19960429,   22,Hans Olav Hygen                                   
+18814,901355,LAERDAL IV                              ,NO,+61:06:00,+007:30:00,   5, TG5,19820114,20200229,     ,                    
+18815,199234,OSLO - LILLEAKER                        ,NO,+59:55:13,+010:38:03,  39,TG21,20120201,20200528,   22,Hans Olav Hygen                                   
+18815,200667,DOENSKI                                 ,NO,+59:54:01,+010:30:04,  59,TG21,19700201,20030830,   22,Hans Olav Hygen                                   
+18821,199639,RV15 FOSNES                             ,NO,+61:54:28,+007:03:32,  32,TG21,20171130,20201231,   22,Hans Olav Hygen                                   
+18821,200675,FLO                                     ,NO,+61:56:43,+007:01:31,  40,TG21,19830513,19880830,   22,Hans Olav Hygen                                   
+18821,200862,LOEN                                    ,NO,+61:52:22,+006:51:25,  39,TG21,19710401,19880330,   22,Hans Olav Hygen                                   
+18826,199517,SETSA                                   ,NO,+67:09:57,+015:29:09,   7,TG21,20090201,20201231,   22,Hans Olav Hygen                                   
+18826,200682,FAUSKE - ERIKSTAD                       ,NO,+67:15:00,+015:22:00,  14,TG21,19671201,19720429,   22,Hans Olav Hygen                                   
+18826,200970,FAUSKE                                  ,NO,+67:15:00,+015:23:00,  14,TG21,19570101,19671129,   22,Hans Olav Hygen                                   
+19142,199126,LAKSFORS                                ,NO,+65:37:17,+013:17:21,  50,TG21,20111120,20201231,   22,Hans Olav Hygen                                   
+19142,200685,GRANE II                                ,NO,+65:35:12,+013:23:00,  42,TG21,19751115,19860720,   22,Hans Olav Hygen                                   
+19142,200878,GRANE                                   ,NO,+65:35:21,+013:22:42,  66,TG21,19751115,19810517,   22,Hans Olav Hygen                                   
+19144,105463,BERGEN FLORIDA                          ,NO,+60:23:00,+005:20:00,  12,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+19144,199130,RV555 SOTRABRUA VIND                    ,NO,+60:22:21,+005:10:26,  50,TG21,20161119,20201231,   22,Hans Olav Hygen                                   
+19144,199724,FV217 STEINRUSTEN                       ,NO,+60:26:29,+005:10:50,  17,TG21,20141224,20201231,   22,Hans Olav Hygen                                   
+19144,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+19144,200691,RV555 SOTRABRUA                         ,NO,+60:22:19,+005:09:20,  30,TG21,20140103,20201231,   22,Hans Olav Hygen                                   
+19144,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18836,199399,FV301 BERG KIRKE                        ,NO,+58:59:34,+009:55:24,  10,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+18836,200695,LANGOEYTANGEN FYR                       ,NO,+58:59:30,+009:45:25,   6,TG21,19720701,19900929,   22,Hans Olav Hygen                                   
+18840,199078,ROEST LUFTHAVN                          ,NO,+67:31:36,+012:06:14,   4,TG21,20021001,20201231,   22,Hans Olav Hygen                                   
+18840,200698,ROEST II                                ,NO,+67:30:23,+012:04:34,  10,TG21,19790101,19971028,   22,Hans Olav Hygen                                   
+18840,200864,ROEST III                               ,NO,+67:31:30,+012:06:14,   4,TG21,19980401,20081230,   22,Hans Olav Hygen                                   
+18840,200886,ROEST                                   ,NO,+67:30:22,+012:04:08,   8,TG21,19570101,19691030,   22,Hans Olav Hygen                                   
+18840,901106,ROEST III                               ,NO,+67:31:00,+012:06:00,   4, TG5,19820114,19971028,     ,                    
+18845,199692,VANGSNES                                ,NO,+61:10:21,+006:38:43,  49,TG21,19931222,20201231,   22,Hans Olav Hygen                                   
+18845,200703,VANGSNES                                ,NO,+61:10:20,+006:38:37,  51,TG21,19540101,19940429,   22,Hans Olav Hygen                                   
+18845,901338,VANGSNES                                ,NO,+61:10:00,+006:39:00,  51, TG5,20020618,20200229,     ,                    
+19145,199091,GJERPEN-ARHUS                           ,NO,+59:13:36,+009:34:38,  41,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+19145,200706,RV36 FJAEREKILEN                        ,NO,+59:11:08,+009:32:25,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+19145,200969,EIDANGER                                ,NO,+59:07:29,+009:41:55,  39,TG21,19611101,19620830,   22,Hans Olav Hygen                                   
+18849,134924,SORKJOSEN LUFTHAVN                      ,NO,+69:47:20,+020:57:19,   6,TG21,20050817,20201231,   22,Hans Olav Hygen                                   
+18849,200708,NORDREISA - OEYENG                      ,NO,+69:44:48,+021:01:36,   5,TG21,19920701,20060830,   22,Hans Olav Hygen                                   
+18849,200779,NORDREISA                               ,NO,+69:44:28,+021:01:25,   1,TG21,19581101,19920629,   22,Hans Olav Hygen                                   
+18849,901041,NORDREISA-OYENG                         ,NO,+69:44:00,+021:01:00,   5, TG5,19820114,20060830,     ,                    
+18862,199300,E6 NORDNES                              ,NO,+69:35:06,+020:23:56,  18,TG21,20150414,20201231,   22,Hans Olav Hygen                                   
+18862,200720,LYNGSEIDET IV                           ,NO,+69:34:00,+020:14:00,   3,TG21,19641101,19760730,   22,Hans Olav Hygen                                   
+18864,200582,HOEYLANDET - DRAGEIDET                  ,NO,+64:33:30,+012:10:56,  29,TG21,19981204,20070611,   22,Hans Olav Hygen                                   
+18864,200723,HOEYLANDET                              ,NO,+64:36:14,+012:16:03,  22,TG21,19540601,19800530,   22,Hans Olav Hygen                                   
+18864,901295,HOYLANDET-DRAG.                         ,NO,+64:33:00,+012:09:00,  29, TG5,19820114,20070610,     ,                    
+18868,109606,ORLAND                                  ,NO,+63:42:01,+009:36:05,  10,TG21,19541101,20201231,   22,Hans Olav Hygen                                   
+18868,200727,OERLAND II                              ,NO,+63:41:00,+009:36:00,  12,TG21,19550701,19550830,   22,Hans Olav Hygen                                   
+18868,901241,ORLAND III                              ,NO,+63:42:00,+009:36:00,   7, TG5,19820113,20200229,     ,                    
+18872,199217,VOSSEVANGEN                             ,NO,+60:37:30,+006:25:35,  54,TG21,20040130,20201231,   22,Hans Olav Hygen                                   
+18872,200732,VOSS II                                 ,NO,+60:37:39,+006:25:31,  61,TG21,19350816,19611030,   22,Hans Olav Hygen                                   
+18872,201016,VOSS - TVILDEMOEN                       ,NO,+60:37:53,+006:25:57,  66,TG21,19611101,19620530,   22,Hans Olav Hygen                                   
+19149,199298,E18 HJORTNES                            ,NO,+59:54:40,+010:42:15,  20,TG21,20130104,20200827,   22,Hans Olav Hygen                                   
+19149,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+19149,200736,OSLO - OBSERVATORIET (VINDU)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19331230,   22,Hans Olav Hygen                                   
+19149,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+19149,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+19149,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+18878,109824,RADE - TOMB                             ,NO,+59:19:00,+010:49:00,  14,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18878,199092,OSAKER                                  ,NO,+59:19:09,+011:02:32,  45,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18878,199277,E6 KARLSHUS                             ,NO,+59:21:01,+010:53:49,  50,TG21,20130105,20201231,   22,Hans Olav Hygen                                   
+18878,200741,ROED I RADE                             ,NO,+59:20:25,+010:53:42,  34,TG21,19591001,19711230,   22,Hans Olav Hygen                                   
+18878,200816,KALNES                                  ,NO,+59:18:55,+011:02:56,  56,TG21,19570101,19820730,   22,Hans Olav Hygen                                   
+18878,901494,RYGGE                                   ,NO,+59:23:00,+010:47:00,  53, TG5,19820113,20200229,     ,                    
+18884,199561,BOE I VESTERALEN III                    ,NO,+68:36:24,+014:26:00,   8,TG21,20021204,20201231,   22,Hans Olav Hygen                                   
+18884,200590,BOE I VESTERALEN II                     ,NO,+68:37:56,+014:27:47,  12,TG21,19610701,20010629,   22,Hans Olav Hygen                                   
+18884,200748,BOE I VESTERALEN                        ,NO,+68:37:13,+014:27:03,   7,TG21,19540101,19600929,   22,Hans Olav Hygen                                   
+18884,200775,LITLOEY FYR                             ,NO,+68:35:36,+014:18:37,  30,TG21,19940901,20030605,   22,Hans Olav Hygen                                   
+18889,199513,BANAK                                   ,NO,+70:03:36,+024:59:24,   5,TG21,19570101,20201231,   22,Hans Olav Hygen                                   
+18889,200599,BRENNELV                                ,NO,+70:04:00,+025:07:00,  35,TG21,19610801,19811230,   22,Hans Olav Hygen                                   
+18889,200755,STABBURSDALEN                           ,NO,+70:03:00,+024:58:14,  26,TG21,19580801,19610429,   22,Hans Olav Hygen                                   
+18889,901059,BANAK                                   ,NO,+70:04:00,+024:59:00,   8, TG5,19820114,20200229,     ,                    
+18895,199065,DRAMMEN - BERSKOG                       ,NO,+59:45:13,+010:07:25,   8,TG21,20041001,20201231,   22,Hans Olav Hygen                                   
+18895,199104,DRAMMEN - BANGELOEKKA                   ,NO,+59:43:52,+010:12:51,  14,TG21,20150629,20201231,   22,Hans Olav Hygen                                   
+18895,199508,DRAMMEN - SLETTA                        ,NO,+59:44:40,+010:13:52,   4,TG21,20171102,20201231,   22,Hans Olav Hygen                                   
+18895,200761,DRAMMEN - MARIENLYST                    ,NO,+59:44:14,+010:12:07,   3,TG21,19660501,20031030,   22,Hans Olav Hygen                                   
+18896,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+18896,199554,NOETTEROEY - FOEYNLAND                  ,NO,+59:14:12,+010:27:22,   2,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+18896,200764,SLAGENTANGEN II                         ,NO,+59:19:00,+010:31:00,   3,TG21,19730801,19831230,   22,Hans Olav Hygen                                   
+18896,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+18896,211244,TOENSBERG - KARLSVIK                    ,NO,+59:17:39,+010:30:49,   3,TG21,20200519,20201231,   22,Hans Olav Hygen                                   
+18901,199294,RYGGE - HUGGENES                        ,NO,+59:23:53,+010:45:15,  35,TG21,20130213,20201231,   22,Hans Olav Hygen                                   
+18901,199566,GULLHOLMEN                              ,NO,+59:26:07,+010:34:41,  14,TG21,20100601,20201231,   22,Hans Olav Hygen                                   
+18901,200768,JELOEY                                  ,NO,+59:26:19,+010:35:38,  12,TG21,19600801,19900429,   22,Hans Olav Hygen                                   
+18902,199709,FV62 EIDSOERA                           ,NO,+62:47:59,+008:09:58,  37,TG21,20150912,20201231,   22,Hans Olav Hygen                                   
+18902,200769,TINGVOLL                                ,NO,+62:50:00,+008:18:01,  51,TG21,19321001,19550629,   22,Hans Olav Hygen                                   
+18902,200914,TINGVOLL - HANEM                        ,NO,+62:50:26,+008:17:54,  69,TG21,19720701,20081129,   22,Hans Olav Hygen                                   
+18902,901227,TINGVOLL-HANEM                          ,NO,+62:50:00,+008:18:00,  69, TG5,19820113,20200229,     ,                    
+18903,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+18903,199073,BODOE - SKIVIKA                         ,NO,+67:18:30,+014:25:51,   5,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18903,200770,BODOE LUFTHAVN TEST                     ,NO,+67:16:02,+014:21:32,  11,TG21,20060222,20060301,   22,Hans Olav Hygen                                   
+18904,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+18904,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+18904,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+18904,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+18909,199561,BOE I VESTERALEN III                    ,NO,+68:36:24,+014:26:00,   8,TG21,20021204,20201231,   22,Hans Olav Hygen                                   
+18909,200590,BOE I VESTERALEN II                     ,NO,+68:37:56,+014:27:47,  12,TG21,19610701,20010629,   22,Hans Olav Hygen                                   
+18909,200748,BOE I VESTERALEN                        ,NO,+68:37:13,+014:27:03,   7,TG21,19540101,19600929,   22,Hans Olav Hygen                                   
+18909,200775,LITLOEY FYR                             ,NO,+68:35:36,+014:18:37,  30,TG21,19940901,20030605,   22,Hans Olav Hygen                                   
+18914,134924,SORKJOSEN LUFTHAVN                      ,NO,+69:47:20,+020:57:19,   6,TG21,20050817,20201231,   22,Hans Olav Hygen                                   
+18914,200708,NORDREISA - OEYENG                      ,NO,+69:44:48,+021:01:36,   5,TG21,19920701,20060830,   22,Hans Olav Hygen                                   
+18914,200779,NORDREISA                               ,NO,+69:44:28,+021:01:25,   1,TG21,19581101,19920629,   22,Hans Olav Hygen                                   
+18914,901041,NORDREISA-OYENG                         ,NO,+69:44:00,+021:01:00,   5, TG5,19820114,20060830,     ,                    
+18930,199196,KVITSOEY - NORDBOE                      ,NO,+59:04:14,+005:24:44,  21,TG21,20050427,20201231,   22,Hans Olav Hygen                                   
+18930,200645,SKUDENES II                             ,NO,+59:08:56,+005:14:58,   2,TG21,19540101,20051129,   22,Hans Olav Hygen                                   
+18930,200794,SKUDENES                                ,NO,+59:08:59,+005:15:38,   7,TG21,19000101,19371230,   22,Hans Olav Hygen                                   
+18930,200925,SKUDENES III                            ,NO,+59:08:47,+005:15:00,  10,TG21,19810501,19921030,   22,Hans Olav Hygen                                   
+18931,199518,FJAERLAND - BREMUSEET                   ,NO,+61:25:24,+006:45:51,   3,TG21,20051201,20201231,   22,Hans Olav Hygen                                   
+18931,200622,FJAERLAND - SKARESTAD                   ,NO,+61:26:07,+006:46:15,  10,TG21,19520701,20050125,   22,Hans Olav Hygen                                   
+18931,200795,FJAERLAND                               ,NO,+61:26:00,+006:46:00,   5,TG21,19210201,19510929,   22,Hans Olav Hygen                                   
+18931,901332,FJAERLAND-BREMUSEET                     ,NO,+61:26:00,+006:46:00,   3, TG5,20061125,20200229,     ,                    
+18936,199562,YTTEROEYANE FYR                         ,NO,+61:34:18,+004:40:54,  26,TG21,19840901,20201231,   22,Hans Olav Hygen                                   
+18936,200640,KINN                                    ,NO,+61:33:40,+004:46:11,   9,TG21,19570101,19671030,   22,Hans Olav Hygen                                   
+18936,200802,KINN                                    ,NO,+61:33:51,+004:47:26,  10,TG21,19671101,19880530,   22,Hans Olav Hygen                                   
+18936,901304,YTTEROYANE LH                           ,NO,+61:34:00,+004:41:00,  25, TG5,19850226,20200229,     ,                    
+18938,133940,NARVIK LUFTHAVN                         ,NO,+68:26:23,+017:23:19,  31,TG21,20020801,20170404,   22,Hans Olav Hygen                                   
+18938,157134,NARVIK II                               ,NO,+68:28:08,+017:29:32,  32,TG21,19540101,19750831,   22,Hans Olav Hygen                                   
+18938,199398,NARVIK SENTRUM                          ,NO,+68:26:14,+017:25:16,  31,TG21,20181214,20201231,   22,Hans Olav Hygen                                   
+18938,200805,NARVIK III                              ,NO,+68:28:11,+017:29:54,  17,TG21,19750901,20020530,   22,Hans Olav Hygen                                   
+18938,901194,NARVIK III                              ,NO,+68:28:00,+017:30:00,  17, TG5,19820113,20020531,     ,                    
+18942,199715,E39 FLASKJAER                           ,NO,+62:16:12,+005:59:30,  20,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18942,200809,HAREID - GRIMSTAD                       ,NO,+62:22:05,+006:00:08,  26,TG21,19610101,19720330,   22,Hans Olav Hygen                                   
+18948,109851,SARPSBORG                               ,NO,+59:17:09,+011:06:53,  57,TG21,19911201,20201231,   22,Hans Olav Hygen                                   
+18948,199092,OSAKER                                  ,NO,+59:19:09,+011:02:32,  45,TG21,20130101,20201231,   22,Hans Olav Hygen                                   
+18948,200816,KALNES                                  ,NO,+59:18:55,+011:02:56,  56,TG21,19570101,19820730,   22,Hans Olav Hygen                                   
+18948,901493,SARPSBORG                               ,NO,+59:17:00,+011:07:00,  57, TG5,20060128,20200229,     ,                    
+18949,199195,SKIBOTN II                              ,NO,+69:23:15,+020:16:56,  20,TG21,20041101,20201231,   22,Hans Olav Hygen                                   
+18949,200817,SKIBOTN - FOSSBAKK                      ,NO,+69:22:06,+020:16:06,   5,TG21,19840901,20041025,   22,Hans Olav Hygen                                   
+18949,201003,SKIBOTN - MELA                          ,NO,+69:22:00,+020:17:00,   8,TG21,19740801,19840830,   22,Hans Olav Hygen                                   
+18949,901036,SKIBOTN                                 ,NO,+69:22:00,+020:16:00,   0, TG5,20020910,20200229,     ,                    
+18949,901037,SKIBOTN 2                               ,NO,+69:23:00,+020:16:00,   6, TG5,20050409,20200229,     ,                    
+18953,110943,ORSKOG                                  ,NO,+62:28:44,+006:49:12,   4,TG21,20141117,20201231,   22,Hans Olav Hygen                                   
+18953,199685,E39 SVORTA                              ,NO,+62:28:58,+006:38:45,  20,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+18953,200821,SKODJE                                  ,NO,+62:30:00,+006:41:00,  26,TG21,19610101,20200830,   22,Hans Olav Hygen                                   
+19162,134780,NY-ALESUND                              ,NO,+78:55:23,+011:56:00,   8,TG21,19740801,20201231,   22,Hans Olav Hygen                                   
+19162,200822,NY-ALESUND TEST                         ,SJ,+78:55:23,+011:56:00,   8,TG21,19930701,19950905,   22,Hans Olav Hygen                                   
+18954,199042,E136 TRESFJORDBRUA                      ,NO,+62:36:40,+007:06:49,  20,TG21,20160419,20201231,   22,Hans Olav Hygen                                   
+18954,200792,GJERMUNDNES                             ,NO,+62:37:27,+007:10:13,  49,TG21,19540101,19720629,   22,Hans Olav Hygen                                   
+18954,200823,HJELVIK - MYRBOE                        ,NO,+62:36:31,+007:13:45,  35,TG21,19990927,20090629,   22,Hans Olav Hygen                                   
+18954,200943,HJELVIK I ROMSDAL                       ,NO,+62:36:58,+007:12:39,  21,TG21,19730901,19921129,   22,Hans Olav Hygen                                   
+18954,901215,HJELVIK-MYRBO                           ,NO,+62:37:00,+007:13:59,  35, TG5,19820113,20170628,     ,                    
+18960,133820,EVENES LUFTHAVN                         ,NO,+68:29:28,+016:41:00,  26,TG21,20040101,20201231,   22,Hans Olav Hygen                                   
+18960,199575,E10 TJELDSUND BRU                       ,NO,+68:37:40,+016:34:59,  20,TG21,20150414,20201231,   22,Hans Olav Hygen                                   
+18960,200831,EVENSKJER                               ,NO,+68:35:01,+016:34:09,   7,TG21,19581001,19851030,   22,Hans Olav Hygen                                   
+18960,201028,EVENSKJER BAKKE                         ,NO,+68:34:58,+016:34:14,  10,TG21,19570301,19580929,   22,Hans Olav Hygen                                   
+19167,134420,NEDRE VATS                              ,NO,+59:29:02,+005:45:03,  64,TG21,19690101,20120131,   22,Hans Olav Hygen                                   
+19167,200838,E134 VATS                               ,NO,+59:34:11,+005:42:09,  50,TG21,20131123,20201231,   22,Hans Olav Hygen                                   
+19167,901417,NEDRE VATS                              ,NO,+59:29:00,+005:45:00,  65, TG5,19820114,20200229,     ,                    
+18966,199456,TRONDHEIM - HOEVRINGEN                  ,NO,+63:26:47,+010:20:11,  44,TG21,20180501,20201231,   22,Hans Olav Hygen                                   
+18966,199478,SKJETLEIN                               ,NO,+63:20:25,+010:17:50,  44,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+18966,200839,TRONDHEIM II                            ,NO,+63:25:35,+010:25:04,  58,TG21,19270413,19431230,   22,Hans Olav Hygen                                   
+18966,201004,TRONDHEIM                               ,NO,+63:25:55,+010:24:53,  58,TG21,19000101,19270330,   22,Hans Olav Hygen                                   
+18974,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+18974,199186,TJOEME                                  ,NO,+59:07:15,+010:23:53,  32,TG21,20160823,20201231,   22,Hans Olav Hygen                                   
+18974,200847,MAKEROEY                                ,NO,+59:09:28,+010:26:25,  43,TG21,19671201,19940929,   22,Hans Olav Hygen                                   
+18974,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+18979,199703,TROMSO - HOLT                           ,NO,+69:39:14,+018:54:34,  20,TG21,19940120,20201231,   22,Hans Olav Hygen                                   
+18979,200836,SKATTOERA                               ,NO,+69:41:49,+019:01:15,  14,TG21,19570101,19640830,   22,Hans Olav Hygen                                   
+18979,200853,TROMSOE I                               ,NO,+69:39:07,+018:57:00,  38,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18987,199639,RV15 FOSNES                             ,NO,+61:54:28,+007:03:32,  32,TG21,20171130,20201231,   22,Hans Olav Hygen                                   
+18987,200675,FLO                                     ,NO,+61:56:43,+007:01:31,  40,TG21,19830513,19880830,   22,Hans Olav Hygen                                   
+18987,200862,LOEN                                    ,NO,+61:52:22,+006:51:25,  39,TG21,19710401,19880330,   22,Hans Olav Hygen                                   
+18989,199078,ROEST LUFTHAVN                          ,NO,+67:31:36,+012:06:14,   4,TG21,20021001,20201231,   22,Hans Olav Hygen                                   
+18989,200698,ROEST II                                ,NO,+67:30:23,+012:04:34,  10,TG21,19790101,19971028,   22,Hans Olav Hygen                                   
+18989,200864,ROEST III                               ,NO,+67:31:30,+012:06:14,   4,TG21,19980401,20081230,   22,Hans Olav Hygen                                   
+18989,200886,ROEST                                   ,NO,+67:30:22,+012:04:08,   8,TG21,19570101,19691030,   22,Hans Olav Hygen                                   
+18989,901106,ROEST III                               ,NO,+67:31:00,+012:06:00,   4, TG5,19820114,19971028,     ,                    
+18991,199130,RV555 SOTRABRUA VIND                    ,NO,+60:22:21,+005:10:26,  50,TG21,20161119,20201231,   22,Hans Olav Hygen                                   
+18991,199224,E16 INDRE ARNA                          ,NO,+60:25:17,+005:27:40,  20,TG21,20151127,20201231,   22,Hans Olav Hygen                                   
+18991,199337,BERGEN - SANDSLI                        ,NO,+60:17:29,+005:16:39,  45,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18991,199412,BERGEN - FLORIDA UIB                    ,NO,+60:23:01,+005:19:55,  46,TG21,20170804,20201231,   22,Hans Olav Hygen                                   
+18991,199724,FV217 STEINRUSTEN                       ,NO,+60:26:29,+005:10:50,  17,TG21,20141224,20201231,   22,Hans Olav Hygen                                   
+18991,200576,BERGEN - PLEIESTIFTELSEN                ,NO,+60:23:18,+005:20:28,  22,TG21,19000101,19261230,   22,Hans Olav Hygen                                   
+18991,200691,RV555 SOTRABRUA                         ,NO,+60:22:19,+005:09:20,  30,TG21,20140103,20201231,   22,Hans Olav Hygen                                   
+18991,200866,BERGEN - FREDRIKSBERG                   ,NO,+60:23:48,+005:18:31,  41,TG21,19040101,19850227,   22,Hans Olav Hygen                                   
+18991,901317,BERGEN/FLORIDA                          ,NO,+60:23:00,+005:20:00,  36, TG5,19820113,20200229,     ,                    
+18998,133676,KRISTIANSUND - KARIHOLA                 ,NO,+63:07:31,+007:42:15,  39,TG21,20170124,20201231,   22,Hans Olav Hygen                                   
+18998,133688,KRISTIANSUND LUFTHAVN                   ,NO,+63:06:34,+007:48:57,  62,TG21,20031017,20201231,   22,Hans Olav Hygen                                   
+18998,200876,KRISTIANSUND N                          ,NO,+63:06:37,+007:45:06,  48,TG21,19570101,19751230,   22,Hans Olav Hygen                                   
+19172,199126,LAKSFORS                                ,NO,+65:37:17,+013:17:21,  50,TG21,20111120,20201231,   22,Hans Olav Hygen                                   
+19172,200685,GRANE II                                ,NO,+65:35:12,+013:23:00,  42,TG21,19751115,19860720,   22,Hans Olav Hygen                                   
+19172,200878,GRANE                                   ,NO,+65:35:21,+013:22:42,  66,TG21,19751115,19810517,   22,Hans Olav Hygen                                   
+19001,112082,ANDOYA                                  ,NO,+69:18:00,+016:09:00,  14,TG21,19580601,20201231,   22,Hans Olav Hygen                                   
+19001,157206,ANDENES                                 ,NO,+69:19:25,+016:07:12,   5,TG21,18670710,19720331,   22,Hans Olav Hygen                                   
+19001,200880,ANDOEYA LH - TEST                       ,NO,+69:15:48,+016:10:48,  13,TG21,20050823,20090524,   22,Hans Olav Hygen                                   
+19001,901010,ANDOYA                                  ,NO,+69:18:00,+016:08:00,  14, TG5,19820113,20160104,     ,                    
+19004,133904,MO I RANA III                           ,NO,+66:18:25,+014:09:15,  41,TG21,19570101,19650930,   22,Hans Olav Hygen                                   
+19004,200644,NERDAL I RANA                           ,NO,+66:15:42,+013:58:17,  31,TG21,19660901,19891030,   22,Hans Olav Hygen                                   
+19004,200740,MO I RANA II                            ,NO,+66:19:40,+014:10:22,  25,TG21,19460710,19561230,   22,Hans Olav Hygen                                   
+19004,200833,YTTEREN I RANA                          ,NO,+66:20:31,+014:07:40,  20,TG21,19411213,19460709,   22,Hans Olav Hygen                                   
+19004,200883,RANA - BASMOEN                          ,NO,+66:19:54,+014:06:08,  40,TG21,19910815,20011014,   22,Hans Olav Hygen                                   
+19004,901149,RANA-BASMOEN                            ,NO,+66:20:00,+014:06:00,  40, TG5,19820113,20011014,     ,                    
+19007,199078,ROEST LUFTHAVN                          ,NO,+67:31:36,+012:06:14,   4,TG21,20021001,20201231,   22,Hans Olav Hygen                                   
+19007,200698,ROEST II                                ,NO,+67:30:23,+012:04:34,  10,TG21,19790101,19971028,   22,Hans Olav Hygen                                   
+19007,200864,ROEST III                               ,NO,+67:31:30,+012:06:14,   4,TG21,19980401,20081230,   22,Hans Olav Hygen                                   
+19007,200886,ROEST                                   ,NO,+67:30:22,+012:04:08,   8,TG21,19570101,19691030,   22,Hans Olav Hygen                                   
+19007,901106,ROEST III                               ,NO,+67:31:00,+012:06:00,   4, TG5,19820114,19971028,     ,                    
+19006,133772,BRONNOYSUND LUFTHAVN                    ,NO,+65:27:24,+012:13:06,   9,TG21,20020801,20201231,   22,Hans Olav Hygen                                   
+19006,200606,BROENNOEYSUND III                       ,NO,+65:28:36,+012:12:45,   5,TG21,19570101,19721230,   22,Hans Olav Hygen                                   
+19006,200887,BROENNOEYSUND                           ,NO,+65:28:00,+012:12:00,   4,TG21,19000101,19481230,   22,Hans Olav Hygen                                   
+19016,199298,E18 HJORTNES                            ,NO,+59:54:40,+010:42:15,  20,TG21,20130104,20200827,   22,Hans Olav Hygen                                   
+19016,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+19016,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+19016,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+19016,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+19019,109673,SAUDA                                   ,NO,+59:38:55,+006:21:48,   5,TG21,19280301,20201231,   22,Hans Olav Hygen                                   
+19019,200901,HYLSFJORDEN                             ,NO,+59:32:43,+006:21:41,  15,TG21,19761201,19901230,   22,Hans Olav Hygen                                   
+19038,199161,MANDAL III                              ,NO,+58:01:29,+007:27:06,  10,TG21,20090827,20201231,   22,Hans Olav Hygen                                   
+19038,200923,MANDAL                                  ,NO,+58:01:43,+007:27:35,   6,TG21,19310101,19490530,   22,Hans Olav Hygen                                   
+19038,201001,MANDAL - EIGEBREKK                      ,NO,+58:00:50,+007:36:31,  10,TG21,19970702,19970730,   22,Hans Olav Hygen                                   
+19038,901430,MANDAL III                              ,NO,+58:01:00,+007:27:00,  12, TG5,20100420,20200229,     ,                    
+19039,199160,RV13 ARDAL                              ,NO,+59:08:59,+006:10:25,   5,TG21,20131015,20201231,   22,Hans Olav Hygen                                   
+19039,200924,FISTER                                  ,NO,+59:10:36,+006:04:06,   1,TG21,19540101,19910730,   22,Hans Olav Hygen                                   
+19039,901422,FISTER_SIGMUNDSTAD                      ,NO,+59:10:00,+006:02:00,  25, TG5,20080126,20200229,     ,                    
+19041,200645,SKUDENES II                             ,NO,+59:08:56,+005:14:58,   2,TG21,19540101,20051129,   22,Hans Olav Hygen                                   
+19041,200794,SKUDENES                                ,NO,+59:08:59,+005:15:38,   7,TG21,19000101,19371230,   22,Hans Olav Hygen                                   
+19041,200925,SKUDENES III                            ,NO,+59:08:47,+005:15:00,  10,TG21,19810501,19921030,   22,Hans Olav Hygen                                   
+19042,199155,LENANGSSTRAUMEN                         ,NO,+69:53:29,+020:08:19,  45,TG21,20161011,20201231,   22,Hans Olav Hygen                                   
+19042,200927,NORD-LENANGEN                           ,NO,+69:54:43,+020:09:18,  23,TG21,19691101,19740629,   22,Hans Olav Hygen                                   
+19043,156990,NORD-SOLVAER                            ,NO,+66:22:06,+012:38:40,   7,TG21,19540101,19980913,   22,Hans Olav Hygen                                   
+19043,199306,SOLVAER III                             ,NO,+66:22:15,+012:36:39,  10,TG21,20071101,20201231,   22,Hans Olav Hygen                                   
+19043,200929,SOLVAER - SLENESET                      ,NO,+66:21:59,+012:36:55,   6,TG21,19981001,20060214,   22,Hans Olav Hygen                                   
+19043,901121,SOLVAER III                             ,NO,+66:21:59,+012:37:00,  12, TG5,19820123,20200229,     ,                    
+19048,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+19048,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+19048,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+19048,199440,FV650 BORRE                             ,NO,+59:21:13,+010:22:57,  55,TG21,20130106,20201231,   22,Hans Olav Hygen                                   
+19048,200935,SLAGENTANGEN                            ,NO,+59:18:42,+010:30:45,  31,TG21,19610716,19701230,   22,Hans Olav Hygen                                   
+19048,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+19048,211247,TOENSBERG - EIK                         ,NO,+59:17:37,+010:25:39,  55,TG21,20200611,20201231,   22,Hans Olav Hygen                                   
+19050,199310,JOMFRULAND                              ,NO,+58:51:23,+009:34:28,   3,TG21,19941012,20201231,   22,Hans Olav Hygen                                   
+19050,200937,JOMFRULAND FYR                          ,NO,+58:51:55,+009:35:51,  12,TG21,19540101,19931129,   22,Hans Olav Hygen                                   
+19050,901476,JOMFRULAND LH                           ,NO,+58:51:00,+009:33:00,   5, TG5,19820113,20200229,     ,                    
+19055,199042,E136 TRESFJORDBRUA                      ,NO,+62:36:40,+007:06:49,  20,TG21,20160419,20201231,   22,Hans Olav Hygen                                   
+19055,200823,HJELVIK - MYRBOE                        ,NO,+62:36:31,+007:13:45,  35,TG21,19990927,20090629,   22,Hans Olav Hygen                                   
+19055,200943,HJELVIK I ROMSDAL                       ,NO,+62:36:58,+007:12:39,  21,TG21,19730901,19921129,   22,Hans Olav Hygen                                   
+19055,901215,HJELVIK-MYRBO                           ,NO,+62:37:00,+007:13:59,  35, TG5,19820113,20170628,     ,                    
+19056,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+19056,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+19056,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+19056,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+19062,200665,LAERDAL - MOLDO                         ,NO,+61:03:59,+007:30:51,  24,TG21,19960601,20080929,   22,Hans Olav Hygen                                   
+19062,200951,LAERDAL - TOENJUM                       ,NO,+61:03:42,+007:31:00,  36,TG21,19540101,19960429,   22,Hans Olav Hygen                                   
+19070,199498,SALTDAL - NORDNES                       ,NO,+66:56:12,+015:18:56,  39,TG21,19970601,20201231,   22,Hans Olav Hygen                                   
+19070,200959,OEVRE SALTDAL                           ,NO,+66:58:30,+015:18:10,  26,TG21,19660701,19820429,   22,Hans Olav Hygen                                   
+19188,133112,ALTA LUFTHAVN                           ,NO,+69:58:39,+023:21:30,   3,TG21,19631201,20201231,   22,Hans Olav Hygen                                   
+19188,200635,ALTA                                    ,NO,+69:58:00,+023:15:00,   4,TG21,19000101,19400910,   22,Hans Olav Hygen                                   
+19188,200967,TURELVA                                 ,NO,+70:01:36,+023:24:30,   9,TG21,19831102,19920512,   22,Hans Olav Hygen                                   
+19078,200706,RV36 FJAEREKILEN                        ,NO,+59:11:08,+009:32:25,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+19078,200969,EIDANGER                                ,NO,+59:07:29,+009:41:55,  39,TG21,19611101,19620830,   22,Hans Olav Hygen                                   
+19079,199517,SETSA                                   ,NO,+67:09:57,+015:29:09,   7,TG21,20090201,20201231,   22,Hans Olav Hygen                                   
+19079,200682,FAUSKE - ERIKSTAD                       ,NO,+67:15:00,+015:22:00,  14,TG21,19671201,19720429,   22,Hans Olav Hygen                                   
+19079,200970,FAUSKE                                  ,NO,+67:15:00,+015:23:00,  14,TG21,19570101,19671129,   22,Hans Olav Hygen                                   
+19093,199386,EIGEROEYA                               ,NO,+58:26:07,+005:52:18,  49,TG21,20100417,20201231,   22,Hans Olav Hygen                                   
+19093,200986,NORDRE EIGEROEY                         ,NO,+58:26:07,+005:54:09,  63,TG21,19690901,19961030,   22,Hans Olav Hygen                                   
+19094,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+19094,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+19094,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+19094,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+19094,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+19094,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+19195,199161,MANDAL III                              ,NO,+58:01:29,+007:27:06,  10,TG21,20090827,20201231,   22,Hans Olav Hygen                                   
+19195,200923,MANDAL                                  ,NO,+58:01:43,+007:27:35,   6,TG21,19310101,19490530,   22,Hans Olav Hygen                                   
+19195,201001,MANDAL - EIGEBREKK                      ,NO,+58:00:50,+007:36:31,  10,TG21,19970702,19970730,   22,Hans Olav Hygen                                   
+19195,901430,MANDAL III                              ,NO,+58:01:00,+007:27:00,  12, TG5,20100420,20200229,     ,                    
+19104,199195,SKIBOTN II                              ,NO,+69:23:15,+020:16:56,  20,TG21,20041101,20201231,   22,Hans Olav Hygen                                   
+19104,200817,SKIBOTN - FOSSBAKK                      ,NO,+69:22:06,+020:16:06,   5,TG21,19840901,20041025,   22,Hans Olav Hygen                                   
+19104,201003,SKIBOTN - MELA                          ,NO,+69:22:00,+020:17:00,   8,TG21,19740801,19840830,   22,Hans Olav Hygen                                   
+19104,901036,SKIBOTN                                 ,NO,+69:22:00,+020:16:00,   0, TG5,20020910,20200229,     ,                    
+19104,901037,SKIBOTN 2                               ,NO,+69:23:00,+020:16:00,   6, TG5,20050409,20200229,     ,                    
+19105,199456,TRONDHEIM - HOEVRINGEN                  ,NO,+63:26:47,+010:20:11,  44,TG21,20180501,20201231,   22,Hans Olav Hygen                                   
+19105,199478,SKJETLEIN                               ,NO,+63:20:25,+010:17:50,  44,TG21,20130206,20201231,   22,Hans Olav Hygen                                   
+19105,200839,TRONDHEIM II                            ,NO,+63:25:35,+010:25:04,  58,TG21,19270413,19431230,   22,Hans Olav Hygen                                   
+19105,201004,TRONDHEIM                               ,NO,+63:25:55,+010:24:53,  58,TG21,19000101,19270330,   22,Hans Olav Hygen                                   
+19115,199232,FEDJE                                   ,NO,+60:46:48,+004:43:12,  19,TG21,20040827,20201231,   22,Hans Olav Hygen                                   
+19115,201018,HELLISOEY FYR                           ,NO,+60:45:10,+004:42:38,  20,TG21,19510101,20141215,   22,Hans Olav Hygen                                   
+19115,901306,HELLISOY FYR                            ,NO,+60:45:00,+004:43:00,   0, TG5,19820113,19920804,     ,                    
+19201,199298,E18 HJORTNES                            ,NO,+59:54:40,+010:42:15,  20,TG21,20130104,20200827,   22,Hans Olav Hygen                                   
+19201,199424,OSLO - BYGDOEY                          ,NO,+59:54:18,+010:40:58,  15,TG21,20120201,20201231,   22,Hans Olav Hygen                                   
+19201,200771,BYGDOEY                                 ,NO,+59:54:00,+010:40:00,  23,TG21,19370101,19410213,   22,Hans Olav Hygen                                   
+19201,200898,OSLO - OBSERVATORIET (HYTTE)            ,NO,+59:54:46,+010:43:03,  25,TG21,19000101,19370429,   22,Hans Olav Hygen                                   
+19201,200944,FORNEBU                                 ,NO,+59:53:34,+010:36:57,  10,TG21,19540101,19981007,   22,Hans Olav Hygen                                   
+19201,201020,OSLO - HAUSMANNSGT                      ,NO,+59:55:50,+010:45:16,  12,TG21,20120201,20120730,   22,Hans Olav Hygen                                   
+19122,133820,EVENES LUFTHAVN                         ,NO,+68:29:28,+016:41:00,  26,TG21,20040101,20201231,   22,Hans Olav Hygen                                   
+19122,199575,E10 TJELDSUND BRU                       ,NO,+68:37:40,+016:34:59,  20,TG21,20150414,20201231,   22,Hans Olav Hygen                                   
+19122,200831,EVENSKJER                               ,NO,+68:35:01,+016:34:09,   7,TG21,19581001,19851030,   22,Hans Olav Hygen                                   
+19122,201028,EVENSKJER BAKKE                         ,NO,+68:34:58,+016:34:14,  10,TG21,19570301,19580929,   22,Hans Olav Hygen                                   
+20821,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+20821,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+20821,199554,NOETTEROEY - FOEYNLAND                  ,NO,+59:14:12,+010:27:22,   2,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+20821,200764,SLAGENTANGEN II                         ,NO,+59:19:00,+010:31:00,   3,TG21,19730801,19831230,   22,Hans Olav Hygen                                   
+20821,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+20821,211244,TOENSBERG - KARLSVIK                    ,NO,+59:17:39,+010:30:49,   3,TG21,20200519,20201231,   22,Hans Olav Hygen                                   
+20821,901481,MELSOM                                  ,NO,+59:14:00,+010:21:00,  26, TG5,19820115,20200229,     ,                    
+20822,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+20822,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+20822,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+20822,199554,NOETTEROEY - FOEYNLAND                  ,NO,+59:14:12,+010:27:22,   2,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+20822,200764,SLAGENTANGEN II                         ,NO,+59:19:00,+010:31:00,   3,TG21,19730801,19831230,   22,Hans Olav Hygen                                   
+20822,200935,SLAGENTANGEN                            ,NO,+59:18:42,+010:30:45,  31,TG21,19610716,19701230,   22,Hans Olav Hygen                                   
+20822,211245,TOENSBERG - VALLOE                      ,NO,+59:15:39,+010:29:52,   9,TG21,20200611,20201231,   22,Hans Olav Hygen                                   
+20823,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+20823,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+20823,199313,E18 GULLI NORD                          ,NO,+59:19:06,+010:22:29,  30,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+20823,211246,TOENSBERG - VEAR                        ,NO,+59:15:48,+010:21:37,  30,TG21,20200611,20201231,   22,Hans Olav Hygen                                   
+20824,199184,TOENSBERG - TARANROED                   ,NO,+59:17:38,+010:17:54,  33,TG21,20131201,20201231,   22,Hans Olav Hygen                                   
+20824,199440,FV650 BORRE                             ,NO,+59:21:13,+010:22:57,  55,TG21,20130106,20201231,   22,Hans Olav Hygen                                   
+20824,200852,STOKKE                                  ,NO,+59:14:00,+010:17:00,  76,TG21,19570101,19710530,   22,Hans Olav Hygen                                   
+20824,200935,SLAGENTANGEN                            ,NO,+59:18:42,+010:30:45,  31,TG21,19610716,19701230,   22,Hans Olav Hygen                                   
+20824,211247,TOENSBERG - EIK                         ,NO,+59:17:37,+010:25:39,  55,TG21,20200611,20201231,   22,Hans Olav Hygen                                   
+21769,105468,BODOE VI                                ,NO,+67:16:02,+014:21:32,  11,TG21,19540101,20201231,   22,Hans Olav Hygen                                   
+21769,111167,BODOE - VAGONES                         ,NO,+67:17:00,+014:28:00,  33,TG21,19940115,20140630,   22,Hans Olav Hygen                                   
+21769,199182,RV80 HUNSTAD                            ,NO,+67:16:42,+014:31:02,  25,TG21,20140101,20201120,   22,Hans Olav Hygen                                   
+21769,199438,RV80 BERTNES                            ,NO,+67:17:16,+014:35:36,  30,TG21,20140101,20201231,   22,Hans Olav Hygen                                   
+21769,218121,FV17 SALTSTRAUMBRUA                     ,NO,+67:13:53,+014:36:45,  21,TG21,20200918,20201231,   22,Hans Olav Hygen                                   
+21770,135020,MELSOM                                  ,NO,+59:13:48,+010:20:54,  26,TG21,19590401,20201231,   22,Hans Olav Hygen                                   
+21770,199045,FV307 GRAVDAL                           ,NO,+59:18:13,+010:11:51,  20,TG21,20130104,20201231,   22,Hans Olav Hygen                                   
+21770,199140,NOETTEROEY - VESTSKOGEN                 ,NO,+59:14:30,+010:24:08,  25,TG21,20151231,20201231,   22,Hans Olav Hygen                                   
+21770,199248,TOENSBERG - KILEN                       ,NO,+59:16:42,+010:25:52,   3,TG21,20100413,20201231,   22,Hans Olav Hygen                                   
+21770,200987,JARLSBERG FLYPLASS                      ,NO,+59:18:05,+010:22:02,  25,TG21,20030204,20030204,   22,Hans Olav Hygen                                   
+21770,218162,TOENSBERG GJESTEHAVN                    ,NO,+59:16:12,+010:24:07,   3,TG21,20201024,20201231,   22,Hans Olav Hygen                                   
