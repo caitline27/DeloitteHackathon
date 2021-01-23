@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { BeatLoader } from 'react-spinners'
 import ConsumptionGraph from "./ConsumptionGraph"
 import "./Form.css"
 import axios from "axios"
@@ -29,6 +30,7 @@ class Form extends Component {
       city: '',
       start_date: '',
       end_date: '',
+      isGraphLoading: false,
       isGraphVisible: false,
       testGraphData: [],
       reserving_value: 0
@@ -51,6 +53,7 @@ class Form extends Component {
   formSubmit = (event) => {
     event.preventDefault();
     const { city, start_date, end_date } = this.state;
+    this.setState({isGraphLoading: true});
 
     const formData = {
       city: city,
@@ -69,7 +72,7 @@ class Form extends Component {
 
         if (res) {
           const { data, reserving_value } = res["data"];
-          this.setState({ "testGraphData": data, reserving_value, isGraphVisible: true })
+          this.setState({ "testGraphData": data, reserving_value, isGraphVisible: true, isGraphLoading: false })
         }
       });
     }else{
@@ -79,7 +82,7 @@ class Form extends Component {
   }
 
   render() {
-    const { start_date, end_date, city, isGraphVisible } = this.state;
+    const { start_date, end_date, city, isGraphVisible, isGraphLoading } = this.state;
     return (
       <>
         <div className="col-12">
@@ -115,6 +118,16 @@ class Form extends Component {
 
           </div>
         </div>
+
+        {isGraphLoading &&
+          <div className="col-12 pb-5">
+            <div className="col-12 graph mx-auto graphContainer" >
+              <div className="loadingContainer">
+                <BeatLoader/>
+              </div>
+            </div>
+          </div>
+        }
 
         {isGraphVisible &&
           <div className="col-12 pb-5">

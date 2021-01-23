@@ -2,3 +2,9 @@
     padding-top: 10px;
     height: 300px;
 }
+
+.loadingContainer {
+    top: 47%;
+    left: 47%;
+    position: absolute;
+}
