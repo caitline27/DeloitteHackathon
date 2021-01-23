@@ -13,9 +13,9 @@ salmon futures DEBRAJ
 brent crude oil price, MENGQING
 brent crude oil volumes MENGQING 
 nickel futures
-norway 3m
+norway 3m CAITLIN
 norway 6m CAITLIN
-norway 9m
+norway 9m CAITLIN
 norway 12m
 norway 60m
 norway 120m
