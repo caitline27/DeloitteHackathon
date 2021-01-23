@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
 
+import ConsumptionGraph from "./ConsumptionGraph"
 import "./Form.css"
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
+const testGraphData = [
+  { label: "Jan",  y: 10  },
+  { label: "Feb", y: 15  },
+  { label: "Mar", y: 25  },
+  { label: "Apr",  y: 30  },
+  { label: "May",  y: 28  },
+  { label: "Jun",  y: 10  },
+  { label: "Jul", y: 15  },
+  { label: "Aug", y: 25  },
+  { label: "Sep",  y: 30  },
+  { label: "Oct",  y: 28  },
+  { label: "Nov",  y: 56  },
+  { label: "Dec",  y: 28  }
+]
+
 class Form extends Component {
 
   constructor(props) {
@@ -10,7 +26,8 @@ class Form extends Component {
     super(props)
     this.state = {
       city: '',
-      date: ''
+      date: '',
+      isGraphVisible: false,
     }
   }
 
@@ -29,13 +46,12 @@ class Form extends Component {
 
   formSubmit = (event) => {
     event.preventDefault();
-
+    this.setState({isGraphVisible: true});
     console.log(this.state);
-
   }
 
   render() {
-    const { date, city } = this.state;
+    const { date, city, isGraphVisible } = this.state;
     return (
       <>
         <div className="col-12">
@@ -68,12 +84,13 @@ class Form extends Component {
           </div>
         </div>
 
-        <div className="col-12 pb-5">
-          <div className="col-10 graph mx-auto" >
-            <p className="text-center">TODO Consumption Graph</p>
-            {/* TODO Graph */}
+        {isGraphVisible &&
+          <div className="col-12 pb-5">
+            <div className="col-12 graph mx-auto graphContainer" >
+              <ConsumptionGraph dataPoints={testGraphData}/>
+            </div>
           </div>
-        </div>
+        }
       </>
     )
 
