@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 
 import ConsumptionGraph from "./ConsumptionGraph"
 import "./Form.css"
+import axios from "axios"
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
-const testGraphData = [
-  { label: "Jan",  y: 10  },
-  { label: "Feb", y: 15  },
-  { label: "Mar", y: 25  },
-  { label: "Apr",  y: 30  },
-  { label: "May",  y: 28  },
-  { label: "Jun",  y: 10  },
-  { label: "Jul", y: 15  },
-  { label: "Aug", y: 25  },
-  { label: "Sep",  y: 30  },
-  { label: "Oct",  y: 28  },
-  { label: "Nov",  y: 56  },
-  { label: "Dec",  y: 28  }
-]
+// const testGraphData = [
+//   { label: "Jan",  y: 10  },
+//   { label: "Feb", y: 15  },
+//   { label: "Mar", y: 25  },
+//   { label: "Apr",  y: 30  },
+//   { label: "May",  y: 28  },
+//   { label: "Jun",  y: 10  },
+//   { label: "Jul", y: 15  },
+//   { label: "Aug", y: 25  },
+//   { label: "Sep",  y: 30  },
+//   { label: "Oct",  y: 28  },
+//   { label: "Nov",  y: 56  },
+//   { label: "Dec",  y: 28  }
+// ]
 
 class Form extends Component {
 
@@ -28,6 +29,8 @@ class Form extends Component {
       city: '',
       date: '',
       isGraphVisible: false,
+      testGraphData:[],
+      reserving_value:0
     }
   }
 
@@ -46,8 +49,14 @@ class Form extends Component {
 
   formSubmit = (event) => {
     event.preventDefault();
-    this.setState({isGraphVisible: true});
-    console.log(this.state);
+
+    axios.get("http://127.0.0.1:5000/reserve").then(res =>{
+
+    if(res){
+      const {data , reserving_value} = res["data"];
+      this.setState({"testGraphData" : data , reserving_value,  isGraphVisible :true})
+    }
+    });
   }
 
   render() {
@@ -55,6 +64,9 @@ class Form extends Component {
     return (
       <>
         <div className="col-12">
+
+        
+
           <h5 className="mb-4">How much electricity should you buy?</h5>
 
           <div className="col-4 float-left">
@@ -79,7 +91,7 @@ class Form extends Component {
           </div>
           <div className="col-8 float-left">
 
-            <p className="watt-value">150 MW</p>
+            <p className="watt-value">{this.state.reserving_value} MW</p>
 
           </div>
         </div>
@@ -87,7 +99,7 @@ class Form extends Component {
         {isGraphVisible &&
           <div className="col-12 pb-5">
             <div className="col-12 graph mx-auto graphContainer" >
-              <ConsumptionGraph dataPoints={testGraphData}/>
+              <ConsumptionGraph dataPoints={this.state.testGraphData}/>
             </div>
           </div>
         }
