@@ -3,28 +3,21 @@ from numpy import loadtxt
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
-from Code import TimeSeriesCleaning as tsc
+from src import TimeSeriesCleaning as tsc
 
 # load data
 dataset = tsc.get_df()
 
-DMZ = "Close_DominosPizzaEOD5Years"
-TESLA = "Close_TeslaEOD5Years"
+CONSUMPTION = "Close_ConsumptionBergenNO5"
 X_cols = set(dataset.columns.to_list())
-X_cols.remove(DMZ)
-X_cols.remove(TESLA)
-X_cols.remove("Close_Nasdaq100")
-X_cols.remove("Date")
-X_cols.remove("Close_SNP500")
-X_cols.remove("Close_US5YearTreasury")
-X_cols.remove("Close_OrangeJuice")
+X_cols.remove(CONSUMPTION)
+X_cols.remove('Date')
 
 X_cols = list(X_cols)
 
 # split data into X and y
 X = dataset[X_cols]
-# Y = dataset[TESLA]
-Y = dataset[DMZ]
+Y = dataset[CONSUMPTION]
 
 def main():
 
