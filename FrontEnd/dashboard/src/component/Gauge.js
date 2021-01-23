@@ -12,8 +12,14 @@ class Gauge extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { gaugeValue : this.props.gaugeValue };
+        this.state =
+        {
+            gaugeValue: this.props.gaugeValue
+
+        };
     }
+
+    
 
     componentDidMount() {
          
@@ -21,16 +27,22 @@ class Gauge extends Component {
 
     //whenever the component updates, this will be called --> maybe use this to get the gaugeValue
     componentDidUpdate() {
-       console.log(5);
+        //console.log(document.getElementById("gauge").value());
     }
+
+    get value() {
+        return this.state.gaugeValue;
+    }
+
+ 
 
     render() {
 
 
 
         return (
-            
-            <IgrRadialGauge
+       
+            <IgrRadialGauge 
 
                 value={this.state.gaugeValue}
 
@@ -48,7 +60,7 @@ class Gauge extends Component {
                 height="300px" width="300px"
                 minimumValue={0}
                 maximumValue={100} interval={10} />
-                
+               
             )
     }
 
