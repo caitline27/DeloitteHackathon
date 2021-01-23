@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_restplus import Api, Resource, fields, Namespace
-from flask import Flask
+from flask_restplus import Api, Resource, fields
 
 SAMPLE_NUMBER = 'SAMPLE_NUMBER'
 SAMPLE_STRING = 'SAMPLE_STRING'
@@ -35,12 +34,33 @@ class MainClass(Resource):
             headsinthecloud_rest_name_space.abort(500, e.__doc__, status='bummer got a 500 error')
 
 
-@flask_app.route("/feature")
-def hello():
-    return "Hello World!"
+@flask_app.route("/reserve", methods=['GET'])
+def reserve():
+    query = request.json
+    city = query['city']
+    start_date = query['start_date']
+    end_date = query['end_date']
+    # TODO: get value of the reserving amount from the model
+    reserving_amount = 50
+    return jsonify({"reserving_value": reserving_amount})
 
 
+@flask_app.route("/trade", methods=['GET'])
+def trade():
+    query = request.json
+    action = query['action']
+    city = query['city']
+    qty = query['qty']
 
+    if action == 'buy':
+        buy_price = 2
+        # TODO: get value of the buying price from the model
+        return jsonify({"reserving_value": buy_price})
+
+    if action == 'sell':
+        selling_price = 1
+        # TODO: get value of the selling price from the model
+        return jsonify({"reserving_value": selling_price})
 
 if __name__ == "__main__":
     flask_app.run(debug=True)
