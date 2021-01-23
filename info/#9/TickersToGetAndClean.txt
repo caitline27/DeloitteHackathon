@@ -14,7 +14,7 @@ brent crude oil price, MENGQING
 brent crude oil volumes MENGQING 
 nickel futures
 norway 3m
-norway 6m
+norway 6m CAITLIN
 norway 9m
 norway 12m
 norway 60m
