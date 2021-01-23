@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Gauge from './Gauge.js';
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
 class RecomComponent extends Component {
@@ -6,8 +7,13 @@ class RecomComponent extends Component {
 
     constructor(props) {
         super(props)
+        this.state = {
+            gaugeValue: 50
+        };
     }
 
+ 
+   
     render() {
 
         return (
@@ -32,15 +38,8 @@ class RecomComponent extends Component {
 
                 <div className="col-12 pl-2em mb-4">
                     <h6>What is your preference?</h6>
-                    <div className="d-flex justify-content-between w-53">
-                        <span>Cost</span>
-                        <span>Environmental Score</span>
 
-                    </div>
-                    <div className="slidecontainer">
-                        <input type="range" min="1" max="100" className="slider" id="myRange" />
-                    </div>
-
+                    <Gauge gaugeValue={this.state.gaugeValue} />
                 </div>
                 <div className="pl-2em col-12 ">
 

@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container">
       <div className="row dashboard-wrapper pl-5">
-        <h3 className="pt-4 pb-5 text-center w-100">Project Power</h3>
+        <h3 className="pt-4 pb-5 text-center w-100">Project Powergetic</h3>
         <Form />
         <RecommendationComp />
       </div>
