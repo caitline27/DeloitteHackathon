@@ -1,7 +1,7 @@
 targetDay, 
 temperatureForecast, WASIM
 norwegian central bank rate/sovereign bonds, JONATHAN 
-Libor, JONATHAN 
+Libor, JONATHAN
 norway stock exchange OSE futures, 
 US treasury bond (ZB)
 US treasuries 2yr (ZT), 
@@ -9,7 +9,7 @@ US treasuries 5yr (ZF),
 US treasuries 10yr (ZN), 
 neighboring bank rates, 
 aluminum futures, 
-salmon futures
+salmon futures DEBRAJ
 brent crude oil price, MENGQING
 brent crude oil volumes MENGQING 
 nickel futures
@@ -26,8 +26,8 @@ Norway Treasures 12m
 Sight deposit rate
 Reserve rate
 Overnight lending rate
-ENOR (MSCI Norway)
-NORW (Global X MSCI Norway ETF)
+ENOR (MSCI Norway) DEBRAJ
+NORW (Global X MSCI Norway ETF) DEBRAJ
 DowJones Norway USD https://ph.investing.com/indices/dj-norway-usd-historical-data
 https://ng.investing.com/indices/bny-norway-classic-adr
 Norway 10 Year vs Germany 10 year spread bond yield historical data
