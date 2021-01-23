@@ -27,10 +27,11 @@ class Form extends Component {
     super(props)
     this.state = {
       city: '',
-      date: '',
+      start_date: '',
+      end_date: '',
       isGraphVisible: false,
-      testGraphData:[],
-      reserving_value:0
+      testGraphData: [],
+      reserving_value: 0
     }
   }
 
@@ -49,23 +50,39 @@ class Form extends Component {
 
   formSubmit = (event) => {
     event.preventDefault();
+    const { city, start_date, end_date } = this.state;
 
-    axios.get("http://127.0.0.1:5000/reserve").then(res =>{
-
-    if(res){
-      const {data , reserving_value} = res["data"];
-      this.setState({"testGraphData" : data , reserving_value,  isGraphVisible :true})
+    const formData = {
+      city: city,
+      start_date: start_date,
+      end_date: end_date
     }
-    });
+    const header = {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
+    }
+
+    if (city.length > 0 && start_date.length > 0 && end_date.length > 0) {
+
+
+      axios.post("http://127.0.0.1:5000/reserve", formData, { headers: header }).then(res => {
+
+        if (res) {
+          const { data, reserving_value } = res["data"];
+          this.setState({ "testGraphData": data, reserving_value, isGraphVisible: true })
+        }
+      });
+    }else{
+      alert("Please enter all the fields")
+    }
+
   }
 
   render() {
-    const { date, city, isGraphVisible } = this.state;
+    const { start_date, end_date, city, isGraphVisible } = this.state;
     return (
       <>
         <div className="col-12">
-
-        
 
           <h5 className="mb-4">How much electricity should you buy?</h5>
 
@@ -80,7 +97,10 @@ class Form extends Component {
                 </select>
               </div>
               <div className="mb-4">
-                <input type="date" className="form-control col-10" name="date" value={date} placeholder="start date" onChange={this.handleChange} />
+                <input type="date" className="form-control col-10" name="start_date" value={start_date} placeholder="start date" onChange={this.handleChange} />
+              </div>
+              <div className="mb-4">
+                <input type="date" className="form-control col-10" name="end_date" value={end_date} placeholder="start date" onChange={this.handleChange} />
               </div>
               <div className="mb-4">
                 <div className="col-10 d-flex justify-content-center">
@@ -99,7 +119,7 @@ class Form extends Component {
         {isGraphVisible &&
           <div className="col-12 pb-5">
             <div className="col-12 graph mx-auto graphContainer" >
-              <ConsumptionGraph dataPoints={this.state.testGraphData}/>
+              <ConsumptionGraph dataPoints={this.state.testGraphData} />
             </div>
           </div>
         }
