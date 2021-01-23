@@ -1,4 +1,4 @@
-,Sight deposit rate,Reserve rate,Overnight lending rate,3yrs,5yrs,10yrs,3months,6months,9months,12months,NOWA,Volume NOK (mill),Qualifier,Banks lending,Banks borrowing,Transactions
+Date,Sight deposit rate,Reserve rate,Overnight lending rate,3yrs,5yrs,10yrs,3months,6months,9months,12months,NOWA,Volume NOK (mill),Qualifier,Banks lending,Banks borrowing,Transactions
 2013-01-01,,,,,,,,,,,,,,,,
 2013-01-02,1.5,0.5,2.5,1.45,1.56,2.07,1.49,1.47,1.54,1.54,1.5,23040.0,Handlet,,,
 2013-01-03,1.5,0.5,2.5,1.43,1.57,2.09,1.45,1.54,1.55,1.55,1.48,27759.0,Handlet,,,
