@@ -1,1 +1,7 @@
 pandas
+jupyter
+scipy
+numpy
+matplotlib
+scikit-learn
+xgboost
