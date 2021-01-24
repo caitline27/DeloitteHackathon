@@ -16,7 +16,7 @@ nickel futures
 norway 3m CAITLIN
 norway 6m CAITLIN
 norway 9m CAITLIN
-norway 12m
+norway 12m CAITLIN
 norway 60m
 norway 120m
 Norway Treasures 3m
@@ -30,9 +30,10 @@ ENOR (MSCI Norway) DEBRAJ
 NORW (Global X MSCI Norway ETF) DEBRAJ
 DowJones Norway USD https://ph.investing.com/indices/dj-norway-usd-historical-data
 https://ng.investing.com/indices/bny-norway-classic-adr
-Norway 10 Year vs Germany 10 year spread bond yield historical data
+Norway 10 Year vs Germany 10 year spread bond yield historical data (only goes to 2016)
 NASDAQ Norway Consumer Goods Historical Data
 Norway FTSE Historical
+NORY Historical Data CAITLIN
  EONIA
 EURIBOR
 LIBOR
