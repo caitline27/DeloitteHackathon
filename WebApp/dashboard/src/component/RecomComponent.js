@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {  IgrRadialGauge } from 'igniteui-react-gauges';
 import Gauge from './Gauge.js';
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
@@ -36,11 +35,7 @@ class RecomComponent extends Component {
         });
     }
 
-    newGaugeValue = (event) => {
-        this.setState({
-            "gaugeValue": event.value
-        });
-    }
+
  
 
    
@@ -50,7 +45,7 @@ class RecomComponent extends Component {
             <div class="container border">
 
 
-                <h5>What would you like to do?</h5>
+                <p class="instruction">What would you like to do?</p>
 
                 <div class="row align-items-center">
                     <div class="col-6 ">
@@ -74,24 +69,7 @@ class RecomComponent extends Component {
                     
                     <div class="col-6">
                         <h6>What is your preference?</h6>    
-              
-                        <IgrRadialGauge
-                            value={this.state.gaugeValue}
-                            isNeedleDraggingEnabled={true}
-                            isNeedleDraggingConstrained={true}
-                            needleBrush="DodgerBlue"
-                            needleOutline="DodgerBlue"
-                            needleEndExtent={0.475}
-                            needleStrokeThickness={1}
-                            needlePivotShape="CircleOverlay"
-                            needlePivotBrush="#9f9fa0"
-                            needlePivotOutline="#9f9fa0"
-                            needlePivotWidthRatio={0.2}
-                            needlePivotStrokeThickness={1}
-                            height="300px" width="300px"
-                            minimumValue={0}
-                            maximumValue={100} interval={10}
-                            valueChanged={this.newGaugeValue}/>
+                        <Gauge gaugeValue={this.state.gaugeValue}  id="g" />
                         <p>someletter: {this.state.gaugeValue}</p>
                     </div>       
                 </div>
