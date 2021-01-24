@@ -23,7 +23,7 @@ def main():
 
 # split data into train and test sets
     seed = 7
-    test_size = 0.33
+    test_size = 0.2
     X_train, X_test, y_train, y_test = train_test_split(X,
                                                         Y,
                                                         test_size=test_size,
@@ -36,6 +36,11 @@ def main():
     # make predictions for test data
     y_pred = model.predict(X_test)
 
+    results_df = pd.DataFrame().append(y_test).transpose()
+    results_df['prediction'] = y_pred
+    results_df['diff'] = y_pred-y_test.to_list()
+    results_df['percent'] = (y_pred-y_test.to_list())/y_test.to_list()
+    print(results_df['percent'].describe())
 
     # evaluate predictions
     error = mean_squared_error(y_test, y_pred)
