@@ -20,6 +20,24 @@ const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Nor
 //   { label: "Dec",  y: 28  }
 // ]
 
+function autoFitFontSize() {
+  /* -------------------------------------------------------------------------- */
+  // Auto stretch the font size of watt text display according to content
+  var watt = document.getElementById("watt");
+  if (watt != null) {
+    watt.style.fontSize = "240px";
+    var fSize = 300;
+    do {
+      watt.style.fontSize = fSize + "px";
+      fSize -= 30;
+    } while (watt.scrollWidth > watt.clientWidth);
+    fSize -= 30
+    watt.style.fontSize = fSize + "px";
+  }
+  /* -------------------------------------------------------------------------- */
+}
+
+
 class Form extends Component {
 
   constructor(props) {
@@ -34,7 +52,7 @@ class Form extends Component {
       reserving_value: 0
     }
   }
-
+  
   handleChange = event => {
 
     if (event.target.tagName.toUpperCase() === "SELECT") {
@@ -64,15 +82,17 @@ class Form extends Component {
 
     if (city.length > 0 && start_date.length > 0 && end_date.length > 0) {
 
-
       axios.post("http://127.0.0.1:5000/reserve", formData, { headers: header }).then(res => {
 
         if (res) {
           const { data, reserving_value } = res["data"];
           this.setState({ "testGraphData": data, reserving_value, isGraphVisible: true })
+          autoFitFontSize();
         }
       });
-    }else{
+
+
+    } else {
       alert("Please enter all the fields")
     }
 
@@ -80,40 +100,47 @@ class Form extends Component {
 
   render() {
     const { start_date, end_date, city, isGraphVisible } = this.state;
+    window.onresize = function () { autoFitFontSize() };
+    
     return (
       <>
         <div className="col-12">
 
           <p className="instruction mb-4">Select the date to see our ML prediction of how much electricity you should buy.</p>
 
-          <div className="col-4 float-left">
-            <form onSubmit={this.formSubmit} noValidate>
+          <div class="container">
+            <div class="row">
+              <div className="col-4">
+                <form onSubmit={this.formSubmit} noValidate>
 
-              <div className="mb-4">
-                <select className="form-control col-10" value={city} onChange={this.handleChange}>
+                  <div className="mb-4">
+                    <select className="form-control col-10" value={city} onChange={this.handleChange}>
 
-                  <option value="">Choose your region</option>
-                  {region.map(ele => <option key={ele} value={ele}>{ele}</option>)}
-                </select>
+                      <option value="">Choose your region</option>
+                      {region.map(ele => <option key={ele} value={ele}>{ele}</option>)}
+                    </select>
+                  </div>
+                  <div className="mb-4">
+                    <input type="date" className="form-control col-10" name="start_date" value={start_date} placeholder="start date" onChange={this.handleChange} />
+                  </div>
+                  <div className="mb-4">
+                    <input type="date" className="form-control col-10" name="end_date" value={end_date} placeholder="start date" onChange={this.handleChange} />
+                  </div>
+                  <div className="mb-4">
+                    <div className="col-10 d-flex justify-content-center">
+                      <button className="btn btn-info btn-75">Check</button>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div className="mb-4">
-                <input type="date" className="form-control col-10" name="start_date" value={start_date} placeholder="start date" onChange={this.handleChange} />
-              </div>
-              <div className="mb-4">
-                <input type="date" className="form-control col-10" name="end_date" value={end_date} placeholder="start date" onChange={this.handleChange} />
-              </div>
-              <div className="mb-4">
-                <div className="col-10 d-flex justify-content-center">
-                  <button className="btn btn-info btn-75">Check</button>
+              <div className="col-8 watt">
+                <div className="watt-text">
+                  <p className="watt-value" id="watt">{this.state.reserving_value}</p>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-          <div className="col-8 float-left">
 
-            <p className="watt-value">{this.state.reserving_value}</p>
-
-          </div>
         </div>
 
         {isGraphVisible &&
