@@ -16,7 +16,7 @@ nickel futures
 norway 3m CAITLIN
 norway 6m CAITLIN
 norway 9m CAITLIN
-norway 12m
+norway 12m CAITLIN
 norway 60m
 norway 120m
 Norway Treasures 3m
