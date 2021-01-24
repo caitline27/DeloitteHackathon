@@ -84,7 +84,7 @@ class Form extends Component {
       <>
         <div className="col-12">
 
-          <h5 className="mb-4">How much electricity should you buy?</h5>
+          <p className="instruction mb-4">Select the date to see our ML prediction of how much electricity you should buy.</p>
 
           <div className="col-4 float-left">
             <form onSubmit={this.formSubmit} noValidate>
@@ -111,7 +111,7 @@ class Form extends Component {
           </div>
           <div className="col-8 float-left">
 
-            <p className="watt-value">{this.state.reserving_value} MW</p>
+            <p className="watt-value">{this.state.reserving_value}</p>
 
           </div>
         </div>
