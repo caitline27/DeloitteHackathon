@@ -21,3 +21,8 @@ seaborn
 gunicorn==20.0.4
 flask-mongoengine
 flask_cors
+jupyter
+scipy
+matplotlib
+scikit-learn
+xgboost

@@ -1,6 +1,9 @@
 from flask import Flask, request, jsonify
 from flask_restplus import Api, Resource, fields
 from flask_cors import CORS, cross_origin
+from xgboost import XGBRegressor
+import csv
+import pandas as pd
 
 SAMPLE_NUMBER = 'SAMPLE_NUMBER'
 SAMPLE_STRING = 'SAMPLE_STRING'
@@ -46,7 +49,10 @@ def reserve():
     # TODO: get value of the reserving amount from the model
     if request.method == 'POST':
         query = request.form
-        # print(query['city'], query['start_date'], query['end_date'])
+        print(query['city'], query['start_date'])
+        result = extractModel(query['city'], query['start_date'])
+         # extractModel("Bergen", "2013-01-04")
+
         data = [
             { "label": "Jan",  "y": 10  },
             { "label": "Feb", "y": 15  },
@@ -62,7 +68,7 @@ def reserve():
             { "label": "Dec",  "y": 28  }
             ]
         reserving_amount = 50
-        response = jsonify({"reserving_value": reserving_amount, "data" : data})
+        response = jsonify({"reserving_value": reserving_amount, "data" : data , "result" : result})
         return response
         
 
@@ -87,6 +93,31 @@ def trade():
     
     response.headers.add("Access-Control-Allow-Origin", "*")
     return response
+
+
+def extractModel(region, date):
+    model = XGBRegressor()
+
+    modelName = "../Models/"+region+".model"
+    model.load_model(modelName)
+
+    fileName = "../CSV_Model_Inputs/Bergen.csv"
+
+    with open(fileName) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+
+        for row in csv_reader:
+            print(f'Column names are {", ".join(row)}')
+            # rowValue = row.split(",")
+            
+            if date in row:
+                row.remove(date)
+                print(row)
+                data = pd.DataFrame(row)
+                reserved = model.predict(data)
+                break
+
+    return reserved
 
 
 if __name__ == "__main__":
