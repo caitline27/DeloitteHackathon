@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import ConsumptionGraph from "./ConsumptionGraph"
+import PieChart from "./PieChart"
 import "./Form.css"
 import axios from "axios"
 
@@ -146,7 +147,7 @@ class Form extends Component {
         {isGraphVisible &&
           <div className="col-12 pb-5">
             <div className="col-12 graph mx-auto graphContainer" >
-              <ConsumptionGraph dataPoints={this.state.testGraphData} />
+              <PieChart dataPoints={this.state.testGraphData} />
             </div>
           </div>
         }
