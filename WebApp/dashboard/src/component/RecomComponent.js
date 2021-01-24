@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { IgrRadialGauge } from 'igniteui-react-gauges';
-import Gauge from './Gauge.js';
+
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
 class RecomComponent extends Component {
@@ -39,7 +39,7 @@ class RecomComponent extends Component {
 
     updateGaugeValue = (event) => {
         this.setState({
-            "gaugeValue": event.value()
+            "gaugeValue": event.value
         });
     }
 
@@ -92,7 +92,7 @@ class RecomComponent extends Component {
                             height="300px" width="300px"
                             minimumValue={0}
                             maximumValue={100} interval={10}
-                            changedValue={this.updateGaugeValue} />
+                            valueChanged={this.updateGaugeValue} />
                         <p>someletter: {this.state.gaugeValue}</p>
                     </div>       
                 </div>
