@@ -3,6 +3,7 @@ from numpy import loadtxt
 from xgboost import XGBRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
+
 from src import TimeSeriesCleaning as tsc
 
 # load data
@@ -36,10 +37,13 @@ def main():
     # make predictions for test data
     y_pred = model.predict(X_test)
 
-    results_df = pd.DataFrame().append(y_test).transpose()
+    actuals = pd.DataFrame().append(y_test).transpose().to_numpy()
+    results_df = pd.DataFrame()
     results_df['prediction'] = y_pred
-    results_df['diff'] = y_pred-y_test.to_list()
-    results_df['percent'] = (y_pred-y_test.to_list())/y_test.to_list()
+    results_df['actuals'] = actuals
+    results_df['diff'] = results_df['prediction'] - results_df['actuals']
+    results_df['percent'] = results_df['diff']/results_df['actuals']
+    print( f"mean is {abs(results_df['percent']).mean()}" )
     print(results_df['percent'].describe())
 
     # evaluate predictions
