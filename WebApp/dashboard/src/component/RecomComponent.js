@@ -93,7 +93,6 @@ class RecomComponent extends Component {
                             minimumValue={0}
                             maximumValue={100} interval={10}
                             valueChanged={this.updateGaugeValue} />
-                        <p>someletter: {this.state.gaugeValue}</p>
                     </div>       
                 </div>
 
