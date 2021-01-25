@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Gauge from './Gauge.js';
+import { IgrRadialGauge } from 'igniteui-react-gauges';
+
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
 class RecomComponent extends Component {
@@ -29,14 +30,19 @@ class RecomComponent extends Component {
         });
     }
 
-    modifyAmount = (event) =>{
+    modifyAmount = (event) => {
         this.setState({
             "tradingAmount": event.target.value
         });
     }
 
 
- 
+    updateGaugeValue = (event) => {
+        this.setState({
+            "gaugeValue": event.value
+        });
+    }
+
 
    
     render() {
@@ -69,7 +75,24 @@ class RecomComponent extends Component {
                     
                     <div class="col-6">
                         <h6>What is your preference?</h6>    
-                        <Gauge gaugeValue={this.state.gaugeValue}  id="g" />
+                        <IgrRadialGauge
+
+                            value={this.state.gaugeValue}
+                            isNeedleDraggingEnabled={true}
+                            isNeedleDraggingConstrained={true}
+                            needleBrush="DodgerBlue"
+                            needleOutline="DodgerBlue"
+                            needleEndExtent={0.475}
+                            needleStrokeThickness={1}
+                            needlePivotShape="CircleOverlay"
+                            needlePivotBrush="#9f9fa0"
+                            needlePivotOutline="#9f9fa0"
+                            needlePivotWidthRatio={0.2}
+                            needlePivotStrokeThickness={1}
+                            height="300px" width="300px"
+                            minimumValue={0}
+                            maximumValue={100} interval={10}
+                            valueChanged={this.updateGaugeValue} />
                         <p>someletter: {this.state.gaugeValue}</p>
                     </div>       
                 </div>
