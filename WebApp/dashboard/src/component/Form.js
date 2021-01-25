@@ -93,7 +93,7 @@ class Form extends Component {
                     this.setState({ "factor_ratings": factor_ratings, reserving_value: (parseInt(reserving_value).toFixed(2)), isGraphVisible: true, loading: false })
                     autoFitFontSize();
                 }
-            });
+            }).catch(err => alert(err + ". Please enter proper date and city"));
 
 
         } else {
