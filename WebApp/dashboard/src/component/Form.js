@@ -130,7 +130,7 @@ class Form extends Component {
       <>
         <div className="col-12">
 
-          <p className="instruction delimiter">Select the date and city to see our ML prediction of how much electricity you should buy.</p>
+          <p className="instruction delimiter">Use our ML model to predict of your electricity consumption</p>
 
           <div class="container">
             <div class="row">

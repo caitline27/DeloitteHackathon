@@ -26,7 +26,7 @@ class PieChart extends Component {
         animationEnabled: true,
         backgroundColor: null,
         title: {
-          text: "Test",
+          text: "Top 10 factors affecting your consumption",
           fontColor: "white"
         },
         height: 380,
