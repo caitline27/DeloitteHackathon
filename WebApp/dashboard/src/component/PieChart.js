@@ -29,7 +29,7 @@ class PieChart extends Component {
           text: "Top 15 factors affecting your consumption",
           fontColor: "white"
         },
-        height: 500,
+        height: 400,
         axisY: {
           gridThickness: 0,
         },
