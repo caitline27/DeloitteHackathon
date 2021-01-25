@@ -31,12 +31,11 @@ function autoFitFontSize() {
             watt.style.fontSize = fSize + "vw";
             fSize -= 0.5;
         } while (watt.scrollWidth > watt.clientWidth);
-        
+
         var textLen = 140 / watt.innerHTML.length;
         var calcFontSize = "calc(" + fSize + "vw - " + textLen + "px)"
-        
+
         watt.style.fontSize = calcFontSize;
-        
     }
     /* -------------------------------------------------------------------------- */
 }
@@ -52,6 +51,7 @@ class Form extends Component {
             date: '',
             isGraphVisible: false,
             factor_ratings: [],
+            // keep it 00000, I will explain it later. no time to write more
             reserving_value: "00000",
             loading: false
         }
@@ -107,6 +107,8 @@ class Form extends Component {
         const { date, region, isGraphVisible } = this.state;
         window.onload = function () { autoFitFontSize() };
         window.onresize = function () { autoFitFontSize() };
+        
+
 
         let styleSpinner = {
             width: '70px',

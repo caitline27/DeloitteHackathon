@@ -366,12 +366,33 @@ input[tupe="text"] {
 margin: 0 auto;
 }
 
+
+.des{
+    font-size: 1.2em;
+    margin-right: 0.7em;
+    margin-top: 0.3em;
+}
+.cont-index{
+    padding: 7vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.center-text{
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
 .fontColor{
     font-family: var(--font-black-sans);
     color: var(--color-nav-text-active);
     font-size: 1.5em;
 }
-
 .font-15em{
-    font-size: 1.5em;
+    font-size: 2vw;
+}
+.ra{
+    text-align: right;
+}
+.la{
+    text-align: left;
 }
