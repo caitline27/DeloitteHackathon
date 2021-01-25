@@ -36,6 +36,7 @@ function autoFitFontSize() {
         var calcFontSize = "calc(" + fSize + "vw - " + textLen + "px)"
 
         watt.style.fontSize = calcFontSize;
+
     }
     /* -------------------------------------------------------------------------- */
 }
@@ -56,6 +57,7 @@ class Form extends Component {
             loading: false
         }
     }
+  }
 
     handleChange = event => {
 
@@ -73,7 +75,7 @@ class Form extends Component {
     formSubmit = (event) => {
         event.preventDefault();
         const { region, date } = this.state;
-        this.setState({ "loading": true });
+        this.setState({"loading" : true});
 
         const formData = {
             region: region,
@@ -90,7 +92,7 @@ class Form extends Component {
 
                 if (res) {
                     const { factor_ratings, reserving_value } = res["data"];
-                    this.setState({ "factor_ratings": factor_ratings, reserving_value: (parseInt(reserving_value).toFixed(2)), isGraphVisible: true, loading: false })
+                    this.setState({ "factor_ratings": factor_ratings, reserving_value : (parseInt(reserving_value).toFixed(2)), isGraphVisible: true , loading : false })
                     autoFitFontSize();
                 }
             }).catch(err => alert(err + ". Please enter proper date and city"));
@@ -110,10 +112,10 @@ class Form extends Component {
         
 
 
-        let styleSpinner = {
-            width: '70px',
-            height: '70px',
-        };
+    let styleSpinner = {
+      width: '70px',
+      height: '70px',
+    };
         const aSpinner = (
 
 
@@ -125,23 +127,23 @@ class Form extends Component {
         );
 
 
-        const wattValue = (
-            <div className="watt-text">
-                <p className="watt-value" id="watt">{this.state.reserving_value}</p>
-            </div>
-        )
+    const wattValue = (
+        <div className="watt-text">
+          <p className="watt-value" id="watt">{this.state.reserving_value}</p>
+        </div>
+    )
 
 
-        return (
-            <>
-                <div className="col-12">
+    return (
+      <>
+        <div className="col-12">
 
-                    <p className="instruction delimiter">Select the date and city to see our ML prediction of how much electricity you should buy.</p>
+          <p className="instruction delimiter">Use our ML Reserve model to predict your electricity consumption</p>
 
-                    <div class="container">
-                        <div class="row">
-                            <div className="col-4">
-                                <form onSubmit={this.formSubmit} noValidate>
+          <div class="container">
+            <div class="row">
+              <div className="col-4">
+                <form onSubmit={this.formSubmit} noValidate>
 
                                     <div className="mb-4">
                                         <select className="form-control col-10" value={region} onChange={this.handleChange}>
