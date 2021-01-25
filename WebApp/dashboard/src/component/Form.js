@@ -22,20 +22,20 @@ const region_options = ["Bergen", "Kirstiansund", "Oslo", "Tromso", "Tronheim"];
 // ]
 
 function autoFitFontSize() {
-    /* -------------------------------------------------------------------------- */
-    // Auto stretch the font size of watt text display according to content
-    var watt = document.getElementById("watt");
-    if (watt != null) {
-        watt.style.fontSize = "240px";
-        var fSize = 300;
-        do {
-            watt.style.fontSize = fSize + "px";
-            fSize -= 30;
-        } while (watt.scrollWidth > watt.clientWidth);
-        fSize -= 30
-        watt.style.fontSize = fSize + "px";
-    }
-    /* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  // Auto stretch the font size of watt text display according to content
+  var watt = document.getElementById("watt");
+  if (watt != null) {
+    watt.style.fontSize = "240px";
+    var fSize = 300;
+    do {
+      watt.style.fontSize = fSize + "px";
+      fSize -= 30;
+    } while (watt.scrollWidth > watt.clientWidth);
+    fSize -= 70
+    watt.style.fontSize = fSize + "px";
+  }
+  /* -------------------------------------------------------------------------- */
 }
 
 
@@ -43,16 +43,16 @@ class Form extends Component {
 
     constructor(props) {
 
-        super(props)
-        this.state = {
-            region: '',
-            date: '',
-            isGraphVisible: false,
-            factor_ratings: [],
-            reserving_value: "-",
-            loading: false
-        }
+    super(props)
+    this.state = {
+      region: '',
+      date: '',
+      isGraphVisible: false,
+      factor_ratings: [],
+      reserving_value: "0",
+      loading: false
     }
+  }
 
     handleChange = event => {
 
@@ -82,14 +82,16 @@ class Form extends Component {
         }
 
         if (region.length > 0 && date.length > 0) {
+
             axios.post("http://127.0.0.1:5000/reserve", formData, { headers: header }).then(res => {
 
                 if (res) {
                     const { factor_ratings, reserving_value } = res["data"];
-                    this.setState({ "factor_ratings": factor_ratings, reserving_value, isGraphVisible: true , loading : false })
+                    this.setState({ "factor_ratings": factor_ratings, reserving_value : (parseInt(reserving_value).toFixed(2)), isGraphVisible: true , loading : false })
                     autoFitFontSize();
                 }
             });
+
 
         } else {
             alert("Please enter all the fields")
@@ -98,19 +100,14 @@ class Form extends Component {
     }
 
 
+  render() {
+    const { date, region, isGraphVisible } = this.state;
+    window.onresize = function () { autoFitFontSize() };
 
-    render() {
-        const { date, region, isGraphVisible } = this.state;
-        window.onresize = function () { autoFitFontSize() };
-
-
-
-        let styleSpinner = {
-            width: '70px',
-            height: '70px',
-        };
-
-
+    let styleSpinner = {
+      width: '70px',
+      height: '70px',
+    };
         const aSpinner = (
 
 
@@ -122,27 +119,23 @@ class Form extends Component {
         );
 
 
-        const wattValue = (
-            <div className="col-8">
-                <div className="watt-text">
-                    <p className="watt-value">{this.state.reserving_value}</p>
-                </div>
-            </div>
-        )
+    const wattValue = (
+        <div className="watt-text">
+          <p className="watt-value" id="watt">{this.state.reserving_value}</p>
+        </div>
+    )
 
 
+    return (
+      <>
+        <div className="col-12">
 
+          <p className="instruction delimiter">Select the date and city to see our ML prediction of how much electricity you should buy.</p>
 
-        return (
-            <>
-                <div className="col-12">
-
-                    <p className="instruction mb-4">Select the date to see our ML prediction of how much electricity you should buy.</p>
-
-                    <div class="container">
-                        <div class="row">
-                            <div className="col-4">
-                                <form onSubmit={this.formSubmit} noValidate>
+          <div class="container">
+            <div class="row">
+              <div className="col-4">
+                <form onSubmit={this.formSubmit} noValidate>
 
                                     <div className="mb-4">
                                         <select className="form-control col-10" value={region} onChange={this.handleChange}>
@@ -181,16 +174,15 @@ class Form extends Component {
                     </div>
                 }
             </>
-
         )
+
+
+
     }
 
 
+
 }
-
-
-
-
 
 
 export default Form;

@@ -51,25 +51,43 @@ class RecomComponent extends Component {
         return (
             <div className="col-12 container border">
 
-                <p className="instruction mb-4">Set your trade-off index between environmental and economic benefits.</p>
+                <p className="instruction delimiter">Set your trade-off index between environmental and economic benefits, the amount of the electricity, and the city where you'd like to trade, and see our suggestion on how you should trade.</p>
+
+
 
                 <div class="row align-items-center">
-                    <div class="col-6 ">
-                        <div class="row justify-content-center" >
-                            <input type="radio" id="buy" name="price" value="buy" onChange={this.modifyRadioState} />
-                            <label htmlFor="buy" className="pr-5 pl-2">Buy</label>
+                    <div class="col-6">
+                        <div class="row justify-content-center mb-4" >
 
-                            <input type="radio" id="sell" name="price" value="sell" onChange={this.modifyRadioState} />
-                            <label htmlFor="sell" className="pl-2">Sell</label>
+                            <div className="box-label">
+                                <input type="radio" id="buy" name="price" value="buy" onChange={this.modifyRadioState} />
+                                <label htmlFor="buy" className="pr-2 pl-2">Buy</label>
+                            </div>
+
+
+                            <div className="box-label">
+                                <input type="radio" id="sell" name="price" value="sell" onChange={this.modifyRadioState} />
+                                <label htmlFor="sell" className="pl-2 pr-2">Sell</label>
+                            </div>
+
                         </div>
-                        <div class="row justify-content-center" onChange={this.modifyAmount}>
-                            <input id="amount" type="text" className="form-control col-5 float-left" placeholder="Enter the amount you would like to trade" />
+
+
+                        <div class="row justify-content-center mb-4" onChange={this.modifyAmount}>
+                            <input id="amount" type="text" className="form-control col-6 float-left" placeholder="the amount of electricity" />
                         </div>
-                        <div class="row justify-content-center" onChange={this.modifyRegion}>
-                            <select className="form-control col-3 float-left mr-5">
+
+
+                        <div class="row justify-content-center mb-4" onChange={this.modifyRegion}>
+                            <select className="form-control col-6 float-left">
                                 <option value="">Choose your region</option>
                                 {region.map(ele => <option id="region" key={ele} value={ele}>{ele}</option>)}
                             </select>
+                        </div>
+
+                        <div class="justify-content-center">
+                            <button class="btn btn-info btn-75" onClick={this.sendToAPI}>Check</button>
+
                         </div>
                     </div>
 
@@ -104,7 +122,6 @@ class RecomComponent extends Component {
 
                 <div class="row">
                     <div class="col-6">
-                        <button class="btn btn-info btn-75" onClick={this.sendToAPI}>Check</button>
 
                     </div>
                     <div class="col-6">
@@ -120,6 +137,9 @@ class RecomComponent extends Component {
                 </div>
 
             </div>
+
+
+
         )
 
     }
