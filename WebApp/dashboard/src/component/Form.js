@@ -87,7 +87,7 @@ class Form extends Component {
 
                 if (res) {
                     const { factor_ratings, reserving_value } = res["data"];
-                    this.setState({ "factor_ratings": factor_ratings, reserving_value, isGraphVisible: true , loading : false })
+                    this.setState({ "factor_ratings": factor_ratings, reserving_value : (parseInt(reserving_value).toFixed(2)), isGraphVisible: true , loading : false })
                     autoFitFontSize();
                 }
             });
@@ -99,29 +99,15 @@ class Form extends Component {
 
     }
 
-  }
 
   render() {
     const { date, region, isGraphVisible } = this.state;
     window.onresize = function () { autoFitFontSize() };
-    
-    return (
-      <>
-        <div className="col-12">
 
     let styleSpinner = {
       width: '70px',
       height: '70px',
     };
-
-          <div class="container">
-            <div class="row">
-              <div className="col-4">
-                <form onSubmit={this.formSubmit} noValidate>
-
-                  <div className="mb-4">
-                    <select className="form-control col-10" value={region} onChange={this.handleChange}>
-
         const aSpinner = (
 
 
@@ -138,8 +124,6 @@ class Form extends Component {
           <p className="watt-value" id="watt">{this.state.reserving_value}</p>
         </div>
     )
-
-
 
 
     return (
