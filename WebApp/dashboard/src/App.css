@@ -160,7 +160,7 @@ p.instruction,
 p.instruction {
     font-size: 3vmax;
     color: var(--color-nav-bg-active);
-    font-family: var(--font-notes);
+    font-family: var(--font-sans-regular);
     padding: 15px 40px;
     /* margin-bottom: 60px !important; */
     /* font-style: italic; */
