@@ -58,9 +58,11 @@ def _plot(_df, colname1_ax1, colname2_ax2, colname3_ax3=None, colname4_ax4=None)
 
         ax3.get_legend().remove()
         ax4.legend(lines3 + lines4, labels3 + labels4, loc='upper right')
+    plt.show()
 
 
 if __name__ == '__main__':
     df = tsc.get_df()
+    print(df.columns)
     _plot(df, 'Close_bergenTemperatureDaily', 'Close_ConsumptionBergenNO5')
     print('')
