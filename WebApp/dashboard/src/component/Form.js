@@ -31,7 +31,7 @@ function autoFitFontSize() {
       watt.style.fontSize = fSize + "px";
       fSize -= 30;
     } while (watt.scrollWidth > watt.clientWidth);
-    fSize -= 30
+    fSize -= 70
     watt.style.fontSize = fSize + "px";
   }
   /* -------------------------------------------------------------------------- */
@@ -106,7 +106,7 @@ class Form extends Component {
       <>
         <div className="col-12">
 
-          <p className="instruction mb-4">Select the date to see our ML prediction of how much electricity you should buy.</p>
+          <p className="instruction delimiter">Select the date and city to see our ML prediction of how much electricity you should buy.</p>
 
           <div class="container">
             <div class="row">
