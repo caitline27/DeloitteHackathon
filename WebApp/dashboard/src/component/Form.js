@@ -70,6 +70,7 @@ class Form extends Component {
     formSubmit = (event) => {
         event.preventDefault();
         const { region, date } = this.state;
+        this.setState({"loading" : true});
 
         const formData = {
             region: region,
@@ -81,17 +82,15 @@ class Form extends Component {
         }
 
         if (region.length > 0 && date.length > 0) {
-            this.state.loading = true;
             axios.post("http://127.0.0.1:5000/reserve", formData, { headers: header }).then(res => {
 
                 if (res) {
                     const { factor_ratings, reserving_value } = res["data"];
-                    this.setState({ "factor_ratings": factor_ratings, reserving_value, isGraphVisible: true })
+                    this.setState({ "factor_ratings": factor_ratings, reserving_value, isGraphVisible: true , loading : false })
                     autoFitFontSize();
                 }
             });
 
-            this.state.loading = false;
         } else {
             alert("Please enter all the fields")
         }
