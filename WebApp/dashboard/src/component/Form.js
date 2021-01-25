@@ -98,23 +98,43 @@ class Form extends Component {
 
     }
 
-    render() {
-        const { date, region, isGraphVisible } = this.state;
-        window.onresize = function () { autoFitFontSize() };
+  }
 
+  render() {
+    const { date, region, isGraphVisible } = this.state;
+    window.onresize = function () { autoFitFontSize() };
+    
+    return (
+      <>
+        <div className="col-12">
 
-        let styleSpinner = {
-            width: '70px',
-            height: '70px',
-        };
+          <p className="instruction mb-4">Select the date to see our ML prediction of how much electricity you should buy.</p>
 
+          <div class="container">
+            <div class="row">
+              <div className="col-4">
+                <form onSubmit={this.formSubmit} noValidate>
 
-        const aSpinner = (
+                  <div className="mb-4">
+                    <select className="form-control col-10" value={region} onChange={this.handleChange}>
 
-
-            <div class="d-flex justify-content-center align-items-center m-3" >
-                <div class="spinner-border" style={styleSpinner} role="status">
-
+                      <option value="">Choose your region</option>
+                      {region_options.map(ele => <option key={ele} value={ele}>{ele}</option>)}
+                    </select>
+                  </div>
+                  <div className="mb-4">
+                    <input type="date" className="form-control col-10" name="date" value={date} placeholder="date" onChange={this.handleChange} />
+                  </div>
+                  <div className="mb-4">
+                    <div className="col-10 d-flex justify-content-center">
+                      <button className="btn btn-info btn-75">Check</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div className="col-8 watt">
+                <div className="watt-text">
+                  <p className="watt-value" id="watt">{this.state.reserving_value > 0 ? (parseInt(this.state.reserving_value).toFixed(2)) : 0}</p>
                 </div>
             </div>
         );
