@@ -81,7 +81,7 @@ class Form extends Component {
         }
 
         if (region.length > 0 && date.length > 0) {
-
+            this.state.loading = true;
             axios.post("http://127.0.0.1:5000/reserve", formData, { headers: header }).then(res => {
 
                 if (res) {
@@ -91,50 +91,33 @@ class Form extends Component {
                 }
             });
 
-
+            this.state.loading = false;
         } else {
             alert("Please enter all the fields")
         }
 
     }
 
-  }
 
-  render() {
-    const { date, region, isGraphVisible } = this.state;
-    window.onresize = function () { autoFitFontSize() };
-    
-    return (
-      <>
-        <div className="col-12">
 
-          <p className="instruction mb-4">Select the date to see our ML prediction of how much electricity you should buy.</p>
+    render() {
+        const { date, region, isGraphVisible } = this.state;
+        window.onresize = function () { autoFitFontSize() };
 
-          <div class="container">
-            <div class="row">
-              <div className="col-4">
-                <form onSubmit={this.formSubmit} noValidate>
 
-                  <div className="mb-4">
-                    <select className="form-control col-10" value={region} onChange={this.handleChange}>
 
-                      <option value="">Choose your region</option>
-                      {region_options.map(ele => <option key={ele} value={ele}>{ele}</option>)}
-                    </select>
-                  </div>
-                  <div className="mb-4">
-                    <input type="date" className="form-control col-10" name="date" value={date} placeholder="date" onChange={this.handleChange} />
-                  </div>
-                  <div className="mb-4">
-                    <div className="col-10 d-flex justify-content-center">
-                      <button className="btn btn-info btn-75">Check</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div className="col-8 watt">
-                <div className="watt-text">
-                  <p className="watt-value" id="watt">{this.state.reserving_value > 0 ? (parseInt(this.state.reserving_value).toFixed(2)) : 0}</p>
+        let styleSpinner = {
+            width: '70px',
+            height: '70px',
+        };
+
+
+        const aSpinner = (
+
+
+            <div class="d-flex justify-content-center align-items-center m-3" >
+                <div class="spinner-border" style={styleSpinner} role="status">
+
                 </div>
             </div>
         );
@@ -199,15 +182,16 @@ class Form extends Component {
                     </div>
                 }
             </>
+
         )
-
-
-
     }
 
 
-
 }
+
+
+
+
 
 
 export default Form;
