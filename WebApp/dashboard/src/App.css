@@ -200,9 +200,9 @@ div.watt {
 
 p.watt-value {
     text-align: center;
-    font-size: 240px;
+    font-size: 15vw;
     font-family: var(--font-black-sans);
-    margin-top: calc(100px - 0.75em);
+    margin-top: calc(80px - 0.8em);
     margin-bottom: -1em;
     /* margin-bottom: 20px; */
     /* font-weight: 900; */
@@ -360,4 +360,18 @@ input[tupe="text"] {
     /* Green background */
     cursor: pointer;
     /* Cursor on hover */
+}
+
+.ig-radial-gauge{
+margin: 0 auto;
+}
+
+.fontColor{
+    font-family: var(--font-black-sans);
+    color: var(--color-nav-text-active);
+    font-size: 1.5em;
+}
+
+.font-15em{
+    font-size: 1.5em;
 }

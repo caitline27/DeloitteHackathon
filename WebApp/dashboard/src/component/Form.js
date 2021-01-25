@@ -22,20 +22,23 @@ const region_options = ["Bergen", "Kirstiansund", "Oslo", "Tromso", "Tronheim"];
 // ]
 
 function autoFitFontSize() {
-  /* -------------------------------------------------------------------------- */
-  // Auto stretch the font size of watt text display according to content
-  var watt = document.getElementById("watt");
-  if (watt != null) {
-    watt.style.fontSize = "240px";
-    var fSize = 300;
-    do {
-      watt.style.fontSize = fSize + "px";
-      fSize -= 30;
-    } while (watt.scrollWidth > watt.clientWidth);
-    fSize -= 70
-    watt.style.fontSize = fSize + "px";
-  }
-  /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    // Auto stretch the font size of watt text display according to content
+    var watt = document.getElementById("watt");
+    if (watt != null) {
+        var fSize = 15.5;
+        do {
+            watt.style.fontSize = fSize + "vw";
+            fSize -= 0.5;
+        } while (watt.scrollWidth > watt.clientWidth);
+
+        var textLen = 140 / watt.innerHTML.length;
+        var calcFontSize = "calc(" + fSize + "vw - " + textLen + "px)"
+
+        watt.style.fontSize = calcFontSize;
+
+    }
+    /* -------------------------------------------------------------------------- */
 }
 
 
@@ -130,7 +133,7 @@ class Form extends Component {
       <>
         <div className="col-12">
 
-          <p className="instruction delimiter">Use our ML model to predict your electricity consumption</p>
+          <p className="instruction delimiter">Use our ML model to predict of your electricity consumption</p>
 
           <div class="container">
             <div class="row">
