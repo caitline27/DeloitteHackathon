@@ -57,7 +57,7 @@ class Form extends Component {
             loading: false
         }
     }
-  }
+  
 
     handleChange = event => {
 

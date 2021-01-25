@@ -116,7 +116,7 @@ class RecomComponent extends Component {
                             needleStrokeThickness={1}
                             needlePivotShape="CircleOverlay"
                             needlePivotBrush="#738eb1"
-                            
+
                             needlePivotOutline="#7e94ad"
                             needlePivotWidthRatio={0.2}
                             needlePivotStrokeThickness={1}
@@ -137,7 +137,7 @@ class RecomComponent extends Component {
                         </div>
                     </div>
                 </div>
-</div>
+
             </div>
 
 
