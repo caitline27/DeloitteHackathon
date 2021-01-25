@@ -12,15 +12,15 @@ class RecomComponent extends Component {
             gaugeValue: 50,
             BuySell: '',
             tradingAmount: 0,
-            region : ''
+            region: ''
         };
     }
 
-    modifyRadioState =(event) => {
+    modifyRadioState = (event) => {
         console.log(event.target);
 
         this.setState({
-            "BuySell" : event.target.id
+            "BuySell": event.target.id
         });
     }
 
@@ -30,7 +30,7 @@ class RecomComponent extends Component {
         });
     }
 
-    modifyAmount = (event) =>{
+    modifyAmount = (event) => {
         this.setState({
             "tradingAmount": event.target.value
         });
@@ -44,11 +44,12 @@ class RecomComponent extends Component {
     }
 
 
-   
+
+
     render() {
 
         return (
-            <div class="container border">
+            <div className="col-12 container border">
 
                 <p className="instruction mb-4">Set your trade-off index between environmental and economic benefits.</p>
 
@@ -57,7 +58,7 @@ class RecomComponent extends Component {
                         <div class="row justify-content-center" >
                             <input type="radio" id="buy" name="price" value="buy" onChange={this.modifyRadioState} />
                             <label htmlFor="buy" className="pr-5 pl-2">Buy</label>
-                            
+
                             <input type="radio" id="sell" name="price" value="sell" onChange={this.modifyRadioState} />
                             <label htmlFor="sell" className="pl-2">Sell</label>
                         </div>
@@ -71,8 +72,9 @@ class RecomComponent extends Component {
                             </select>
                         </div>
                     </div>
-                    
+
                     <div class="col-6">
+
                         <h6>What is your preference?</h6>    
                         <IgrRadialGauge
 
@@ -92,8 +94,8 @@ class RecomComponent extends Component {
                             minimumValue={0}
                             maximumValue={100} interval={10}
                             valueChanged={this.updateGaugeValue} />
-                        <p>someletter: {this.state.gaugeValue}</p>
-                    </div>       
+
+                    </div>
                 </div>
 
 
@@ -103,7 +105,7 @@ class RecomComponent extends Component {
                 <div class="row">
                     <div class="col-6">
                         <button class="btn btn-info btn-75" onClick={this.sendToAPI}>Check</button>
-                        
+
                     </div>
                     <div class="col-6">
                         <div class="d-flex justify-content-start">
@@ -118,7 +120,6 @@ class RecomComponent extends Component {
                 </div>
 
             </div>
-
         )
 
     }
