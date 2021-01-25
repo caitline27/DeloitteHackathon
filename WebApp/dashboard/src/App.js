@@ -6,14 +6,8 @@ function App() {
 
   return (
     <div className="container">
-
-
-
-
-
-
       <div className="row dashboard-wrapper pl-5">
-        <img src="logo.svg" width="60%" height="60%" class="center" />
+        <img src="logo.svg" width="60%" height="60%" className="center" />
         <br />
 
 
