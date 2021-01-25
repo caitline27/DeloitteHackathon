@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { IgrRadialGauge } from 'igniteui-react-gauges';
+import { IgrRadialGaugeModule ,IgrRadialGauge } from 'igniteui-react-gauges';
 
+IgrRadialGaugeModule.register();
 
 const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
 class RecomComponent extends Component {
@@ -93,7 +94,7 @@ class RecomComponent extends Component {
 
                     <div class="col-6">
 
-                        <h6>What is your preference?</h6>    
+                        <h6 className="text-center">What is your preference?</h6>    
                         <IgrRadialGauge
 
                             value={this.state.gaugeValue}
@@ -113,6 +114,16 @@ class RecomComponent extends Component {
                             maximumValue={100} interval={10}
                             valueChanged={this.updateGaugeValue} />
 
+                    <div className="d-flex justify-content-between">
+                        <div className="">
+                            <p className="mb-1 fontColor">{(this.state.gaugeValue).toFixed(2)}</p>
+                            <p className="font-15em">Cost</p>      
+                        </div>    
+                        <div className="">
+                            <p className="mb-1 fontColor">{(100 - this.state.gaugeValue).toFixed(2)}</p>
+                            <p className="font-15em">Environment</p>      
+                    </div>
+                        </div>
                     </div>
                 </div>
 

@@ -361,3 +361,17 @@ input[tupe="text"] {
     cursor: pointer;
     /* Cursor on hover */
 }
+
+.ig-radial-gauge{
+margin: 0 auto;
+}
+
+.fontColor{
+    font-family: var(--font-black-sans);
+    color: var(--color-nav-text-active);
+    font-size: 1.5em;
+}
+
+.font-15em{
+    font-size: 1.5em;
+}
