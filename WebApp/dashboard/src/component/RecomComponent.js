@@ -50,9 +50,9 @@ class RecomComponent extends Component {
     render() {
 
         return (
-            <div className="col-12 container border">
-
-                <p className="instruction delimiter">Set your trade-off index between environmental and economic benefits, the amount of the electricity, and the city where you'd like to trade, and see our suggestion on how you should trade.</p>
+            <div className="col-12 container border d-flex justify-content-center">
+            <div>
+                <p className="instruction delimiter">Use our ML Price model to trade</p>
 
 
 
@@ -146,7 +146,7 @@ class RecomComponent extends Component {
                         </div>
                     </div>
                 </div>
-
+</div>
             </div>
 
 

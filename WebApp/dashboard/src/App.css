@@ -50,6 +50,9 @@ body {
     padding: 5% !important;
     color: var(--color-content-text);
     font-family: var(--font-sans-regular);
+    display:flex;
+    justify-content: center;
+
 }
 
 img.center {

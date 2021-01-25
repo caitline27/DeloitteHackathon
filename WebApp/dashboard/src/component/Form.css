@@ -1,6 +1,6 @@
 .graphContainer {
     padding-top: 10px;
-    height: 400px;
+    min-height: 400px;
     position: relative;
     top: 0.1vh;
     display: inline-block;
