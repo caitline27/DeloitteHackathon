@@ -30,7 +30,7 @@ class RecomComponent extends Component {
         });
     }
 
-    modifyAmount = (event) => {
+    modifyAmount = (event) =>{
         this.setState({
             "tradingAmount": event.target.value
         });
@@ -50,8 +50,7 @@ class RecomComponent extends Component {
         return (
             <div class="container border">
 
-
-                <p class="instruction">What would you like to do?</p>
+                <p className="instruction mb-4">Set your trade-off index between environmental and economic benefits.</p>
 
                 <div class="row align-items-center">
                     <div class="col-6 ">
