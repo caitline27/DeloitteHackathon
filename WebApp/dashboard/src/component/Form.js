@@ -5,7 +5,7 @@ import PieChart from "./PieChart"
 import "./Form.css"
 import axios from "axios"
 
-const region = ["Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
+const region_options = ["Bergen", "Alberta", "Montreal", "British Columbia", "New Brunswick", "Northwest Territories", "Nova Scotia", "Ontario", "Quebec"];
 // const testGraphData = [
 //   { label: "Jan",  y: 10  },
 //   { label: "Feb", y: 15  },
@@ -45,11 +45,10 @@ class Form extends Component {
 
     super(props)
     this.state = {
-      city: '',
-      start_date: '',
-      end_date: '',
+      region: '',
+      date: '',
       isGraphVisible: false,
-      testGraphData: [],
+      factor_ratings: [],
       reserving_value: 0
     }
   }
@@ -57,8 +56,8 @@ class Form extends Component {
   handleChange = event => {
 
     if (event.target.tagName.toUpperCase() === "SELECT") {
-      const city = event.target.value;
-      this.setState({ city })
+      const region = event.target.value;
+      this.setState({ region })
     } else {
       const { name, value } = event.target;
       this.setState({ [name]: value })
@@ -69,25 +68,24 @@ class Form extends Component {
 
   formSubmit = (event) => {
     event.preventDefault();
-    const { city, start_date, end_date } = this.state;
+    const { region, date} = this.state;
 
     const formData = {
-      city: city,
-      start_date: start_date,
-      end_date: end_date
+      region: region,
+      date: date
     }
     const header = {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'
     }
 
-    if (city.length > 0 && start_date.length > 0 && end_date.length > 0) {
+    if (region.length > 0 && date.length > 0 ) {
 
       axios.post("http://127.0.0.1:5000/reserve", formData, { headers: header }).then(res => {
 
         if (res) {
-          const { data, reserving_value } = res["data"];
-          this.setState({ "testGraphData": data, reserving_value, isGraphVisible: true })
+          const { factor_ratings, reserving_value } = res["data"];
+          this.setState({ "factor_ratings": factor_ratings, reserving_value, isGraphVisible: true })
           autoFitFontSize();
         }
       });
@@ -100,7 +98,7 @@ class Form extends Component {
   }
 
   render() {
-    const { start_date, end_date, city, isGraphVisible } = this.state;
+    const { date, region, isGraphVisible } = this.state;
     window.onresize = function () { autoFitFontSize() };
     
     return (
@@ -115,17 +113,14 @@ class Form extends Component {
                 <form onSubmit={this.formSubmit} noValidate>
 
                   <div className="mb-4">
-                    <select className="form-control col-10" value={city} onChange={this.handleChange}>
+                    <select className="form-control col-10" value={region} onChange={this.handleChange}>
 
                       <option value="">Choose your region</option>
-                      {region.map(ele => <option key={ele} value={ele}>{ele}</option>)}
+                      {region_options.map(ele => <option key={ele} value={ele}>{ele}</option>)}
                     </select>
                   </div>
                   <div className="mb-4">
-                    <input type="date" className="form-control col-10" name="start_date" value={start_date} placeholder="start date" onChange={this.handleChange} />
-                  </div>
-                  <div className="mb-4">
-                    <input type="date" className="form-control col-10" name="end_date" value={end_date} placeholder="start date" onChange={this.handleChange} />
+                    <input type="date" className="form-control col-10" name="date" value={date} placeholder="date" onChange={this.handleChange} />
                   </div>
                   <div className="mb-4">
                     <div className="col-10 d-flex justify-content-center">
@@ -147,7 +142,7 @@ class Form extends Component {
         {isGraphVisible &&
           <div className="col-12 pb-5">
             <div className="col-12 graph mx-auto graphContainer" >
-              <PieChart dataPoints={this.state.testGraphData} />
+              <PieChart dataPoints={this.state.factor_ratings} />
             </div>
           </div>
         }
