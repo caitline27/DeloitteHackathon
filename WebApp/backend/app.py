@@ -46,7 +46,8 @@ class MainClass(Resource):
 def reserve():
     # TODO: get value of the reserving amount from the model
     if request.method == 'POST':
-        query = request.form
+        query = request.json
+        print(query)
         print(query['region'], query['date'])
 
         result = extractModel(query['region'], query['date'])
