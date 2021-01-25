@@ -131,7 +131,7 @@ class Form extends Component {
               </div>
               <div className="col-8 watt">
                 <div className="watt-text">
-                  <p className="watt-value" id="watt">{this.state.reserving_value}</p>
+                  <p className="watt-value" id="watt">{this.state.reserving_value > 0 ? (parseInt(this.state.reserving_value).toFixed(2)) : 0}</p>
                 </div>
               </div>
             </div>
