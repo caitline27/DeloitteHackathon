@@ -79,13 +79,15 @@ def extractModel(region, date):
     X_cols = target_row.columns.to_list()
     X_cols.remove('Unnamed: 0')
     X_cols.remove('Date')
+    X_cols.remove('Close_ConsumptionBergenNO5')
+
     X_cols = list(X_cols)
 
     # split data into X and y
     X = target_row[X_cols]
     result = model.predict(X)
 
-    factor_rating = sorted(list(zip(X_cols, model.feature_importances_)), key=lambda x: x[1], reverse=True)[:10]
+    factor_rating = sorted(list(zip(X_cols, model.feature_importances_)), key=lambda x: x[1], reverse=True)[:15]
 
     return result,factor_rating
 

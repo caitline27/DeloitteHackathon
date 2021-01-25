@@ -210,7 +210,7 @@ p.watt-value {
 }
 
 p.watt-value::after {
-    content: "  MWHs";
+    content: "  kWh";
     font-size: 35px;
 }
 
