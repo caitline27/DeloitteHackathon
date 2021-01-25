@@ -1,5 +1,4 @@
 import json
-
 from flask import Flask, request, jsonify
 from flask_restplus import Api, Resource, fields
 from flask_cors import CORS, cross_origin
@@ -46,7 +45,7 @@ class MainClass(Resource):
 def reserve():
     # TODO: get value of the reserving amount from the model
     if request.method == 'POST':
-        query = request.json
+        query = request.form
         print(query)
         print(query['region'], query['date'])
 
@@ -66,14 +65,18 @@ def reserve():
 def extractModel(region, date):
     model = XGBRegressor()
 
-    modelName = "../Models/"+region+".model"
+    model1 = XGBRegressor()
+
+    modelName = "./Models/"+region+".model"
     model.load_model(modelName)
 
-    fileName = "../CSV_Model_Inputs/"+region+".csv"
+    model1.load_model(modelName)
+
+    fileName = "./CSV_Model_Inputs/"+region+".csv"
 
     dataset = pd.read_csv(fileName)
     target_row = dataset[(dataset.Date == date)]
-    X_cols = set(target_row.columns.to_list())
+    X_cols = target_row.columns.to_list()
     X_cols.remove('Unnamed: 0')
     X_cols.remove('Date')
     X_cols = list(X_cols)
