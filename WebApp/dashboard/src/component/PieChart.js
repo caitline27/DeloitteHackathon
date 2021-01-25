@@ -27,7 +27,7 @@ class PieChart extends Component {
         backgroundColor: null,
         title: {
           text: "Top 15 factors affecting your consumption",
-          fontColor: "white"
+          fontColor: "black"
         },
         height: 400,
         axisY: {
@@ -39,7 +39,7 @@ class PieChart extends Component {
         data: [{				
           type: "pie",
           indexLabel: "{label}: {y}%",
-          indexLabelFontColor: "blue",
+          indexLabelFontColor: "DarkSlateGray",
           legendText: "{label}",
           showInLegend: true,
           dataPoints

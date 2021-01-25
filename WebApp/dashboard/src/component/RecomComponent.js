@@ -110,16 +110,15 @@ class RecomComponent extends Component {
                             value={this.state.gaugeValue}
                             isNeedleDraggingEnabled={true}
                             isNeedleDraggingConstrained={true}
-                            needleBrush="DodgerBlue"
-                            needleOutline="DodgerBlue"
+                            needleBrush="#b7c5b8"
+                            needleOutline="#1b5246"
                             needleEndExtent={0.475}
                             needleStrokeThickness={1}
                             needlePivotShape="CircleOverlay"
-                            needlePivotBrush="#738eb1"
-
+                            needlePivotBrush="#0e0d1d"
                             needlePivotOutline="#7e94ad"
-                            needlePivotWidthRatio={0.2}
-                            needlePivotStrokeThickness={1}
+                            needlePivotWidthRatio={0.15}
+                            needlePivotStrokeThickness={0}
                             height="35vw" width="35vw"
                             minimumValue={0}
                             maximumValue={100} interval={10}
