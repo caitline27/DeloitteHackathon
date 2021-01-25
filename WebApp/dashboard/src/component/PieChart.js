@@ -11,6 +11,17 @@ class PieChart extends Component {
     }
 
     render() {
+
+      const dataPoints = []
+
+      this.props.dataPoints.forEach(element => {
+        const label = Object.keys(element)[0];
+        let datay = Object.values(element)[0];
+        const y = (datay*100).toFixed(2);
+        const dataPoint = {label, y};
+        dataPoints.push(dataPoint);
+      });
+
       const options = {
         animationEnabled: true,
         backgroundColor: null,
@@ -28,8 +39,10 @@ class PieChart extends Component {
         data: [{				
           type: "pie",
           indexLabel: "{label}: {y}%",
-          indexLabelFontColor: "white",
-          dataPoints: this.props.dataPoints
+          indexLabelFontColor: "blue",
+          legendText: "{label}",
+          showInLegend: true,
+          dataPoints
          }]
      }
           
