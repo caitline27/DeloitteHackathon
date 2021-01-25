@@ -22,20 +22,23 @@ const region_options = ["Bergen", "Kirstiansund", "Oslo", "Tromso", "Tronheim"];
 // ]
 
 function autoFitFontSize() {
-  /* -------------------------------------------------------------------------- */
-  // Auto stretch the font size of watt text display according to content
-  var watt = document.getElementById("watt");
-  if (watt != null) {
-    watt.style.fontSize = "240px";
-    var fSize = 300;
-    do {
-      watt.style.fontSize = fSize + "px";
-      fSize -= 30;
-    } while (watt.scrollWidth > watt.clientWidth);
-    fSize -= 70
-    watt.style.fontSize = fSize + "px";
-  }
-  /* -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- */
+    // Auto stretch the font size of watt text display according to content
+    var watt = document.getElementById("watt");
+    if (watt != null) {
+        var fSize = 15.5;
+        do {
+            watt.style.fontSize = fSize + "vw";
+            fSize -= 0.5;
+        } while (watt.scrollWidth > watt.clientWidth);
+        
+        var textLen = 140 / watt.innerHTML.length;
+        var calcFontSize = "calc(" + fSize + "vw - " + textLen + "px)"
+        
+        watt.style.fontSize = calcFontSize;
+        
+    }
+    /* -------------------------------------------------------------------------- */
 }
 
 
@@ -43,16 +46,16 @@ class Form extends Component {
 
     constructor(props) {
 
-    super(props)
-    this.state = {
-      region: '',
-      date: '',
-      isGraphVisible: false,
-      factor_ratings: [],
-      reserving_value: "0",
-      loading: false
+        super(props)
+        this.state = {
+            region: '',
+            date: '',
+            isGraphVisible: false,
+            factor_ratings: [],
+            reserving_value: "00000",
+            loading: false
+        }
     }
-  }
 
     handleChange = event => {
 
@@ -70,7 +73,7 @@ class Form extends Component {
     formSubmit = (event) => {
         event.preventDefault();
         const { region, date } = this.state;
-        this.setState({"loading" : true});
+        this.setState({ "loading": true });
 
         const formData = {
             region: region,
@@ -87,7 +90,7 @@ class Form extends Component {
 
                 if (res) {
                     const { factor_ratings, reserving_value } = res["data"];
-                    this.setState({ "factor_ratings": factor_ratings, reserving_value : (parseInt(reserving_value).toFixed(2)), isGraphVisible: true , loading : false })
+                    this.setState({ "factor_ratings": factor_ratings, reserving_value: (parseInt(reserving_value).toFixed(2)), isGraphVisible: true, loading: false })
                     autoFitFontSize();
                 }
             });
@@ -100,14 +103,15 @@ class Form extends Component {
     }
 
 
-  render() {
-    const { date, region, isGraphVisible } = this.state;
-    window.onresize = function () { autoFitFontSize() };
+    render() {
+        const { date, region, isGraphVisible } = this.state;
+        window.onload = function () { autoFitFontSize() };
+        window.onresize = function () { autoFitFontSize() };
 
-    let styleSpinner = {
-      width: '70px',
-      height: '70px',
-    };
+        let styleSpinner = {
+            width: '70px',
+            height: '70px',
+        };
         const aSpinner = (
 
 
@@ -119,23 +123,23 @@ class Form extends Component {
         );
 
 
-    const wattValue = (
-        <div className="watt-text">
-          <p className="watt-value" id="watt">{this.state.reserving_value}</p>
-        </div>
-    )
+        const wattValue = (
+            <div className="watt-text">
+                <p className="watt-value" id="watt">{this.state.reserving_value}</p>
+            </div>
+        )
 
 
-    return (
-      <>
-        <div className="col-12">
+        return (
+            <>
+                <div className="col-12">
 
-          <p className="instruction delimiter">Select the date and city to see our ML prediction of how much electricity you should buy.</p>
+                    <p className="instruction delimiter">Select the date and city to see our ML prediction of how much electricity you should buy.</p>
 
-          <div class="container">
-            <div class="row">
-              <div className="col-4">
-                <form onSubmit={this.formSubmit} noValidate>
+                    <div class="container">
+                        <div class="row">
+                            <div className="col-4">
+                                <form onSubmit={this.formSubmit} noValidate>
 
                                     <div className="mb-4">
                                         <select className="form-control col-10" value={region} onChange={this.handleChange}>
