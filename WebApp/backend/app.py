@@ -46,19 +46,21 @@ class MainClass(Resource):
 def reserve():
     # TODO: get value of the reserving amount from the model
     if request.method == 'POST':
-        query = request.form
+        query = request.json
+        print(query)
+        print(query['region'], query['date'])
+
         result = extractModel(query['region'], query['date'])
+
 
         opt = result[0].astype(numpy.float)
         print(result[1])
 
-        features =[]
+        factor_rating =[]
         for item in result[1]:
-            features.append({item[0] : item[1].astype(numpy.float)})
+            factor_rating.append({item[0] : item[1].astype(numpy.float)})
 
-        print(type(features))
-
-        response = jsonify({"reserving_value": str(opt[0]), "factor_ratings" : features})
+        response = jsonify({"reserving_value": str(opt[0]), "factor_ratings" : factor_rating})
         return response
 
 def extractModel(region, date):

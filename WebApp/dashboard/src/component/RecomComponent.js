@@ -49,7 +49,7 @@ class RecomComponent extends Component {
     render() {
 
         return (
-            <div className="col-12">
+            <div className="col-12 container border">
 
                 <p className="instruction mb-4">Set your trade-off index between environmental and economic benefits.</p>
 
@@ -74,6 +74,7 @@ class RecomComponent extends Component {
                     </div>
 
                     <div class="col-6">
+
                         <h6>What is your preference?</h6>    
                         <IgrRadialGauge
 
@@ -93,7 +94,7 @@ class RecomComponent extends Component {
                             minimumValue={0}
                             maximumValue={100} interval={10}
                             valueChanged={this.updateGaugeValue} />
-                        <p>someletter: {this.state.gaugeValue}</p>
+
                     </div>
                 </div>
 
